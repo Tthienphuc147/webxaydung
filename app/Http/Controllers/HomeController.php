@@ -8,6 +8,9 @@ class HomeController extends Controller
 {
     public function showHome()
     {
-        return view('mainPage.home');
+        $project='App\Project'::all()->random(6);
+        $countProject='App\Project'::get()->count();
+        return view('mainPage.home')->with('project',$project)->with('countProject',$countProject);
     }
+        
 }

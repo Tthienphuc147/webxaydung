@@ -24,33 +24,32 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         </button>
-                    <a class="navbar-brand" href="#"><img src="{{ asset('/public/img/logo.png')}}" alt=""><img src="{{ asset('/public/img/logo.png')}}" alt=""></a>
+                    <a class="navbar-brand" href="/"><img src="{{ asset('/public/img/logo.png')}}" alt=""><img src="{{ asset('/public/img/logo.png')}}" alt=""></a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="">GIỚI THIỆU</a></li>
+                        <li class="active"><a href="/introduction">GIỚI THIỆU</a></li>
                         <li class="dropdown submenu ">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">DỰ ÁN</a>
                             <ul class="dropdown-menu">
-                                <li><a href="index.html">BIỆT THỰ</a></li>
-                                <li><a href="index-2.html">NHÀ PHỐ</a></li>
-                                <li><a href="index.html">KHÁCH SẠN-VĂN PHÒNG</a></li>
-                                <li><a href="index-2.html">HÌNH ẢNH THI CÔNG XÂY DỰNG THỰC TẾ</a></li>
+                                @foreach ($projectCategoryMenu as $item)
+                            <li><a href="/categoryProject/{{$item->id}}" class="text-uppercase">{{$item->name}}</a></li>
+                                @endforeach
+                            
+                              
                             </ul>
                         </li>
                         <li class="dropdown submenu">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">DỊCH VỤ</a>
                             <ul class="dropdown-menu">
-                                <li><a href="project-full-width.html">THIẾT KẾ KIẾN TRÚC</a></li>
-                                <li><a href="project-grid-three-column.html">THIẾT KẾ CẤU TRÚC</a></li>
-                                <li><a href="project-grid-two-column.html">THIẾT KẾ CƠ ĐIỆN MEPF</a></li>
-                                <li><a href="project-three-column.html">TƯ VẤN THẨM TRA</a></li>
-                                <li><a href="project-single.html">THI CÔNG XÂY DỰNG</a></li>
-                                <li><a href="project-three-column.html">TƯ VẤN DÁM SÁT XÂY DỰNG</a></li>
-                                <li><a href="project-single.html">THIẾT KẾ XIN GIẤY PH</a></li>
+                                @foreach ($serviceCategoryMenu as $item)
+                                     <li><a href="/serviceCategory/{{$item->id}}">{{$item->name}}</a></li>
+                                @endforeach
+                               
+                            
                             </ul>
                         </li>
                         <li class="dropdown submenu">
@@ -58,15 +57,17 @@
                             <ul class="dropdown-menu">
                                 <li><a href="project-full-width.html">XEM HƯỚNG NHÀ THEO TUỔI</a></li>
                                 <li><a href="project-grid-three-column.html">THƯỚC LỖ BAN</a></li>
-                                <li><a href="project-grid-two-column.html">MÀU HỢP TUỔI</a></li>
 
                             </ul>
                         </li>
                         <li class="dropdown submenu">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">BẢNG GIÁ</a>
                             <ul class="dropdown-menu">
-                                <li><a href="project-full-width.html">BẢNG GIÁ THI CÔNG</a></li>
-                                <li><a href="project-grid-three-column.html">BẢNG GIÁ THIẾT KẾ</a></li>
+                                @foreach ($pricingCategoryMenu as $item)
+                                      <li><a href="/pricing/{{$item->id}}">{{$item->name_pricing_category}}</a></li>
+                                @endforeach
+                              
+                         
 
 
                             </ul>
@@ -74,14 +75,15 @@
                         <li class="dropdown submenu">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">TƯ VẤN</a>
                             <ul class="dropdown-menu">
-                                <li><a href="project-full-width.html">TƯ VẤN PHONG THỦY</a></li>
-                                <li><a href="project-grid-three-column.html">GIẢI PHÁP KIẾN TRÚC</a></li>
-                                <li><a href="project-grid-two-column.html">KỸ THUẬT XÂY DỰNG</a></li>
-                                <li><a href="project-grid-two-column.html">CHỌN VÀ SỬ DỤNG VẬT LIỆU</a></li>
+                                @foreach ($advisoryCategoryMenu as $item)
+                                    <li><a href="/advisoryCategory/{{$item->id}}">{{$item->name}}</a></li>
+                                @endforeach
+                                
+                          
                             </ul>
                         </li>
 
-                        <li><a href="#">LIÊN HỆ</a></li>
+                        <li><a href="/contactView">LIÊN HỆ</a></li>
 
                     </ul>
                 </div>

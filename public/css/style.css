@@ -3476,7 +3476,7 @@ iframe {
     top: 0px;
     bottom: 0px;
     text-align: center;
-    padding: 18px;
+    padding: 8px !important;
 }
 
 .our_project_details .project_item .project_hover .project_hover_inner {
@@ -3579,7 +3579,7 @@ iframe {
     top: 0px;
     bottom: 0px;
     text-align: center;
-    padding: 18px;
+    padding: 8px;
 }
 
 .project_item .project_hover .project_hover_inner {
@@ -4009,6 +4009,10 @@ iframe {
 .footer_widgets_area {
     background: #31353d;
     padding: 70px 0px;
+   
+}
+.footer_area{
+ padding-top: 200px;
 }
 
 .footer_widgets_area.footer_bg {
@@ -4426,4 +4430,36 @@ hr {
     .send-button {
         width: 99%;
     }
+}
+
+/*comment*/
+.comment-wrapper .panel-body {
+    max-height:650px;
+    overflow:auto;
+}
+
+.comment-wrapper .media-list .media img {
+    width:64px;
+    height:64px;
+    border:2px solid #e5e7e8;
+}
+
+.comment-wrapper .media-list .media {
+    border-bottom:1px dashed #efefef;
+    margin-bottom:25px;
+}
+.panel-heading{
+    background-color: #f6831f !important;
+    color:#fff !important;
+}
+.btn-comment{
+ background-color: #f6831f !important;
+    color:#fff !important;
+    border: 1px #f6831f !important;
+}
+.panel-info {
+     border-color: #f6831f !important;
+}
+.help-is-danger{
+    color:red;
 }

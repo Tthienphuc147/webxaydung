@@ -21,3 +21,6 @@ Route::get('/advisoryCategory/{unsigned_name}','AdvisoryCategoryController@showC
 Route::get('/advisory/{unsigned_name}','AdvisoryController@showDetail');
 Route::get('/project/{unsigned_name}','ProjectController@showDetail');
 Route::get('/pricing/{unsigned_name}','PricingController@showDetail');
+
+/*admin*/
+Route::get('/admin','AdminController@showDashboard');

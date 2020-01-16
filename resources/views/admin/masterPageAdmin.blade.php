@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>DCONSTECH-DASHBOARD</title>
+  <link rel="icon" href="{{ asset('/public/img/logo.png')}}" type="image/x-icon" />
 
      <link href="{{ asset('/public/assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
       <link href="{{ asset('/public/assets/vendor/fonts/circular-std/style.css')}}" rel="stylesheet">

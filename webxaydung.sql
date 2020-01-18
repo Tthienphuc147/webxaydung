@@ -63,7 +63,8 @@ CREATE TABLE `contact` (
   `land_direction` text DEFAULT NULL,
   `phone` int(11) NOT NULL,
   `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `status` tinyint(1) DEFAULT(0)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --

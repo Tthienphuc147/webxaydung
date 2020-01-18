@@ -11,7 +11,7 @@
                             <div class="email-head-sender">
                                 
                               
-                                <div class="sender"><a href="#">{{$contactDetail->full_name}}</a> to <a href="#">Dconstech</a>
+                                <div class="sender"><a href="#">{{$contactDetail->full_name}}</a> To <a href="#">Dconstech</a>
                                 
                                 </div>
                             </div>
@@ -33,9 +33,10 @@
                                  <img src="/public/image/contact/{{$contactDetail->land_image}}" alt="" width="300px" height="300px">
                             @endif
                            
-
+                            
                            
                         </div>
+                        <button class="btn btn-primary"><a href="/admin/contactDetail/change/{{$contactDetail->id}}">Chuyển Trạng Thái Đã Xử Lý</a></button>
                      
                     </div>
 @endsection

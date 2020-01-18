@@ -14,30 +14,22 @@
     <section class="project_single_area">
         <div class="container">
             <div class="project_single_inner">
-                <div class="project_single_slider">
-                    <div id="slider" class="flexslider">
-                        <ul class="slides">
-                            <li><img src="img/single/1.jpg" alt=""></li>
-                            <li><img src="img/single/2.jpg" alt=""></li>
-                            <li><img src="img/single/3.jpg" alt=""></li>
-                            <li><img src="img/single/4.jpg" alt=""></li>
-                            <li><img src="img/single/5.jpg" alt=""></li>
-                        </ul>
-                    </div>
-                    <div id="carousel" class="flexslider">
-                        <ul class="slides">
-                            <li><img src="img/single/1.jpg" alt=""></li>
-                            <li><img src="img/single/2.jpg" alt=""></li>
-                            <li><img src="img/single/3.jpg" alt=""></li>
-                            <li><img src="img/single/4.jpg" alt=""></li>
-                            <li><img src="img/single/5.jpg" alt=""></li>
-                        </ul>
-                        <div class="custom-navigation">
-                            <a href="#" class="flex-prev"><i class="fa fa-angle-left"></i></a>
-                            <a href="#" class="flex-next"><i class="fa fa-angle-right"></i></a>
-                        </div>
-                    </div>
-                </div>
+                <section class="main_slider_area slider_2">
+    <div id="main_slider" class="rev_slider" data-version="5.3.1.6">
+        <ul>
+              @foreach ($slideImage as $item)
+            <li data-index="rs-2972" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="/public/image/building/{{$item->image_url}}
+                data-rotate="0" data-saveperformance="off" data-title="Web Show" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                <!-- MAIN IMAGE -->
+                <img src="/public/image/building/{{$item->image_url}}" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="{{$slideCount}}" class="rev-slidebg" data-no-retina>
+                <!-- LAYERS -->
+
+            </li>
+            @endforeach
+        
+        </ul>
+    </div>
+</section>
                 <div class="row">
 
                     <div class="project_summery">

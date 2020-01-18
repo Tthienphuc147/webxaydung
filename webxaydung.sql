@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 16, 2020 at 09:48 AM
+-- Generation Time: Jan 18, 2020 at 01:10 AM
 -- Server version: 10.4.8-MariaDB
 -- PHP Version: 7.3.11
 
@@ -27,7 +27,6 @@ SET time_zone = "+00:00";
 --
 -- Table structure for table `comment`
 --
-
 DROP TABLE IF EXISTS `comment`;
 DROP TABLE IF EXISTS `contact`;
 DROP TABLE IF EXISTS `post`;
@@ -41,7 +40,6 @@ DROP TABLE IF EXISTS `service_category`;
 DROP TABLE IF EXISTS `slide`;
 DROP TABLE IF EXISTS `slide_category`;
 DROP TABLE IF EXISTS `slide_image`;
-
 CREATE TABLE `comment` (
   `id` int(11) NOT NULL,
   `content` text NOT NULL
@@ -72,7 +70,26 @@ CREATE TABLE `contact` (
 -- Dumping data for table `contact`
 --
 
-
+INSERT INTO `contact` (`id`, `full_name`, `address`, `email`, `plot_map_image`, `demand`, `land_image`, `message`, `land_direction`, `phone`, `updated_at`, `created_at`) VALUES
+(4, 'ádsa', '20', 'aaaa1@gmail.com', 'z3rh_82068940_2590059527939788_3610012057732120576_n.jpg', 'Thiết kế', NULL, 'adsasd', 'Nam', 21312, '2020-01-16 01:08:44', '2020-01-16 01:08:44'),
+(5, 'ád', '123', 'aaaa1@gmail.com', '6eLO_82068940_2590059527939788_3610012057732120576_n.jpg', 'Thiết kế', NULL, 'ádadsdas', 'Nam', 123123, '2020-01-16 01:09:13', '2020-01-16 01:09:13'),
+(6, 'ádasd', '123123', 'dthienphuc147@gmail.com', 'iEd3_doan.sql', 'Thi công', NULL, 'ádadsasdasd', 'Nam', 213123, '2020-01-16 01:09:47', '2020-01-16 01:09:47'),
+(7, 'ádasd', '123123', 'dthienphuc147@gmail.com', 'paAB_4K-Road-Forest-Night-Wallpaper-3840x2160.jpg', 'Thi công', NULL, 'adsdasdasd', 'Nam', 21312312, '2020-01-16 01:11:40', '2020-01-16 01:11:40'),
+(8, 'ádasd', '123123', 'dthienphuc147@gmail.com', 'Hc6W_4K-Road-Forest-Night-Wallpaper-3840x2160.jpg', 'Thi công', NULL, 'adsasd', 'a', 213123, '2020-01-16 01:16:11', '2020-01-16 01:16:11'),
+(9, 'ádasd', '12312', 'aaaa1@gmail.com', 'bgxw_54.jpeg', 'Thiết kế', 'Ne7N_4K-Road-Forest-Night-Wallpaper-3840x2160 - Copy.jpg', 'ádsadsasad', 'Nam', 123123, '2020-01-16 01:17:32', '2020-01-16 01:17:32'),
+(10, 'ád', '20', 'dthienphuc147@gmail.com', 'Zdae_54.jpeg', 'Thiết kế', '5rHg_4K-Road-Forest-Night-Wallpaper-3840x2160.jpg', 'ádasdasd', 'Nam', 123123, '2020-01-16 01:23:20', '2020-01-16 01:23:20'),
+(11, 'Phúc', '20', 'aaaa1@gmail.com', 'NP8g_54.jpeg', 'Thi công', 'F5kp_4K-Road-Forest-Night-Wallpaper-3840x2160.jpg', 'ádsa', 'Nam', 123321, '2020-01-16 01:24:00', '2020-01-16 01:24:00'),
+(12, 'Phúc', '20', 'aaaa1@gmail.com', 'neCN_54.jpeg', 'Thi công', 'rRNx_4K-Road-Forest-Night-Wallpaper-3840x2160.jpg', 'ádsa', 'Nam', 123321, '2020-01-16 01:25:56', '2020-01-16 01:25:56'),
+(13, 'Phúc', 'ád', 'dthienphuc147@gmail.com', 'Obsj_54.jpeg', 'Thiết kế', 'CHb3_4K-Road-Forest-Night-Wallpaper-3840x2160.jpg', 'sad', 'Nam', 12, '2020-01-16 01:26:13', '2020-01-16 01:26:13'),
+(14, 'Phúc', 'ád', 'dthienphuc147@gmail.com', 'Szis_54.jpeg', 'Thiết kế', 'c1rT_4K-Road-Forest-Night-Wallpaper-3840x2160.jpg', 'sad', 'Nam', 12, '2020-01-16 01:27:30', '2020-01-16 01:27:30'),
+(15, 'Phúc', 'ádds', 'aaaa1@gmail.com', NULL, 'Thiết kế', NULL, 'adssad', 'Nam', 2313, '2020-01-16 01:27:44', '2020-01-16 01:27:44'),
+(16, 'ád', '213', 'dthienphuc147@gmail.com', NULL, 'Thiết kế', NULL, 'a', 'Nam', 132, '2020-01-16 01:28:32', '2020-01-16 01:28:32'),
+(17, 'ád', 'ads', 'aaaa1@gmail.com', NULL, 'Thiết kế', NULL, 'a', 'Nam', 3123, '2020-01-16 01:29:11', '2020-01-16 01:29:11'),
+(18, 'ád', 'ads', 'aaaa1@gmail.com', NULL, 'Thiết kế', NULL, 'a', 'Nam', 3123, '2020-01-16 01:31:13', '2020-01-16 01:31:13'),
+(19, 'ád', 'ads', 'aaaa1@gmail.com', NULL, 'Thiết kế', NULL, 'a', 'Nam', 3123, '2020-01-16 01:32:14', '2020-01-16 01:32:14'),
+(20, 'ád', 'ads', 'aaaa1@gmail.com', NULL, 'Thiết kế', NULL, 'a', 'Nam', 3123, '2020-01-16 01:34:30', '2020-01-16 01:34:30'),
+(21, 'ád', '123123', 'dthienphuc147@gmail.com', 'kyiH_4K-Road-Forest-Night-Wallpaper-3840x2160.jpg', 'Thi công', 'TB9T_4K-Road-Forest-Night-Wallpaper-3840x2160 - Copy.jpg', 'a', 'Nam', 12331, '2020-01-16 01:34:58', '2020-01-16 01:34:58'),
+(22, 'ád', '123123', 'dthienphuc147@gmail.com', 'nT0c_4K-Road-Forest-Night-Wallpaper-3840x2160.jpg', 'Thi công', 'U8Vh_4K-Road-Forest-Night-Wallpaper-3840x2160 - Copy.jpg', 'a', 'Nam', 12331, '2020-01-16 01:35:45', '2020-01-16 01:35:45');
 
 -- --------------------------------------------------------
 
@@ -187,11 +204,11 @@ CREATE TABLE `project` (
 
 INSERT INTO `project` (`id`, `name_project`, `customer_name`, `investor`, `description`, `land_area`, `building_area`, `construction_progress`, `total_amount`, `project_category_id`, `slide_id`, `image`) VALUES
 (1, 'MR PHƯỚC HOUSE_16_DCONSTECH', 'MR PHƯỚC', 'CÔNG TY TNHH TVXD & TM DCONSTECH', ' Mr Phước House: căn hộ được thiết kế 8 tầng vừa là nhà ở vừa làm căn hộ cho thuê nằm trên trục đường Trần Phú đắt địa nhưng không kém phần khó khăn trong công tác thi công. ', 800, 800, 150, 0, 2, 1, 'project1.jpg'),
-(2, 'XUYÊN VILLA_17_DCONSTECH', 'XUYÊN', 'CÔNG TY TNHH TVXD & TM DCONSTECH', 'Biệt thự được thiết kế với phong cách hiện đại trên khu đất rộng 250m2 nằm trên trục đường Vip nhất của khu đô thi Nam Việt Á (đường Bùi Tá Hán) với các khoảng không làm cho ngôi nhà luôn đầy nắng và gió. ', 250, 350, 120, 0, 1, 0, 'project2.jpg'),
-(3, 'VILLA OF BOSS_11_DCONSTECH', 'Boss', 'CÔNG TY TNHH TVXD & TM DCONSTECH', '\" Nhà của sếp \" Tựa đề đã nói lên tất cả. Cám ơn sếp đã tin tưởng chúng tôi, chúng tôi tự tin sẽ làm sếp hài lòng. Biệt thự 3 tầng với phong cách hiện đại tọa lạc tại một trong những khu Vip nhất Đà Nẵng \"', 250, 560, 90, 0, 1, 0, 'project3.jpg'),
-(4, 'MS KHƯƠNG HOUSE_18_DCONSTECH', 'MS KHƯƠNG', 'CÔNG TY TNHH TVXD & TM DCONSTECH', 'Chuyện giờ mới kể : khởi công vào tháng 9 sương sương, trời thì vẫn cứ mưa, nhà thì vẫn cứ xây, ngồi nhà của ms Khương nên hình như vậy. Cảm ơn chị đã đặt trọn niềm tin vào chúng tôi để xây dựng ngôi nhà mơ ước.', 120, 185, 90, 0, 2, 0, 'project4.png'),
-(5, 'MR KHÁNH HOUSE_15_DCONSTECH', 'Mr Khánh', 'CÔNG TY TNHH TVXD & TM DCONSTECH', 'Ngôi nhà 5 tầng ban đầu được đơn vị thiết kế S3 thiết kế với kết cấu thép với chi phí rất cao. Với sự tư vấn của chúng tôi, chủ đầu tư đã đồng ý chuyển sang phương án BTCT với chi phí phải chăng và mang lại hiệu quả lâu dài. ', 100, 500, 120, 0, 2, 0, 'project5.jpg'),
-(6, 'MR THƯƠNG HOUSE_07_DCONSTECH', 'Mr Thương', 'CÔNG TY TNHH TVXD & TM DCONSTECH', 'Mr Thương House_25/05/2019. Ngôi nhà 3 tầng trên diện tích lô đất rộng 200m2 được thiết kế các không gian thoáng và nhiều ánh sáng như mong muốn của chủ nhà. ', 250, 420, 120, 0, 2, 0, 'project6.jpg');
+(2, 'XUYÊN VILLA_17_DCONSTECH', 'XUYÊN', 'CÔNG TY TNHH TVXD & TM DCONSTECH', 'Biệt thự được thiết kế với phong cách hiện đại trên khu đất rộng 250m2 nằm trên trục đường Vip nhất của khu đô thi Nam Việt Á (đường Bùi Tá Hán) với các khoảng không làm cho ngôi nhà luôn đầy nắng và gió. ', 250, 350, 120, 0, 1, 2, 'project2.jpg'),
+(3, 'VILLA OF BOSS_11_DCONSTECH', 'Boss', 'CÔNG TY TNHH TVXD & TM DCONSTECH', '\" Nhà của sếp \" Tựa đề đã nói lên tất cả. Cám ơn sếp đã tin tưởng chúng tôi, chúng tôi tự tin sẽ làm sếp hài lòng. Biệt thự 3 tầng với phong cách hiện đại tọa lạc tại một trong những khu Vip nhất Đà Nẵng \"', 250, 560, 90, 0, 1, 3, 'project3.jpg'),
+(4, 'MS KHƯƠNG HOUSE_18_DCONSTECH', 'MS KHƯƠNG', 'CÔNG TY TNHH TVXD & TM DCONSTECH', 'Chuyện giờ mới kể : khởi công vào tháng 9 sương sương, trời thì vẫn cứ mưa, nhà thì vẫn cứ xây, ngồi nhà của ms Khương nên hình như vậy. Cảm ơn chị đã đặt trọn niềm tin vào chúng tôi để xây dựng ngôi nhà mơ ước.', 120, 185, 90, 0, 2, 6, 'project4.png'),
+(5, 'MR KHÁNH HOUSE_15_DCONSTECH', 'Mr Khánh', 'CÔNG TY TNHH TVXD & TM DCONSTECH', 'Ngôi nhà 5 tầng ban đầu được đơn vị thiết kế S3 thiết kế với kết cấu thép với chi phí rất cao. Với sự tư vấn của chúng tôi, chủ đầu tư đã đồng ý chuyển sang phương án BTCT với chi phí phải chăng và mang lại hiệu quả lâu dài. ', 100, 500, 120, 0, 2, 4, 'project5.jpg'),
+(6, 'MR THƯƠNG HOUSE_07_DCONSTECH', 'Mr Thương', 'CÔNG TY TNHH TVXD & TM DCONSTECH', 'Mr Thương House_25/05/2019. Ngôi nhà 3 tầng trên diện tích lô đất rộng 200m2 được thiết kế các không gian thoáng và nhiều ánh sáng như mong muốn của chủ nhà. ', 250, 420, 120, 0, 2, 5, 'project6.jpg');
 
 -- --------------------------------------------------------
 
@@ -265,8 +282,20 @@ INSERT INTO `service_category` (`id`, `name`) VALUES
 CREATE TABLE `slide` (
   `id` int(11) NOT NULL,
   `slide_category_id` int(11) NOT NULL,
-  `name` int(11) NOT NULL
+  `name` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `slide`
+--
+
+INSERT INTO `slide` (`id`, `slide_category_id`, `name`) VALUES
+(1, 2, 'MR PHƯỚC HOUSE_16_DCONSTECH'),
+(2, 2, 'XUYÊN VILLA_17_DCONSTECH'),
+(3, 2, 'VILLA OF BOSS_11_DCONSTECH'),
+(4, 2, 'MR KHÁNH HOUSE_15_DCONSTECH'),
+(5, 2, 'MR THƯƠNG HOUSE_07_DCONSTECH'),
+(6, 2, 'MS KHƯƠNG HOUSE_18_DCONSTECH');
 
 -- --------------------------------------------------------
 
@@ -279,6 +308,14 @@ CREATE TABLE `slide_category` (
   `name` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Dumping data for table `slide_category`
+--
+
+INSERT INTO `slide_category` (`id`, `name`) VALUES
+(1, 'Home'),
+(2, 'Buiding');
+
 -- --------------------------------------------------------
 
 --
@@ -290,6 +327,41 @@ CREATE TABLE `slide_image` (
   `slide_id` int(11) NOT NULL,
   `image_url` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `slide_image`
+--
+
+INSERT INTO `slide_image` (`id`, `slide_id`, `image_url`) VALUES
+(1, 1, 'mrphuochouse1.jpg'),
+(2, 1, 'mrphuochouse2.jpg'),
+(3, 1, 'mrphuochouse3.jpg'),
+(4, 1, 'mrphuochouse4.jpg'),
+(5, 1, 'mrphuochouse5.jpg'),
+(6, 2, 'xuyenvilla1.jpg'),
+(7, 2, 'xuyenvilla2.jpg'),
+(8, 2, 'xuyenvilla3.jpg'),
+(9, 2, 'xuyenvilla4.jpg'),
+(10, 3, 'bossvilla1.jpg'),
+(11, 3, 'bossvilla2.jpg'),
+(12, 3, 'bossvilla3.jpg'),
+(13, 3, 'bossvilla4.jpg'),
+(14, 3, 'bossvilla5.jpg'),
+(15, 3, 'bossvilla6.jpg'),
+(16, 3, 'bossvilla7.jpg'),
+(17, 4, 'mrkhanh1.jpg'),
+(18, 4, 'mrkhanh2.jpg'),
+(19, 4, 'mrkhanh3.jpg'),
+(20, 4, 'mrkhanh4.jpg'),
+(21, 5, 'mrthuong1.jpg'),
+(22, 5, 'mrthuong2.jpg'),
+(23, 5, 'mrthuong3.jpg'),
+(24, 5, 'mrthuong4.jpg'),
+(25, 5, 'mrthuong5.jpg'),
+(26, 5, 'mrthuong6.jpg'),
+(27, 6, 'mrkhuong1.png'),
+(28, 6, 'mrkhuong2.jpg'),
+(29, 6, 'mrkhuong3.jpg');
 
 --
 -- Indexes for dumped tables
@@ -441,19 +513,19 @@ ALTER TABLE `service_category`
 -- AUTO_INCREMENT for table `slide`
 --
 ALTER TABLE `slide`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `slide_category`
 --
 ALTER TABLE `slide_category`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `slide_image`
 --
 ALTER TABLE `slide_image`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

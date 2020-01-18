@@ -39,15 +39,15 @@
                                 </div>
                             </li>
                              <li class="nav-item">
-                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-2" aria-controls="submenu-2"><i class="fa fa-fw fab fas fa-diagnoses"></i>Quản lý loại dịch vụ</a>
-                                <div id="submenu-2" class="collapse submenu" style="">
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-3" aria-controls="submenu-2"><i class="fa fa-fw fab fas fa-diagnoses"></i>Quản lý loại dịch vụ</a>
+                                <div id="submenu-3" class="collapse submenu" style="">
                                     <ul class="nav flex-column">
                                    
                                         <li class="nav-item">
-                                            <a class="nav-link" href="general.html">Danh sách loại dịch vụ</a>
+                                            <a class="nav-link" href="/admin/servicecategory">Danh sách loại dịch vụ</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="carousel.html">Thêm dịch vụ</a>
+                                            <a class="nav-link" href="/admin/servicecategory/show/add">Thêm dịch vụ</a>
                                         </li>
                                    
                                     </ul>
@@ -55,23 +55,21 @@
                             </li>
                            
                                <li class="nav-item">
-                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-2" aria-controls="submenu-2"><i class="fa fa-fw fas fa-diagnoses"></i>Quản lý dịch vụ</a>
-                                <div id="submenu-2" class="collapse submenu" style="">
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-4" aria-controls="submenu-2"><i class="fa fa-fw fas fa-diagnoses"></i>Quản lý dịch vụ</a>
+                                <div id="submenu-4" class="collapse submenu" style="">
                                     <ul class="nav flex-column">
                                    
                                         <li class="nav-item">
-                                            <a class="nav-link" href="general.html">Danh sách dịch vụ</a>
+                                            <a class="nav-link" href="/admin/service">Danh sách dịch vụ</a>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="carousel.html">Thêm dịch vụ</a>
-                                        </li>
+    
                                    
                                     </ul>
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-3" aria-controls="submenu-3"><i class="fas fa-fw fas fa-table"></i>Quản lý bảng giá</a>
-                                <div id="submenu-3" class="collapse submenu" style="">
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-5" aria-controls="submenu-3"><i class="fas fa-fw fas fa-table"></i>Quản lý bảng giá</a>
+                                <div id="submenu-5" class="collapse submenu" style="">
                                     <ul class="nav flex-column">
                                         <li class="nav-item">
                                             <a class="nav-link" href="chart-c3.html">Danh sách bảng giá</a>
@@ -84,8 +82,8 @@
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-3" aria-controls="submenu-3"><i class="fas fa-fw fas fa-book"></i>Quản lý danh mục tư vấn</a>
-                                <div id="submenu-3" class="collapse submenu" style="">
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-6" aria-controls="submenu-3"><i class="fas fa-fw fas fa-book"></i>Quản lý danh mục tư vấn</a>
+                                <div id="submenu-6" class="collapse submenu" style="">
                                     <ul class="nav flex-column">
                                         <li class="nav-item">
                                             <a class="nav-link" href="chart-c3.html">Danh sách danh mục tư vấn</a>
@@ -98,8 +96,8 @@
                                 </div>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-4" aria-controls="submenu-4"><i class="fab fa-fw fas fa-book"></i>Quản lý bài viết tư vấn</a>
-                                <div id="submenu-4" class="collapse submenu" style="">
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-7" aria-controls="submenu-4"><i class="fab fa-fw fas fa-book"></i>Quản lý bài viết tư vấn</a>
+                                <div id="submenu-7" class="collapse submenu" style="">
                                     <ul class="nav flex-column">
                                         <li class="nav-item">
                                             <a class="nav-link" href="form-elements.html">Danh sách bài viết tư vấn</a>
@@ -116,8 +114,8 @@
                                 Features
                             </li> -->
                             <li class="nav-item">
-                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-6" aria-controls="submenu-6"><i class="fas fa-fw  fas fa-images"></i>Quản lý slide</a>
-                                <div id="submenu-6" class="collapse submenu" style="">
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-8" aria-controls="submenu-6"><i class="fas fa-fw  fas fa-images"></i>Quản lý slide</a>
+                                <div id="submenu-8" class="collapse submenu" style="">
                                     <ul class="nav flex-column">
                                         <li class="nav-item">
                                             <a class="nav-link" href="invoice.html">Danh sách slide</a>
@@ -131,8 +129,8 @@
                             </li>
                           
                             <li class="nav-item">
-                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-8" aria-controls="submenu-8"><i class="fas fa-fw fas fa-tty"></i>Quản lý phản hồi</a>
-                                <div id="submenu-8" class="collapse submenu" style="">
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-9" aria-controls="submenu-8"><i class="fas fa-fw fas fa-tty"></i>Quản lý phản hồi</a>
+                                <div id="submenu-9" class="collapse submenu" style="">
                                     <ul class="nav flex-column">
                                         <li class="nav-item">
                                             <a class="nav-link" href="icon-fontawesome.html">Danh sách phản hồi</a>
@@ -142,8 +140,8 @@
                                 </div>
                             </li>
                               <li class="nav-item">
-                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-5" aria-controls="submenu-5"><i class="fas fa-fw fas fa-phone-square"></i>Quản lý liên hệ</a>
-                                <div id="submenu-5" class="collapse submenu" style="">
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-10" aria-controls="submenu-5"><i class="fas fa-fw fas fa-phone-square"></i>Quản lý liên hệ</a>
+                                <div id="submenu-10" class="collapse submenu" style="">
                                     <ul class="nav flex-column">
                                         <li class="nav-item">
                                             <a class="nav-link" href="/admin/contactList">Danh sách liên hệ</a>

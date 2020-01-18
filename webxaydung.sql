@@ -248,8 +248,8 @@ INSERT INTO `project_category` (`id`, `name`) VALUES
 
 CREATE TABLE `service` (
   `id` int(11) NOT NULL,
-  `name_service` text NOT NULL,
-  `content` text NOT NULL,
+  `name_service` text,
+  `content` text,
   `service_category_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 

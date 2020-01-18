@@ -53,9 +53,9 @@
                             <li class="dropdown submenu">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PHONG THỦY</a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="phongthuy.html">XEM HƯỚNG NHÀ THEO TUỔI</a></li>
-                                    <li><a href="">THƯỚC LỖ BAN</a></li>
-                                    <li><a href="">MÀU HỢP TUỔI</a></li>
+                                    <li><a href="">XEM HƯỚNG NHÀ THEO TUỔI</a></li>
+                                    <li><a href="/phongthuy/thuocloban">THƯỚC LỖ BAN</a></li>
+                              
 
                                 </ul>
                             </li>

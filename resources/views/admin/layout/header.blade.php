@@ -60,11 +60,14 @@ John Abraham</span>is now following you
                         <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="{{ asset('/public/image/avarta.png')}}" alt="" class="user-avatar-md rounded-circle"></a>
                             <div class="dropdown-menu dropdown-menu-right nav-user-dropdown" aria-labelledby="navbarDropdownMenuLink2">
                                 <div class="nav-user-info">
-                                    <h5 class="mb-0 text-white nav-user-name">John Abraham</h5>
-                                    <span class="status"></span><span class="ml-2">Available</span>
+                                     @if (request()->session()->has('username'))
+                                    <h5 class="mb-0 text-white nav-user-name">{{request()->session()->get('username')}}</h5>
+                                    @endif
                                 </div>
+        
+                                <a href="useradmin">{{ request()->session()->get('hotenUser')}} </a>
                                 <a class="dropdown-item" href="#"><i class="fas fa-user mr-2"></i>Tài khoản</a>
-                                <a class="dropdown-item" href="#"><i class="fas fa-power-off mr-2"></i>Đăng xuất</a>
+                                <a class="dropdown-item" href="/logout"><i class="fas fa-power-off mr-2"></i>Đăng xuất</a>
                             </div>
                         </li>
                     </ul>

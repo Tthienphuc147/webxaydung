@@ -40,6 +40,7 @@ DROP TABLE IF EXISTS `service_category`;
 DROP TABLE IF EXISTS `slide`;
 DROP TABLE IF EXISTS `slide_category`;
 DROP TABLE IF EXISTS `slide_image`;
+DROP TABLE IF EXISTS `users`;
 CREATE TABLE `comment` (
   `id` int(11) NOT NULL,
   `content` text NOT NULL
@@ -67,6 +68,14 @@ CREATE TABLE `contact` (
   `status` tinyint(1) DEFAULT(0)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL,
+  `username` text NOT NULL,
+  `password` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+INSERT INTO `users` (`id`, `username`,`password`) VALUES(1,'admin','admin');
 --
 -- Dumping data for table `contact`
 --
@@ -386,6 +395,9 @@ ALTER TABLE `contact`
 ALTER TABLE `post`
   ADD PRIMARY KEY (`id`);
 
+  ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`);
+
 --
 -- Indexes for table `post_category`
 --
@@ -455,6 +467,9 @@ ALTER TABLE `slide_image`
 --
 ALTER TABLE `comment`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+  ALTER TABLE `users`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT for table `contact`

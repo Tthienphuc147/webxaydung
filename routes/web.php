@@ -31,3 +31,9 @@ Route::get('/admin/contactDetail/change/{unsigned_name}','AdminController@change
 
 // phong thuy
 Route::get('/phongthuy/thuocloban','PhongthuyController@showthuocloban');
+
+//login
+
+Route::get('/showlogin','UserController@CheckLogin');
+Route::post('/showlogin/login','UserController@LoginAuth');
+route::get('/logout','UserController@Logout');

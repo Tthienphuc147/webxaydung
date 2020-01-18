@@ -24,3 +24,6 @@ Route::get('/pricing/{unsigned_name}','PricingController@showDetail');
 
 /*admin*/
 Route::get('/admin','AdminController@showDashboard');
+/*admin-contact*/
+Route::get('/admin/contactList','AdminController@showContactList');
+Route::get('/admin/contactDetail/{unsigned_name}','AdminController@showContactDetail');

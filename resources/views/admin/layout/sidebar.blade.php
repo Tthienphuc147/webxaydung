@@ -146,7 +146,7 @@
                                 <div id="submenu-5" class="collapse submenu" style="">
                                     <ul class="nav flex-column">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="general-table.html">Danh sách liên hệ</a>
+                                            <a class="nav-link" href="/admin/contactList">Danh sách liên hệ</a>
                                         </li>
                                       
                                     </ul>

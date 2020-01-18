@@ -42,6 +42,27 @@ Route::get('/admin/service/{id}','AdminService@showService');
 Route::post('/admin/service/update','AdminService@update');
 
 
+//admin-postCategory
+Route::get('/admin/postcategory','AdminPostCategory@showList');
+Route::get('/admin/postcategory/show/add','AdminPostCategory@showAdd');
+Route::get('/admin/postcategory/{id}','AdminPostCategory@showPostCategory');
+
+Route::post('/admin/postcategory/update','AdminPostCategory@update');
+Route::post('/admin/postcategory/add','AdminPostCategory@add');
+
+//admin-post
+Route::get('/admin/post','AdminPost@showList');
+Route::get('/admin/post/{id}','AdminPost@showPost');
+Route::get('/admin/post/show/add','AdminPost@showAdd');
+Route::post('/admin/post/update','AdminPost@update');
+Route::post('/admin/post/add','AdminPost@add');
+
+
+//admin-comment
+Route::get('/admin/comment/{id}','AdminComment@showList');
+Route::get('/admin/comment/accept/{idpost}/{id}','AdminComment@accept');
+Route::get('/admin/comment/denife/{idpost}/{id}','AdminComment@denife');
+
 // phong thuy
 Route::get('/phongthuy/thuocloban','PhongthuyController@showthuocloban');
 

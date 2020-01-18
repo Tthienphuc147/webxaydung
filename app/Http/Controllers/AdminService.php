@@ -12,8 +12,8 @@ class AdminService extends Controller
   
       public function showList(){
         if(Request()->session()->has('id')){
-          $list=DB::table('service')
-          ->join('service_category','service.service_category_id','=','service_category.id')
+          $list=DB::table('service_category')
+          ->join('service','service.service_category_id','=','service_category.id')
           ->orderby('service.id','desc')
           ->paginate(10);
           return view('admin.mainPage.service.service')->with('serviceList',$list);

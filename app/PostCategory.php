@@ -8,4 +8,5 @@ class PostCategory extends Model
 {
     //
     protected $table ="post_category";
+    public $timestamps=false;
 }

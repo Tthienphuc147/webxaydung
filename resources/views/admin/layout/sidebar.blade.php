@@ -86,10 +86,10 @@
                                 <div id="submenu-6" class="collapse submenu" style="">
                                     <ul class="nav flex-column">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="chart-c3.html">Danh sách danh mục tư vấn</a>
+                                            <a class="nav-link" href="/admin/postcategory">Danh sách danh mục tư vấn</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="chart-chartist.html">Thêm danh mục tư vấn </a>
+                                            <a class="nav-link" href="/admin/postcategory/show/add">Thêm danh mục tư vấn </a>
                                         </li>
                                        
                                     </ul>
@@ -100,10 +100,10 @@
                                 <div id="submenu-7" class="collapse submenu" style="">
                                     <ul class="nav flex-column">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="form-elements.html">Danh sách bài viết tư vấn</a>
+                                            <a class="nav-link" href="/admin/post">Danh sách bài viết tư vấn</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="form-validation.html">Thêm bài viết tư vấn</a>
+                                            <a class="nav-link" href="/admin/post/show/add">Thêm bài viết tư vấn</a>
                                         </li>
                                     
                                     </ul>

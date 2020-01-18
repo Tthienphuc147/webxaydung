@@ -5,6 +5,7 @@ use Illuminate\Http\Request;
 use App\ServiceCategory;
 use App\Service;
 use App\Post;
+use App\Comment;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\DB;
 
@@ -30,7 +31,7 @@ class AdminComment extends Controller
           return redirect("/admin/comment/$idpost");
         }
 
-        //return redirect('/showlogin');
+        return redirect('/showlogin');
       }
       public function denife($idpost,$id){
         if(Request()->session()->has('id')){
@@ -40,7 +41,23 @@ class AdminComment extends Controller
           return redirect("/admin/comment/$idpost");
         }
 
-       // return redirect('/showlogin');
+        return redirect('/showlogin');
+      }
+      public function add(Request $request){
+        if(Request()->session()->has('id')){
+          $list=new Comment();
+          $list->status=0;
+          $list->id_post=$request->input('idpost');
+          $comment=$request->input('comment');
+          if($comment!=""){
+            $list->content=$comment;
+            $list->save();
+          }
+          
+          return redirect("/advisory/$list->id_post");
+        }
+
+        return redirect('/showlogin');
       }
       
         

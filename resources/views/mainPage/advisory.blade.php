@@ -43,28 +43,31 @@
                     Bình luận bài viết
                 </div>
                 <div class="panel-body">
-                    <textarea class="form-control" placeholder="Viết bình luận..." rows="3" style="min-width:100%"></textarea>
+                <form  action="/admin/comment/add" method="POST" enctype="multipart/form-data">
+                    {{csrf_field()}}
+                    <input name="idpost" hidden="true" value="{{$advisory->id}}">
+                    <textarea class="form-control" name="comment" placeholder="Viết bình luận..." rows="3" style="min-width:100%"></textarea>
                     <br>
-                    <button type="button" class="btn btn-info pull-right btn-comment">Bình luận</button>
+                    <button  class="btn btn-info pull-right btn-comment" id="submit" type="submit" value="SEND">Bình luận</button>
+                    </form>
                     <div class="clearfix"></div>
                     <hr>
                     <ul class="media-list">
+                    @foreach ($listComment as $key=>$item)
                         <li class="media">
                             <a href="#" class="pull-left">
                                 <img src="https://bootdey.com/img/Content/user_1.jpg" alt="" class="img-circle">
                             </a>
+                            
                             <div class="media-body">
-                                <span class="text-muted pull-right">
-                                    <small class="text-muted">30 min ago</small>
-                                </span>
-                                <strong class="text-success">@MartinoMont</strong>
+                                
+                                <strong class="text-success">Khách Hàng</strong>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Lorem ipsum dolor sit amet, <a href="#">#consecteturadipiscing </a>.
+                                    {{$item->content}}
                                 </p>
                             </div>
                         </li>
-                   
+                   @endforeach
                     </ul>
                 </div>
             </div>

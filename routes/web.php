@@ -62,6 +62,7 @@ Route::post('/admin/post/add','AdminPost@add');
 Route::get('/admin/comment/{id}','AdminComment@showList');
 Route::get('/admin/comment/accept/{idpost}/{id}','AdminComment@accept');
 Route::get('/admin/comment/denife/{idpost}/{id}','AdminComment@denife');
+Route::post('/admin/comment/add','AdminComment@add');
 
 // phong thuy
 Route::get('/phongthuy/thuocloban','PhongthuyController@showthuocloban');

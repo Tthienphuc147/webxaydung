@@ -10,7 +10,8 @@ class AdvisoryController extends Controller
        
          $advisory='App\Post'::where('id',$unsigned_name)->first();
         $advisoryCategory='App\Post'::where('post_category_id',$advisory->post_category_id)->get();
-          return view('mainPage.advisory')->with('advisory',$advisory)->with('advisoryCategory',$advisoryCategory);
+        $listComment='App\Comment'::where('id_post',$unsigned_name)->where('status',1)->orderby('id','desc')->get();
+          return view('mainPage.advisory')->with('advisory',$advisory)->with('advisoryCategory',$advisoryCategory)->with('listComment',$listComment);
 
     }
         

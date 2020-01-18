@@ -27,3 +27,5 @@ Route::get('/admin','AdminController@showDashboard');
 /*admin-contact*/
 Route::get('/admin/contactList','AdminController@showContactList');
 Route::get('/admin/contactDetail/{unsigned_name}','AdminController@showContactDetail');
+// phong thuy
+Route::get('/phongthuy/thuocloban','PhongthuyController@showthuocloban');

@@ -56,7 +56,7 @@
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PHONG THỦY</a>
                             <ul class="dropdown-menu">
                                 <li><a href="project-full-width.html">XEM HƯỚNG NHÀ THEO TUỔI</a></li>
-                                <li><a href="project-grid-three-column.html">THƯỚC LỖ BAN</a></li>
+                                <li><a href="/phongthuy/thuocloban">THƯỚC LỖ BAN</a></li>
 
                             </ul>
                         </li>

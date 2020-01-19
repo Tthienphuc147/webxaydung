@@ -30,7 +30,7 @@
         <div class="chose_video_right">
             <div class="chose_video_inner">
 
-                <iframe width="100%" height="629" src="https://www.youtube.com/embed/_hT_cyPTYXI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="100%" height="629" src="https://r4---sn-i3b7knsl.c.drive.google.com/videoplayback?expire=1579433201&ei=sQQkXvOEC9Sqj-8PisKvCA&ip=1.53.56.196&cp=QVNMQUVfUlJOQlhOOldDMjlNSl9aT2ZZa0NHLXdWODQxNjVwZW03eS03TDNsTEprWlNDTWxLTXY&id=1fe19a4add250187&itag=22&source=webdrive&requiressl=yes&mm=30&mn=sn-i3b7knsl&ms=nxu&mv=m&mvi=3&pl=24&sc=yes&ttl=transient&susc=dr&driveid=1oJ91CSm0MZHRT6OtjVEFu60ks_gLoTko&app=texmex&mime=video/mp4&dur=355.892&lmt=1579018013452660&mt=1579418725&sparams=expire,ei,ip,cp,id,itag,source,requiressl,ttl,susc,driveid,app,mime,dur,lmt&sig=ALgxI2wwRQIhANjGZ8INr4PozaA4QB9TZdyoPvYVIOjesX8h8g0PbN2AAiAHKnpiS6OKuBOi2OYTm-gmQVV7dohm0djHc3S0pMiXGQ==&lsparams=mm,mn,ms,mv,mvi,pl,sc&lsig=AHylml4wRgIhAJ1RJhAScdaExJzWw_Zn7SycPrjZDokhOMLFZtaGEpSQAiEA3h-EEtB07nGZpMUWeVrq8xU3izMZdOTdEH_ESvo8uvE=&cpn=LwakI6_Aj9zQ1Bvz&c=WEB_EMBEDDED_PLAYER&cver=20200116" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </section>
@@ -95,12 +95,18 @@
                             <h4 class="project_title">Thông tin chung</h4>
 
                             <ul>
-                                <li> <span>Tên doanh nghiệp:</span> </li>
-                                <li> <span>Trụ sở chính:</span> </li>
-                                <li><span>MST:</span> </li>
+                                <li> <span>Tên doanh nghiệp:Công Ty TNHH Tư Vấn Xây Dựng Và Thương Mại Dconstech</span> </li>
+                                <li> <span>Trụ sở chính:24 Trần Thánh Tông</span> </li>
+                                <li><span>VP Đại Diện : 189 Lê ĐÌnh Lý</span></li>
+                                <li><span>Ngày Thành Lập 01/10/2018</span></li>
 
                             </ul>
                         </div>
+                
+                     
+                    </div>
+                      <div class="col-md-6">
+                       
                         <div class="left_service_desc">
                             <h4 class="project_title">Nghành nghề kinh doanh</h4>
 
@@ -112,35 +118,9 @@
 
                             </ul>
                         </div>
-                        <div class="left_service_desc">
-                            <h4 class="project_title">Định hướng phát triển</h4>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus ea harum nesciunt adipisci? Ipsa tempora reiciendis quibusdam perferendis consectetur aut sapiente quo voluptatibus ducimus aliquam, rem deserunt autem possimus
-                                ratione.
-                            </p>
-                        </div>
+                     
                     </div>
-                    <div class="col-md-6">
-                        <div class="left_service_desc">
-                            <h4 class="project_title">Tiêu chí thiết kế</h4>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus ea harum nesciunt adipisci? Ipsa tempora reiciendis quibusdam perferendis consectetur aut sapiente quo voluptatibus ducimus aliquam, rem deserunt autem possimus
-                                ratione.
-                            </p>
-                        </div>
-                        <div class="left_service_desc">
-                            <h4 class="project_title">Tầm nhìn</h4>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus ea harum nesciunt adipisci? Ipsa tempora reiciendis quibusdam perferendis consectetur aut sapiente quo voluptatibus ducimus aliquam, rem deserunt autem possimus
-                                ratione.
-                            </p>
-                        </div>
-                        <div class="left_service_desc">
-                            <h4 class="project_title">Sứ mệnh</h4>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus ea harum nesciunt adipisci? Ipsa tempora reiciendis quibusdam perferendis consectetur aut sapiente quo voluptatibus ducimus aliquam, rem deserunt autem possimus
-                                ratione.
-                            </p>
-                        </div>
-
-
-                    </div>
+                  
                 </div>
                 <section class="our_team_area2">
                     <div class="container">

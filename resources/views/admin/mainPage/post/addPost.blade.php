@@ -19,11 +19,11 @@
                 <div class="form-group">
                 
                     <div class="col-sm-12">
-                        <input type="text" class="form-control" id="name" placeholder="" name="name">
+                        <input type="text" class="form-control" id="name" placeholder="" name="name" required>
                     </div>
                 </div>
                 <p><label>Mô tả tóm tắt</label></p>
-                    <textarea name="tomtat"  class="form-control" rows="3" >
+                    <textarea name="tomtat"  class="form-control" rows="3" required>
                         
                         </textarea>
                 <p><label>Nội dung</label></p>
@@ -45,7 +45,7 @@
                 <div class="col-md-12">
                   <div class="form-group">
                     <label for="anhgioithieu">Ảnh giới thiệu</label>
-                    <input type="file" name="anhgioithieu" id="anhgioithieu">
+                    <input type="file" name="anhgioithieu" id="anhgioithieu" required>
                     
                   </div>
 

@@ -36,7 +36,7 @@
                             
                            
                         </div>
-                        <button class="btn btn-primary"><a href="/admin/contactDetail/change/{{$contactDetail->id}}">Chuyển Trạng Thái Đã Xử Lý</a></button>
+                        <button class="btn btn-primary"><a href="/admin/contactDetail/change/{{$contactDetail->id}}" style="color:#fff">Chuyển Trạng Thái Đã Xử Lý</a></button>
                      
                     </div>
 @endsection

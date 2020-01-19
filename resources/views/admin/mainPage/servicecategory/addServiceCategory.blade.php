@@ -25,7 +25,7 @@
                   </div>
                 
                 </button>
-                     </from>
+                     </form>
                     </div>
 @endsection
 

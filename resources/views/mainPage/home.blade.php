@@ -12,7 +12,7 @@
                     <h4>Dconstech</h4>
                     <h4>Thiết kế và xây dựng Đà Nẵng</h4>
                     <p>CHẤT LƯỢNG LÀM NÊN THƯƠNG HIỆU, UY TÍN TẠO DỰNG THÀNH CÔNG </p>
-                    <a class="slider_btn" href="#">CHI TIẾT</a>
+                    <a class="slider_btn" href="/introduction">CHI TIẾT</a>
                 </div>
             </div>
             <div class="col-md-7">
@@ -43,7 +43,7 @@
                             </div>
                             <h4>TƯ VẤN THIẾT KẾ</h4>
                             <p></p>
-                            <a class="view_btn" href="#">Xem chi tiết</a>
+                           
                         </div>
                     </div>
                 </div>
@@ -58,7 +58,7 @@
                             </div>
                             <h4>THI CÔNG</h4>
                             <p></p>
-                            <a class="view_btn" href="#">Xem chi tiết</a>
+                          
                         </div>
                     </div>
                 </div>

@@ -8,4 +8,5 @@ class SlideImage extends Model
 {
     //
     protected $table ="slide_image";
+    public $timestamps=false;
 }

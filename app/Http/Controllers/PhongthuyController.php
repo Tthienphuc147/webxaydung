@@ -11,6 +11,11 @@ class PhongthuyController extends Controller
           return view('mainPage.thuocloban');
 
     }
+     public function showhuongnha(){
+
+          return view('mainPage.huongnha');
+
+    }
 
     
 

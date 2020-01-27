@@ -38,9 +38,12 @@
 
                         </div>
                     </div>
-                    <div class="project_quote">
-                         <h4 class="project_title">Ảnh của dự án</h4>
-                        <p>{!!$project->content!!}</p>
+                    <div class="project_detail">
+                         <h4 class="project_title">Chi tiết dự án</h4>
+                         <div class="detail_inner">
+                               {!!$project->content!!}
+                         </div>
+                       
                     </div>
 
 

@@ -13,13 +13,21 @@
     </section>
 
 
-       <section class="our_latest_project">
-        <div class="container">
-         
-           @if ($pricing!=null)
-                      {!!$pricing->content!!}
-                @endif
+       <section class="blog_details_area p_100">
+        <div class="fuild-container">
+            <div class="row blog_details_inner">
+                <div class="col-md-12" style="padding-right:0px">
+                    <div class="blog_d_text blog_table">
+                            @if ($pricing!=null)
+                                {!!$pricing->content!!}
+                         @endif
+                    </div>
+                
 
+
+                </div>
+              
+            </div>
         </div>
     </section>
 

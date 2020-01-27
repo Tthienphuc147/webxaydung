@@ -66,7 +66,7 @@ Route::post('/admin/comment/add','AdminComment@add');
 
 // phong thuy
 Route::get('/phongthuy/thuocloban','PhongthuyController@showthuocloban');
-
+Route::get('/phongthuy/huongnha','PhongthuyController@showhuongnha');
 
 //login
 

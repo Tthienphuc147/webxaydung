@@ -145,9 +145,7 @@
                                 <h4>Eng. Abul Kalam</h4>
                             </a>
                         </div>
-                        <div class="testi_right">
-                            <img src="{{ asset('/public/img/testimonials/test-1.jpg')}}" alt="">
-                        </div>
+                     
                     </div>
                     <div class="item">
                         <div class="testi_left">
@@ -157,9 +155,7 @@
                                 <h4>Eng. Abul Kalam</h4>
                             </a>
                         </div>
-                        <div class="testi_right">
-                            <img src="{{ asset('/public/img/testimonials/test-1.jpg')}}" alt="">
-                        </div>
+                       
                     </div>
                     <div class="item">
                         <div class="testi_left">
@@ -169,9 +165,7 @@
                                 <h4>Eng. Abul Kalam</h4>
                             </a>
                         </div>
-                        <div class="testi_right">
-                            <img src="{{ asset('/public/img/testimonials/test-1.jpg')}}" alt="">
-                        </div>
+                     
                     </div>
                 </div>
             </div>

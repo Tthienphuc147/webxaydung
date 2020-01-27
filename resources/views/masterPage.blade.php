@@ -5,6 +5,22 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta name="description"
+		content="Công Ty TNHH Tư Vấn Xây Dựng Và Thương Mại Dconstech." />
+	<meta name="keywords" content="Công Ty TNHH Tư Vấn Xây Dựng Và Thương Mại Dconstech" />
+    <meta name="abstract" content="Công Ty TNHH Tư Vấn Xây Dựng Và Thương Mại Dconstech" />
+    <meta property="og:locale" content="vi_VN" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Công Ty TNHH Tư Vấn Xây Dựng Và Thương Mại Dconstech" />
+	<meta property="og:description"
+		content="Công Ty TNHH Tư Vấn Xây Dựng Và Thương Mại Dconstech" />
+	<meta property="og:site_name" content="Công Ty TNHH Tư Vấn Xây Dựng Và Thương Mại Dconstech" />
+	<meta property='og:image' content=''>
+    <meta name="distribution" content="Global" />
+
+	<meta name="REVISIT-AFTER" content="1 DAYS" />
+	<meta name="RATING" content="GENERAL" />
+
 
     <link rel="icon" href="{{ asset('/public/img/logo.png')}}" type="image/x-icon" />
 

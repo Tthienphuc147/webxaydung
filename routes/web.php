@@ -73,7 +73,8 @@ Route::get('/phongthuy/huongnha','PhongthuyController@showhuongnha');
 Route::get('/showlogin','UserController@CheckLogin');
 Route::post('/showlogin/login','UserController@LoginAuth');
 route::get('/logout','UserController@Logout');
-
+route::get('/forgot_password','SecurityController@forgot');
+route::post('/forgot','SecurityController@resetPassword');
 
 //project category
 Route::get('/admin/projectcategory','AdminProjectCategory@showList');

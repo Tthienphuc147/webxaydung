@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Contact;
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\SendMailable;
 
 class ContactController extends Controller
 {
@@ -59,9 +61,11 @@ class ContactController extends Controller
                 $img_file1->move('public/image/contact/',$random_file_name1);
                 $data->land_image = $random_file_name1;
             }
-            
+                    $name = $request->input('full_name');
+                    Mail::to($request->input('email'))->send(new SendMailable($name));
                
                 $data->save();   
+
             return redirect('/contactView');
       
     }

@@ -1,7 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Support\Facades\Mail;
+use App\Mail\SendRespondMailable;
 
 
 class AdminController extends Controller
@@ -37,7 +38,10 @@ class AdminController extends Controller
             $contact='App\Contact'::find($unsigned_name);
             $contact->status=1;
             $contact->save();
-            return view('admin.mainPage.contact.detailContact')->with('contactDetail',$contact);
+             $name=$contact->full_name;
+            Mail::to($contact->email)->send(new SendRespondMailable($name));
+            return redirect('/admin/contactList');
+            
             }
       return redirect('/showlogin');
 

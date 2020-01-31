@@ -19,28 +19,14 @@
         <div class="card ">
             <div class="card-header text-center"><a href="#"><img class="logo-img" src="{{ asset('/public/img/logo.png')}}" alt="logo"></div>
             <div class="card-body">
-                <form action="/showlogin/login"  method="POST">
+                <form action="/forgot"  method="POST">
                       {{csrf_field()}}
-                    <div class="form-group">
-                        <input class="form-control form-control-lg" id="username" type="text" placeholder="Tài khoản" autocomplete="off" name="username">
-                    </div>
-                    <div class="form-group">
-                        <input class="form-control form-control-lg" id="password" type="password" placeholder="Mật khẩu" name="passlogin">
-                    </div>
-                    <!-- <div class="form-group">
-                        <label class="custom-control custom-checkbox">
-                            <input class="custom-control-input" type="checkbox"><span class="custom-control-label">Remember Me</span>
-                        </label>
-                    </div> -->
-                    <button type="submit" class="btn btn-primary btn-lg btn-block">Đăng nhập</button>
+                      <input type="email" name="email" id="email">
+                    
+                    <button type="submit" class="btn btn-primary btn-lg btn-block">Gửi email</button>
                 </form>
             </div>
-            <div class="card-footer bg-white p-0  ">
-                
-                <div class="card-footer-item card-footer-item-bordered">
-                    <a href="/forgot_password" class="footer-link">Quên mật khẩu</a>
-                </div>
-            </div>
+         
         </div>
     </div>
 

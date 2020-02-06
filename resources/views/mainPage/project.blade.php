@@ -16,11 +16,12 @@
             <div class="project_single_inner">
             
                 <div class="row">
-
-                    <div class="project_summery">
-                        <h4 class="project_title">Tổng quan dự án</h4>
-                        <p>{{$project->desciption}}</p>
-                        <ul>
+                <h4 class="project_title">Tổng quan dự án</h4>
+                        <p class="project_description">{{$project->description}}</p>
+                    <div class="project_summery row">
+                        
+                        <div class="description col-sm-5">
+                             <ul>
                              <li><a href="#">Chủ đầu từ: <span>{{$project->investor}}</span> </a></li>
                             <li><a href="#">Tên khách hàng : <span>{{$project->customer_name}}</span> </a></li>
                             <li><a href="#">Loại dự án: <span>{{$project->name}}</span></a></li>
@@ -30,20 +31,25 @@
                             <li><a href="#">Tổng kinh phí: <span>{{$project->total_amount}} VNĐ</span></a></li>
 
                         </ul>
-                    </div>
-                    <div class="project_quote">
-                        <h4 class="project_title">Đánh giá khách hàng</h4>
-                        <div class="quote_inner">
-                            <p>Đây sẽ hiển hiện những đánh giá của khách hàng về dự án </p>
-
                         </div>
+                      
+                        <div class="project_image col-sm-7"><img src="/public/image/project/{{ $project->image}}" alt="" width="100%" height="400px"></div>
                     </div>
+               
                     <div class="project_detail">
                          <h4 class="project_title">Chi tiết dự án</h4>
                          <div class="detail_inner">
                                {!!$project->content!!}
                          </div>
                        
+                    </div>
+
+                         <div class="project_quote">
+                        <h4 class="project_title">Đánh giá khách hàng</h4>
+                        <div class="quote_inner">
+                            <p>Đây sẽ hiển hiện những đánh giá của khách hàng về dự án </p>
+
+                        </div>
                     </div>
 
 

@@ -30,6 +30,8 @@ class ContactController extends Controller
             if($request->input('message')!="")$data->message=$request->input('message');
 
             if($request->input('land_direction')!="")$data->land_direction=$request->input('land_direction');
+            if($request->input('type')!="")$data->land_direction=$request->input('type');
+            if($request->input('other')!="")$data->land_direction=$request->input('other');
          
             if($request->hasFile('plot_map_image'))
             {

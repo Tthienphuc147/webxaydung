@@ -2,15 +2,9 @@
         <div class="header_top_area">
             <div class="container">
                 <div class="pull-left">
-                    <a href="#"><i class="fa fa-phone"></i>(012) - 3456789</a>
-                    <a href="#"><i class="fa fa-map-marker"></i>Đà Nẵng</a>
-                    <a href="#"><i class="mdi mdi-clock"></i>08 AM - 10 PM</a>
+               <marquee direction="right" style="color:transparent">CHÀO MỪNG BẠN ĐẾN VỚI CTY TNHH TƯ VẤN XD&TM DCONSTECH</marquee>
                 </div>
-                <div class="pull-right">
-                    <ul class="header_social">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    </ul>
-                </div>
+      
             </div>
         </div>
         <div class="main_menu_area">

@@ -9,10 +9,9 @@
         <div class="row">
             <div class="col-md-5">
                 <div class="b_companu_l_text">
-                    <h4>Dconstech</h4>
-                    <h4>Thiết kế và xây dựng Đà Nẵng</h4>
-                    <p>CHẤT LƯỢNG LÀM NÊN THƯƠNG HIỆU, UY TÍN TẠO DỰNG THÀNH CÔNG </p>
-                    <a class="slider_btn" href="/introduction">CHI TIẾT</a>
+                    <h4>CTY TNHH TƯ VẤN XD&TM DCONSTECH</h4>
+                    <p>"CHẤT LƯỢNG LÀM NÊN THƯƠNG HIỆU, UY TÍN TẠO DỰNG THÀNH CÔNG"</p>
+                    <a class="slider_btn" href="/introduction">GIỚI THIỆU</a>
                 </div>
             </div>
             <div class="col-md-7">

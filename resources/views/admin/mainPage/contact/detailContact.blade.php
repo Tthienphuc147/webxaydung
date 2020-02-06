@@ -48,7 +48,8 @@
                                         @endif
                                      
                                         @if ($contactDetail->message)
-                                            <p>Nội dung:{{$contactDetail->message}}</p>
+                                            <p>Nội dung</p>
+                                            <textarea  cols="50" rows="10">{{$contactDetail->message}}</textarea>
                                         @endif
                                         
                                 </div>
@@ -72,10 +73,10 @@
                             
                          
                            
-                            
-                           
+                            <br>
+                           <button class="btn btn-primary"><a href="/admin/contactDetail/change/{{$contactDetail->id}}" style="color:#fff;margin:10px 0">Chuyển Trạng Thái Đã Xử Lý</a></button>
                         </div>
-                        <button class="btn btn-primary"><a href="/admin/contactDetail/change/{{$contactDetail->id}}" style="color:#fff">Chuyển Trạng Thái Đã Xử Lý</a></button>
+                        
                      
                     </div>
 @endsection

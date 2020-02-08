@@ -29,6 +29,6 @@ class SendRespondMailable extends Mailable
      */
     public function build()
     {
-        return $this->view('respondCustomer')->subject('Dconstech thông báo')->from('dthienphuc147@gmail.com', 'Dconstech');
+        return $this->view('respondCustomer')->subject('Dconstech thông báo')->from('dconstech2020@gmail.com', 'Dconstech');
     }
 }

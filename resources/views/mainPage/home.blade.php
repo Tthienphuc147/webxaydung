@@ -7,18 +7,18 @@
 <section class="best_company_area">
     <div class="container">
         <div class="row">
-            <div class="col-md-5">
+            <div class="col-md-12">
                 <div class="b_companu_l_text">
-                    <h4>CTY TNHH TƯ VẤN XD&TM DCONSTECH</h4>
+                    <h4>CTY TNHH TƯ VẤN XÂY DỰNG & THƯƠNG MẠI DCONSTECH</h4>
                     <p>"CHẤT LƯỢNG LÀM NÊN THƯƠNG HIỆU, UY TÍN TẠO DỰNG THÀNH CÔNG"</p>
                     <a class="slider_btn" href="/introduction">GIỚI THIỆU</a>
                 </div>
             </div>
-            <div class="col-md-7">
+            <!-- <div class="col-md-7">
                 <div class="b_company_image">
                     <img src="{{ asset('/public/img/about.jpg')}}" alt="">
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </section>

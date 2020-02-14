@@ -1,5 +1,7 @@
 @extends('masterPage')
-
+@section('title')
+Thước lỗ ban
+@endsection
 @section('content')
      
  <section class="banner_area" style="background: url(../public/img/banner/single-page-banner2.jpg); background-size: cover">

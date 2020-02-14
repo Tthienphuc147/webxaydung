@@ -834,12 +834,9 @@ CREATE TABLE `service_category` (
 --
 
 INSERT INTO `service_category` (`id`, `name`) VALUES
-(1, 'Thiết kế kiến trúc'),
-(2, 'Thiết kế cấu trúc'),
-(3, 'Thiết kế cơ điện MEPF'),
-(4, 'Thi công xây dựng'),
-(5, 'Tư vấn dám sát xây dựng'),
-(6, 'Thiết kế xin giấy phép');
+(1, 'Thiết kế công trình'),
+(2, 'Thi công xây dựng')
+;
 
 -- --------------------------------------------------------
 

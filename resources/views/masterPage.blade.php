@@ -24,7 +24,7 @@
 
     <link rel="icon" href="{{ asset('/public/img/logo.png')}}" type="image/x-icon" />
 
-    <title>Dconstech-Thiết Kế và xây dựng Đà Nẵng</title>
+    <title>@yield('title')</title>
 
     <!-- Icon css link -->
     <link href="{{ asset('/public/css/font-awesome.min.css')}}"rel="stylesheet">

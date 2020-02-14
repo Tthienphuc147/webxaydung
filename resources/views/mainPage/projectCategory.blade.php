@@ -1,5 +1,7 @@
 @extends('masterPage')
-
+@section('title')
+Dự án
+@endsection
 @section('content')
   <section class="banner_area" style="background: url(../public/img/banner/single-page-banner2.jpg); background-size: cover">
         <div class="container">

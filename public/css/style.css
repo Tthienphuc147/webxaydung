@@ -382,7 +382,7 @@ iframe {
 .main_header_area+section,
 .main_header_area+div,
 .main_header_area+.row {
-    margin-top: 152px;
+    margin-top: 130px;
 }
 
 .main_header_area.navbar_fixed .main_menu_area {
@@ -1760,6 +1760,26 @@ iframe {
 
 .best_company_area {
     padding: 60px 0px;
+    position: relative;
+}
+
+.best_company_area::after {
+    content: "";
+    background: url(../image/material/bg.jpg/) no-repeat scroll center center;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.b_companu_l_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .b_companu_l_text h4 {
@@ -1814,14 +1834,14 @@ iframe {
 }
 
 .service2_inner .service2_item {
-    height: 304px;
+    height: 250px;
 }
 
 .service2_inner .service2_item .service2_item_inner {
     text-align: center;
     background: #fff;
     padding: 45px 20px 16px 20px;
-    min-height: 304px;
+    min-height: 200px;
     -webkit-transition: all 400ms linear 0s;
     -o-transition: all 400ms linear 0s;
     transition: all 400ms linear 0s;

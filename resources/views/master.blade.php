@@ -42,6 +42,7 @@
     <!-- Extra plugin css -->
     <link href="{{ asset('/public/css/style.css')}}" rel="stylesheet">
     <link href="{{ asset('/public/css/responsive.css')}}" rel="stylesheet">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
 
 </head>
@@ -65,6 +66,7 @@
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="{{ asset('/public/js/jquery-2.2.4.js')}}"></script>
+    
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="{{ asset('/public/js/bootstrap.min.js')}}"></script>
     <!-- Rev slider js -->

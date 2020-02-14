@@ -58,7 +58,7 @@ Giới thiệu
                         <ul class="introduce--info " >
                                 <li class="row"> <span class="col-4">Tên doanh nghiệp:</span><span class="col-8"> Công Ty TNHH Tư Vấn Xây Dựng Và Thương Mại Dconstech</span> </li>
                                 <li class="row"> <span class="col-4">Trụ sở chính:</span><span class="col-8"> 24 Trần Thánh Tông</span> </li>
-                                <li class="row"><span class="col-4">VP Đại Diện:</span><span class="col-8"> 189 Lê ĐÌnh Lý</span></li>
+                                <li class="row"><span class="col-4">VP Đại Diện:</span><span class="col-8"> 189 Lê Đình Lý</span></li>
                                 <li class="row"><span class="col-4">Ngày Thành Lập:</span><span class="col-8"> 01/10/2018</span></li>
 
                             </ul>

@@ -43,6 +43,7 @@
     <!-- Extra plugin css -->
     <link href="{{ asset('/public/css/style.css')}}" rel="stylesheet">
     <link href="{{ asset('/public/css/responsive.css')}}" rel="stylesheet">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
 
 </head>

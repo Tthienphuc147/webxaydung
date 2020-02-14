@@ -66,35 +66,7 @@
                                    
                                     </ul>
                                 </div>
-                            </li>
-                               <li class="nav-item">
-                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-5" aria-controls="submenu-3"><i class="fas fa-fw fas fa-table"></i>Quản lý loại bảng giá</a>
-                                <div id="submenu-5" class="collapse submenu" style="">
-                                    <ul class="nav flex-column">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="/admin/pricingcategory">Danh sách loại bảng giá</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="/admin/pricingcategory/show/add">Thêm loại bảng giá </a>
-                                        </li>
-                                       
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-6" aria-controls="submenu-3"><i class="fas fa-fw fas fa-table"></i>Quản lý bảng giá</a>
-                                <div id="submenu-6" class="collapse submenu" style="">
-                                    <ul class="nav flex-column">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="/admin/pricing">Danh sách bảng giá</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="/admin/pricing/show/add">Thêm bảng giá </a>
-                                        </li>
-                                       
-                                    </ul>
-                                </div>
-                            </li>
+           
                             <li class="nav-item">
                                 <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-7" aria-controls="submenu-3"><i class="fas fa-fw fas fa-book"></i>Quản lý danh mục tư vấn</a>
                                 <div id="submenu-7" class="collapse submenu" style="">
@@ -142,17 +114,7 @@
                                 </div>
                             </li>
                           
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-10" aria-controls="submenu-8"><i class="fas fa-fw fas fa-tty"></i>Quản lý phản hồi</a>
-                                <div id="submenu-10" class="collapse submenu" style="">
-                                    <ul class="nav flex-column">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="icon-fontawesome.html">Danh sách phản hồi</a>
-                                        </li>
-                                       
-                                    </ul>
-                                </div>
-                            </li>
+                        
                               <li class="nav-item">
                                 <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-11" aria-controls="submenu-5"><i class="fas fa-fw fas fa-phone-square"></i>Quản lý liên hệ</a>
                                 <div id="submenu-11" class="collapse submenu" style="">

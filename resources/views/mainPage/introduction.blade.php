@@ -10,7 +10,7 @@ Giới thiệu
     <section class="banner_area" style="background: url(../public/img/bgg.jpg); background-size: cover">
         <div class="container">
             <div class="banner_inner_text">
-                <h4>Giới thiệu</h4>
+                <h4><a href="/">Trang chủ</a> / <a href="/introduction">Giới thiệu</a></h4>
 
             </div>
         </div>

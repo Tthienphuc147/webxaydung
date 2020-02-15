@@ -169,9 +169,52 @@ CREATE TABLE `project` (
 --
 
 INSERT INTO `project` (`id`, `name_project`, `customer_name`, `investor`, `description`, `land_area`, `building_area`, `construction_progress`, `total_amount`, `project_category_id`, `content`, `image`,`created_at`,`updated_at`) VALUES
-(1, 'MR PHƯỚC HOUSE_16_DCONSTECH', 'MR PHƯỚC', 'CÔNG TY TNHH TVXD & TM DCONSTECH', ' Mr Phước House: căn hộ được thiết kế 8 tầng vừa là nhà ở vừa làm căn hộ cho thuê nằm trên trục đường Trần Phú đắt địa nhưng không kém phần khó khăn trong công tác thi công. ', 800, 800, 150, 0, 2, '', 'project1.jpg','2020-01-16 01:08:44','2020-01-16 01:08:44'),
-(2, 'XUYÊN VILLA_17_DCONSTECH', 'XUYÊN', 'CÔNG TY TNHH TVXD & TM DCONSTECH', 'Biệt thự được thiết kế với phong cách hiện đại trên khu đất rộng 250m2 nằm trên trục đường Vip nhất của khu đô thi Nam Việt Á (đường Bùi Tá Hán) với các khoảng không làm cho ngôi nhà luôn đầy nắng và gió. ', 250, 350, 120, 0, 1, '', 'project2.jpg','2020-01-16 01:08:44','2020-01-16 01:08:44'),
-(3, 'VILLA OF BOSS_11_DCONSTECH', 'Boss', 'CÔNG TY TNHH TVXD & TM DCONSTECH', '\" Nhà của sếp \" Tựa đề đã nói lên tất cả. Cám ơn sếp đã tin tưởng chúng tôi, chúng tôi tự tin sẽ làm sếp hài lòng. Biệt thự 3 tầng với phong cách hiện đại tọa lạc tại một trong những khu Vip nhất Đà Nẵng \"', 250, 560, 90, 0, 1, '', 'project3.jpg','2020-01-16 01:08:44','2020-01-16 01:08:44'),
+(1, 'MR PHƯỚC HOUSE_16_DCONSTECH', 'MR PHƯỚC', 'CÔNG TY TNHH TVXD & TM DCONSTECH', ' Mr Phước House: căn hộ được thiết kế 8 tầng vừa là nhà ở vừa làm căn hộ cho thuê nằm trên trục đường Trần Phú đắt địa nhưng không kém phần khó khăn trong công tác thi công. ', 800, 800, 150, 0, 2, '
+Edit your toolbar now!
+
+<p><strong>B&ecirc; t&ocirc;ng m&oacute;ng</strong></p>
+
+<p><img alt="Trong hình ảnh có thể có: trong nhà" src="https://scontent.fdad5-1.fna.fbcdn.net/v/t1.0-9/p720x720/68565361_700572577081498_1162767592578875392_o.jpg?_nc_cat=106&amp;_nc_ohc=12LsvseSfyIAX-ut9bO&amp;_nc_ht=scontent.fdad5-1.fna&amp;_nc_tp=6&amp;oh=2233abc6ae1641cba4e1e7c904f57706&amp;oe=5F02ED0D" /></p>
+
+<p>&nbsp;</p>
+
+<p><strong>C&ocirc;ng t&aacute;c v&aacute;n khu&ocirc;n m&oacute;ng</strong></p>
+
+<p><img alt="Không có mô tả ảnh." src="https://scontent.fdad5-1.fna.fbcdn.net/v/t1.0-9/p720x720/68720191_700572403748182_4051921139738345472_o.jpg?_nc_cat=102&amp;_nc_ohc=99r1RvUm3JUAX9vmrOL&amp;_nc_ht=scontent.fdad5-1.fna&amp;_nc_tp=6&amp;oh=7a9f9c2b1ddfe762259999fab1ebdaa6&amp;oe=5EFE52A7" /></p>
+', 'project1.jpg','2020-01-16 01:08:44','2020-01-16 01:08:44'),
+(2, 'XUYÊN VILLA_17_DCONSTECH', 'XUYÊN', 'CÔNG TY TNHH TVXD & TM DCONSTECH', 'Biệt thự được thiết kế với phong cách hiện đại trên khu đất rộng 250m2 nằm trên trục đường Vip nhất của khu đô thi Nam Việt Á (đường Bùi Tá Hán) với các khoảng không làm cho ngôi nhà luôn đầy nắng và gió. ', 250, 350, 120, 0, 1, '<p><strong>&Eacute;p cừ C chống sạt nh&agrave; l&acirc;n cận</strong></p>
+
+<p><img alt="Trong hình ảnh có thể có: một hoặc nhiều người, mọi người đang đứng và ngoài trời" src="https://scontent.fdad5-1.fna.fbcdn.net/v/t1.0-9/p720x720/70433355_714322199039869_6215581485705986048_o.jpg?_nc_cat=109&amp;_nc_ohc=tHTVJ1Wepe4AX8IEUqJ&amp;_nc_ht=scontent.fdad5-1.fna&amp;_nc_tp=6&amp;oh=e8efea1d607491d6762924e4ad0fe03a&amp;oe=5EC5886A" /></p>
+
+<p><strong>&Eacute;p cừ C</strong></p>
+
+<p><img alt="Trong hình ảnh có thể có: bầu trời, cây và ngoài trời" src="https://scontent.fdad5-1.fna.fbcdn.net/v/t1.0-9/p720x720/70014256_714322022373220_4455988403065847808_o.jpg?_nc_cat=101&amp;_nc_ohc=DRHvkrau-8QAX_ZpqOr&amp;_nc_ht=scontent.fdad5-1.fna&amp;_nc_tp=6&amp;oh=44b6577502af9b31946d44fb7e6f6549&amp;oe=5EBBEF15" /></p>
+
+<p><strong>C&uacute;ng động thổ</strong></p>
+
+<p><img alt="Trong hình ảnh có thể có: bầu trời, cây và ngoài trời" src="https://scontent.fdad5-1.fna.fbcdn.net/v/t1.0-9/p720x720/70037553_714321729039916_9100853520596205568_o.jpg?_nc_cat=107&amp;_nc_ohc=KqLl8lohUPwAX_3U9mu&amp;_nc_ht=scontent.fdad5-1.fna&amp;_nc_tp=6&amp;oh=cf9e5fe826ce38a561c680ea35fb808c&amp;oe=5F0303DC" /></p>
+
+<p>&nbsp;</p>
+', 'project2.jpg','2020-01-16 01:08:44','2020-01-16 01:08:44'),
+(3, 'VILLA OF BOSS_11_DCONSTECH', 'Boss', 'CÔNG TY TNHH TVXD & TM DCONSTECH', '\" Nhà của sếp \" Tựa đề đã nói lên tất cả. Cám ơn sếp đã tin tưởng chúng tôi, chúng tôi tự tin sẽ làm sếp hài lòng. Biệt thự 3 tầng với phong cách hiện đại tọa lạc tại một trong những khu Vip nhất Đà Nẵng \"', 250, 560, 90, 0, 1, '<p><strong>X&acirc;y tường</strong></p>
+
+<p><img alt="Trong hình ảnh có thể có: giày và ngoài trời" src="https://scontent.fdad5-1.fna.fbcdn.net/v/t1.0-9/p720x720/69636737_706997406439015_8391769409462468608_o.jpg?_nc_cat=107&amp;_nc_ohc=SlJuYq2VCssAX__7Luo&amp;_nc_ht=scontent.fdad5-1.fna&amp;_nc_tp=6&amp;oh=9786dd4e9dedf447f8b332d6667026b2&amp;oe=5F03503F" /></p>
+
+<p><img alt="Trong hình ảnh có thể có: ngoài trời" src="https://scontent.fdad5-1.fna.fbcdn.net/v/t1.0-9/69852381_706997606438995_1324835267210641408_o.jpg?_nc_cat=106&amp;_nc_ohc=8YZDXVntnqgAX-RKGJz&amp;_nc_ht=scontent.fdad5-1.fna&amp;oh=a4fe33db3042b2e4a3104bf6aab670bb&amp;oe=5EC31BA4" /></p>
+
+<p><img alt="Trong hình ảnh có thể có: ngoài trời" src="https://scontent.fdad5-1.fna.fbcdn.net/v/t1.0-9/p720x720/69335263_706997466439009_1591860578073182208_o.jpg?_nc_cat=107&amp;_nc_ohc=nrxRB5G73gYAX-pYtQU&amp;_nc_ht=scontent.fdad5-1.fna&amp;_nc_tp=6&amp;oh=8263b7f40d6382788b7297e782bf885f&amp;oe=5EC391DA" /></p>
+
+<p>&nbsp;</p>
+
+<p><strong>Khoan b&aacute;t r&acirc;u x&acirc;y tường</strong></p>
+
+<p><img alt="Trong hình ảnh có thể có: cây, thực vật, bầu trời và ngoài trời" src="https://scontent.fdad5-1.fna.fbcdn.net/v/t1.0-9/p720x720/69251680_706997796438976_6571705034130587648_o.jpg?_nc_cat=105&amp;_nc_ohc=VhsAbfjausEAX8oPMdk&amp;_nc_ht=scontent.fdad5-1.fna&amp;_nc_tp=6&amp;oh=6c3b710a4285a4b68a0160f9fc18d688&amp;oe=5EFCBFE9" /></p>
+
+
+
+
+<p>&nbsp;</p>
+', 'project3.jpg','2020-01-16 01:08:44','2020-01-16 01:08:44'),
 (4, 'MS KHƯƠNG HOUSE_18_DCONSTECH', 'MS KHƯƠNG', 'CÔNG TY TNHH TVXD & TM DCONSTECH', 'Chuyện giờ mới kể : khởi công vào tháng 9 sương sương, trời thì vẫn cứ mưa, nhà thì vẫn cứ xây, ngồi nhà của ms Khương nên hình như vậy. Cảm ơn chị đã đặt trọn niềm tin vào chúng tôi để xây dựng ngôi nhà mơ ước.', 120, 185, 90, 0, 2, '', 'project4.png','2020-01-16 01:08:44','2020-01-16 01:08:44'),
 (5, 'MR KHÁNH HOUSE_15_DCONSTECH', 'Mr Khánh', 'CÔNG TY TNHH TVXD & TM DCONSTECH', 'Ngôi nhà 5 tầng ban đầu được đơn vị thiết kế S3 thiết kế với kết cấu thép với chi phí rất cao. Với sự tư vấn của chúng tôi, chủ đầu tư đã đồng ý chuyển sang phương án BTCT với chi phí phải chăng và mang lại hiệu quả lâu dài. ', 100, 500, 120, 0, 2, '', 'project5.jpg','2020-01-16 01:08:44','2020-01-16 01:08:44'),
 (6, 'MR THƯƠNG HOUSE_07_DCONSTECH', 'Mr Thương', 'CÔNG TY TNHH TVXD & TM DCONSTECH', 'Mr Thương House_25/05/2019. Ngôi nhà 3 tầng trên diện tích lô đất rộng 200m2 được thiết kế các không gian thoáng và nhiều ánh sáng như mong muốn của chủ nhà. ', 250, 420, 120, 0, 2, '', 'project6.jpg','2020-01-16 01:08:44','2020-01-16 01:08:44');

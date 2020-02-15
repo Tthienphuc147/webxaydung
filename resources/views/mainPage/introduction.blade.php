@@ -7,7 +7,7 @@ Giới thiệu
     <!--================Header Area =================-->
 
     <!--================Banner Area =================-->
-    <section class="banner_area" style="background: url(../public/img/bgg.jpg); background-size: cover">
+    <section class="banner_area" style="background: url(../public/img/banner/single-page-banner2.jpg); background-size: cover">
         <div class="container">
             <div class="banner_inner_text">
                 <h4><a href="/">Trang chủ</a> / <a href="/introduction">Giới thiệu</a></h4>

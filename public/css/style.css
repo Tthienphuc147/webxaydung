@@ -3450,10 +3450,17 @@ iframe {
 .banner_inner_text {
     text-align: center;
 }
+.banner_inner_text a{
+    color:#fff;
+}
+.banner_inner_text a:hover{
+    color:rgb(230, 228, 228);
+    transition-duration: 0.8s;
+}
 
 .banner_inner_text h4 {
-    font-size: 35px;
-    font-family: "PT Sans", sans-serif;
+    font-size: 25px;
+    font-family: "Open Sans", sans-serif;
     font-weight: bold;
     color: #fff;
     padding-bottom: 3px;

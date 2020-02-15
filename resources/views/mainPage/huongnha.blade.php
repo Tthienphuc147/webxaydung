@@ -7,7 +7,7 @@ Xem hướng tuổi theo nhà
  <section class="banner_area" style="background: url(../public/img/banner/single-page-banner2.jpg); background-size: cover">
         <div class="container">
             <div class="banner_inner_text">
-                <h4>XEM HƯỚNG NHÀ THEO TUỔI</h4>
+                <h4><a href="/">Trang chủ</a> / Xem hướng nhà theo tuổi</h4>
 
             </div>
         </div>

@@ -55,18 +55,6 @@
                             </ul>
                         </li>
                         <li class="dropdown submenu">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">BẢNG GIÁ</a>
-                            <ul class="dropdown-menu">
-                                @foreach ($pricingCategoryMenu as $item)
-                                      <li><a href="/pricing/{{$item->id}}">{{$item->name_pricing_category}}</a></li>
-                                @endforeach
-                              
-                         
-
-
-                            </ul>
-                        </li>
-                        <li class="dropdown submenu">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">TƯ VẤN</a>
                             <ul class="dropdown-menu">
                                 @foreach ($advisoryCategoryMenu as $item)

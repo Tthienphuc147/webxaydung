@@ -8,7 +8,9 @@ class IntroductionController extends Controller
 {
     public function showIntroduction()
     {
-        return view('mainPage.introduction');
+        $slide='App\SlideImage'::get();
+        $countSlide='App\SlideImage'::get()->count();
+        return view('mainPage.introduction')->with('slide',$slide)->with('countSlide',$countSlide);
     }
         
 }

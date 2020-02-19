@@ -68,6 +68,15 @@ ul {
     padding: 0px;
 }
 
+.introduce--info {
+    font-size: 2.5rem;
+    line-height: 5rem;
+}
+
+ul.introduce--info li span:first-child {
+    font-weight: bold;
+}
+
 a {
     text-decoration: none;
 }
@@ -373,7 +382,7 @@ iframe {
 .main_header_area+section,
 .main_header_area+div,
 .main_header_area+.row {
-    margin-top: 152px;
+    margin-top: 130px;
 }
 
 .main_header_area.navbar_fixed .main_menu_area {
@@ -1751,11 +1760,31 @@ iframe {
 
 .best_company_area {
     padding: 60px 0px;
+    position: relative;
+}
+
+.best_company_area::after {
+    content: "";
+    background: url(../image/material/bg.jpg/) no-repeat scroll center center;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.b_companu_l_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .b_companu_l_text h4 {
     font-size: 30px;
-    font-family: "PT Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: bold;
     color: #343434;
     text-transform: uppercase;
@@ -1805,14 +1834,14 @@ iframe {
 }
 
 .service2_inner .service2_item {
-    height: 304px;
+    height: 250px;
 }
 
 .service2_inner .service2_item .service2_item_inner {
     text-align: center;
     background: #fff;
     padding: 45px 20px 16px 20px;
-    min-height: 304px;
+    min-height: 200px;
     -webkit-transition: all 400ms linear 0s;
     -o-transition: all 400ms linear 0s;
     transition: all 400ms linear 0s;
@@ -2649,10 +2678,10 @@ iframe {
 
 .project_summery {
     padding-top: 60px;
-
 }
-.project_description{
-    margin-top:10px;
+
+.project_description {
+    margin-top: 10px;
     font-size: 17px;
 }
 
@@ -2672,11 +2701,10 @@ iframe {
 
 .project_summery ul li {
     margin-bottom: 27px;
-   
 }
 
 .project_summery ul li a {
-     font-size: 17px;
+    font-size: 17px;
     font-family: "Open Sans", sans-serif;
     font-weight: bold;
     color: #444444;
@@ -2720,7 +2748,6 @@ iframe {
     color: #f6831f;
 }
 
-
 .project_detail {
     margin-top: 40px;
 }
@@ -2731,19 +2758,30 @@ iframe {
 
 .project_detail .detail_inner {
     position: relative;
-    padding-left: 70px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
+.project_detail .detail_inner img{
+    width: 90rem;
+    padding-bottom: 4rem;
+}
+
+.project_detail .detail_inner p{
+   font-size: 2rem;
+   padding-bottom: 2rem;
+}
+
 
 
 .project_quote .detail_inner p {
-    font-size: 15px;
+    font-size: 20px;
     font-family: "Open Sans", sans-serif;
     line-height: 26px;
     color: #444444;
-    padding-bottom: 3px;
+    padding-bottom: 5rem;
 }
-
-
 
 .project_collaps {
     margin-top: 40px;
@@ -3021,14 +3059,16 @@ iframe {
     padding-bottom: 6px;
 }
 
-.blogP{
-    padding:20px 0 50px 0;
-    font-size:16px;
+.blogP {
+    padding: 20px 0 50px 0;
+    font-size: 16px;
 }
-.blogP img{
+
+.blogP img {
     width: 100%;
 }
-.blogP table{
+
+.blogP table {
     width: 100% !important;
 }
 
@@ -3042,15 +3082,15 @@ iframe {
 .blog_d_text {
     padding-left: 25px;
 }
-.blog_table{
+
+.blog_table {
     padding: 0 50px;
-     overflow:auto !important;
-     width: 100%;
+    overflow: auto !important;
+    width: 100%;
 }
 
-.blog_d_text table{
+.blog_d_text table {
     width: 100% !important;
-   
 }
 
 .blog_d_text h6 {
@@ -3424,10 +3464,17 @@ iframe {
 .banner_inner_text {
     text-align: center;
 }
+.banner_inner_text a{
+    color:#fff;
+}
+.banner_inner_text a:hover{
+    color:rgb(230, 228, 228);
+    transition-duration: 0.8s;
+}
 
 .banner_inner_text h4 {
-    font-size: 35px;
-    font-family: "PT Sans", sans-serif;
+    font-size: 25px;
+    font-family: "Open Sans", sans-serif;
     font-weight: bold;
     color: #fff;
     padding-bottom: 3px;
@@ -4061,11 +4108,9 @@ iframe {
 .footer_widgets_area {
     background: #31353d;
     padding: 70px 0px;
-   
 }
-.footer_area{
 
-}
+.footer_area {}
 
 .footer_widgets_area.footer_bg {
     background: -webkit-gradient(linear, left bottom, left top, from(rgba(49, 53, 61, 0.96)), to(rgba(49, 53, 61, 0.96))), url(../img/footer-bg.jpg) no-repeat scroll center center;
@@ -4221,22 +4266,23 @@ iframe {
     padding-bottom: 200px;
     font-family: "Open Sans", sans-serif;
 }
+
 input[type="file"] {
     display: none;
 }
+
 .custom-file-upload {
     border: 1px solid #f6831f;
     display: inline-block;
     padding: 6px 12px;
     cursor: pointer;
     background-color: #f6831f;
-    color:#fff;
+    color: #fff;
     font-family: "Open Sans", sans-serif;
     width: 100%;
     margin: 0 auto;
     text-align: center;
 }
-
 
 .section-header {
     text-align: center;
@@ -4248,6 +4294,7 @@ input[type="file"] {
     color: #f6831f;
     margin-bottom: 25px;
 }
+
 .section-header-contact {
     text-align: center;
     margin: 0 auto;
@@ -4438,7 +4485,7 @@ hr {
 
 @media screen and (max-width: 760px) {
     #contact {
-    min-height: 40rem;
+        min-height: 40rem;
     }
     .section-header {
         font-size: 65px;
@@ -4504,7 +4551,7 @@ hr {
         height: 55px;
         line-height: 55px;
     }
-    .contact-list{
+    .contact-list {
         font-size: 12px;
     }
 }
@@ -4515,34 +4562,40 @@ hr {
     }
 }
 
+
 /*comment*/
+
 .comment-wrapper .panel-body {
-    max-height:650px;
-    overflow:auto;
+    max-height: 650px;
+    overflow: auto;
 }
 
 .comment-wrapper .media-list .media img {
-    width:64px;
-    height:64px;
-    border:2px solid #e5e7e8;
+    width: 64px;
+    height: 64px;
+    border: 2px solid #e5e7e8;
 }
 
 .comment-wrapper .media-list .media {
-    border-bottom:1px dashed #efefef;
-    margin-bottom:25px;
+    border-bottom: 1px dashed #efefef;
+    margin-bottom: 25px;
 }
-.panel-heading{
+
+.panel-heading {
     background-color: #f6831f !important;
-    color:#fff !important;
+    color: #fff !important;
 }
-.btn-comment{
- background-color: #f6831f !important;
-    color:#fff !important;
+
+.btn-comment {
+    background-color: #f6831f !important;
+    color: #fff !important;
     border: 1px #f6831f !important;
 }
+
 .panel-info {
-     border-color: #f6831f !important;
+    border-color: #f6831f !important;
 }
-.help-is-danger{
-    color:red;
+
+.help-is-danger {
+    color: red;
 }

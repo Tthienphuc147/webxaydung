@@ -1,11 +1,13 @@
 @extends('masterPage')
-
+@section('title')
+{{$project->name_project}}
+@endsection
 @section('content')
      <section class="banner_area" style="background: url(../public/img/banner/single-page-banner2.jpg); background-size: cover">
         <div class="container">
             <div class="banner_inner_text">
-                <h4>{{$project->name_project}}</h4>
 
+                 <h4><a href="/">Trang chủ</a> / Dự án / <a href="/categoryProject/{{$project->project_category_id}}">{{$project->name}}</a> / {{$project->name_project}}</h4>
             </div>
         </div>
     </section>

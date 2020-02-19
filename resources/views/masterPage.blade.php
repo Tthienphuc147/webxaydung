@@ -24,7 +24,7 @@
 
     <link rel="icon" href="{{ asset('/public/img/logo.png')}}" type="image/x-icon" />
 
-    <title>Dconstech-Thiết Kế và xây dựng Đà Nẵng</title>
+    <title>@yield('title')</title>
 
     <!-- Icon css link -->
     <link href="{{ asset('/public/css/font-awesome.min.css')}}"rel="stylesheet">
@@ -43,6 +43,7 @@
     <!-- Extra plugin css -->
     <link href="{{ asset('/public/css/style.css')}}" rel="stylesheet">
     <link href="{{ asset('/public/css/responsive.css')}}" rel="stylesheet">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
 
 </head>

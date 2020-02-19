@@ -31,8 +31,6 @@ DROP TABLE IF EXISTS `comment`;
 DROP TABLE IF EXISTS `contact`;
 DROP TABLE IF EXISTS `post`;
 DROP TABLE IF EXISTS `post_category`;
-DROP TABLE IF EXISTS `pricing`;
-DROP TABLE IF EXISTS `pricing_category`;
 DROP TABLE IF EXISTS `project`;
 DROP TABLE IF EXISTS `project_category`;
 DROP TABLE IF EXISTS `service`;
@@ -108,7 +106,8 @@ CREATE TABLE `post` (
 --
 
 INSERT INTO `post` (`id`, `post_category_id`, `name_post`, `description`, `content`, `image`, `date`) VALUES
-(2, 1, 'Kiểu trang tri tường đẹp hợp phong thủy', 'Trang trí nhà hợp phong thủy sẽ giúp chúng ta có thêm những may mắn trong dịp đầu năm mới. 10 ý tưởng trang trí nhà đơn giản nhưng hiệu quả và hợp phong thủy dưới đây rất hữu ích để bạn tham khảo.', '<p><strong>Trang tr&iacute; nh&agrave; hợp phong thủy sẽ gi&uacute;p ch&uacute;ng ta c&oacute; th&ecirc;m những may mắn trong dịp đầu năm mới.</strong></p>\r\n\r\n <p>10 &yacute; tưởng trang tr&iacute; nh&agrave; đơn giản nhưng hiệu quả v&agrave; hợp phong thủy dưới đ&acirc;y rất hữu &iacute;ch để bạn tham khảo.</p>\r\n<p><strong>1. Chọn m&agrave;u sắc một c&aacute;ch thận trọng</strong></p>\r\n<p>Nếu một bức tường được sơn bằng m&agrave;u sơn cũ, x&aacute;m xịt hay bất kỳ m&agrave;u sơn n&agrave;o cảm thấy giống như vậy khiến ta thấy buồn tẻ v&agrave; nh&agrave;m ch&aacute;n, trong khi một một bức tường được sơn bằng m&agrave;u\r\n                            sơn mới, hoặc sơn những m&agrave;u sắc s&aacute;ng sửa, sạch sẽ như đem đến một hơi thở mới v&agrave; năng lượng cho cuộc sống cũng như to&agrave;n bộ kh&ocirc;ng gian của ng&ocirc;i nh&agrave;.</p>\r\n\r\n\r\n\r\n                        <p><strong>2. Để đồ đạc ra khoảng kh&ocirc;ng rộng</strong></p>\r\n\r\n                        <p>Khi nghe điều n&agrave;y c&oacute; vẻ kh&aacute; mơ hồ, nhưng n&oacute; thực sự kh&aacute; đơn giản. H&atilde;y chắc chắn rằng bất kỳ đồ đạc được sắp xếp n&ecirc;n để lại một khoảng trống th&iacute;ch hợp xung quanh &ndash; khi\r\n                            bạn đi v&agrave;o ph&ograve;ng kh&aacute;ch, kh&ocirc;ng n&ecirc;n để ch&acirc;n bị chạm v&agrave;o lưng ghế. Những phụ kiện nhỏ hoặc những thứ tượng tự ch&uacute;ng ta n&ecirc;n cất trong tủ quần &aacute;o trong ph&ograve;ng\r\n                            ngủ. Như vậy, ch&uacute;ng ta sẽ c&oacute; th&ecirc;m nhiều kh&ocirc;ng gian khi đồ đạc được sắp xếp gọn g&agrave;ng m&agrave; vẫn giữ được số lượng thực tế vốn c&oacute;.</p>\r\n\r\n\r\n\r\n                        <p><strong>3. Kết hợp trang tr&iacute; ở tr&ecirc;n cao</strong></p>\r\n\r\n                        <p>Một căn ph&ograve;ng được b&agrave;i tr&iacute; theo phong thủy sẽ đem lại cho bạn cảm gi&aacute;c an to&agrave;n v&agrave; thoải m&aacute;i hơn. Một sản phẩm mang t&iacute;nh chất nghệ thuật được treo l&ecirc;n cao, hoặc một b&oacute;ng\r\n                            đ&egrave;n y&ecirc;u th&iacute;ch được n&acirc;ng l&ecirc;n tr&ecirc;n nhằm thu h&uacute;t &aacute;nh mắt hướng l&ecirc;n, được cho l&agrave; một thủ thuật n&acirc;ng cao t&acirc;m trạng. Nếu n&oacute; kh&ocirc;ng c&oacute;\r\n                            &yacute; nghĩa trong kh&ocirc;ng gian nh&agrave; bạn, th&igrave; h&atilde;y thử một chiến lược n&acirc;ng cao tầm mắt, chẳng hạn như gắn c&aacute;c vật trang tr&iacute; cho cửa sổ gần trần nh&agrave; hoặc sơn trần nh&agrave;\r\n                            đẹp, nhẹ nh&agrave;ng h&agrave;i h&ograve;a.</p>\r\n', '1.jpg', '2020-01-16');
+(2, 1, 'Kiểu trang tri tường đẹp hợp phong thủy', 'Trang trí nhà hợp phong thủy sẽ giúp chúng ta có thêm những may mắn trong dịp đầu năm mới. 10 ý tưởng trang trí nhà đơn giản nhưng hiệu quả và hợp phong thủy dưới đây rất hữu ích để bạn tham khảo.', '<p><strong>Trang tr&iacute; nh&agrave; hợp phong thủy sẽ gi&uacute;p ch&uacute;ng ta c&oacute; th&ecirc;m những may mắn trong dịp đầu năm mới.</strong></p>\r\n\r\n <p>10 &yacute; tưởng trang tr&iacute; nh&agrave; đơn giản nhưng hiệu quả v&agrave; hợp phong thủy dưới đ&acirc;y rất hữu &iacute;ch để bạn tham khảo.</p>\r\n<p><strong>1. Chọn m&agrave;u sắc một c&aacute;ch thận trọng</strong></p>\r\n<p>Nếu một bức tường được sơn bằng m&agrave;u sơn cũ, x&aacute;m xịt hay bất kỳ m&agrave;u sơn n&agrave;o cảm thấy giống như vậy khiến ta thấy buồn tẻ v&agrave; nh&agrave;m ch&aacute;n, trong khi một một bức tường được sơn bằng m&agrave;u\r\n                            sơn mới, hoặc sơn những m&agrave;u sắc s&aacute;ng sửa, sạch sẽ như đem đến một hơi thở mới v&agrave; năng lượng cho cuộc sống cũng như to&agrave;n bộ kh&ocirc;ng gian của ng&ocirc;i nh&agrave;.</p>\r\n\r\n\r\n\r\n                        <p><strong>2. Để đồ đạc ra khoảng kh&ocirc;ng rộng</strong></p>\r\n\r\n                        <p>Khi nghe điều n&agrave;y c&oacute; vẻ kh&aacute; mơ hồ, nhưng n&oacute; thực sự kh&aacute; đơn giản. H&atilde;y chắc chắn rằng bất kỳ đồ đạc được sắp xếp n&ecirc;n để lại một khoảng trống th&iacute;ch hợp xung quanh &ndash; khi\r\n                            bạn đi v&agrave;o ph&ograve;ng kh&aacute;ch, kh&ocirc;ng n&ecirc;n để ch&acirc;n bị chạm v&agrave;o lưng ghế. Những phụ kiện nhỏ hoặc những thứ tượng tự ch&uacute;ng ta n&ecirc;n cất trong tủ quần &aacute;o trong ph&ograve;ng\r\n                            ngủ. Như vậy, ch&uacute;ng ta sẽ c&oacute; th&ecirc;m nhiều kh&ocirc;ng gian khi đồ đạc được sắp xếp gọn g&agrave;ng m&agrave; vẫn giữ được số lượng thực tế vốn c&oacute;.</p>\r\n\r\n\r\n\r\n                        <p><strong>3. Kết hợp trang tr&iacute; ở tr&ecirc;n cao</strong></p>\r\n\r\n                        <p>Một căn ph&ograve;ng được b&agrave;i tr&iacute; theo phong thủy sẽ đem lại cho bạn cảm gi&aacute;c an to&agrave;n v&agrave; thoải m&aacute;i hơn. Một sản phẩm mang t&iacute;nh chất nghệ thuật được treo l&ecirc;n cao, hoặc một b&oacute;ng\r\n                            đ&egrave;n y&ecirc;u th&iacute;ch được n&acirc;ng l&ecirc;n tr&ecirc;n nhằm thu h&uacute;t &aacute;nh mắt hướng l&ecirc;n, được cho l&agrave; một thủ thuật n&acirc;ng cao t&acirc;m trạng. Nếu n&oacute; kh&ocirc;ng c&oacute;\r\n                            &yacute; nghĩa trong kh&ocirc;ng gian nh&agrave; bạn, th&igrave; h&atilde;y thử một chiến lược n&acirc;ng cao tầm mắt, chẳng hạn như gắn c&aacute;c vật trang tr&iacute; cho cửa sổ gần trần nh&agrave; hoặc sơn trần nh&agrave;\r\n                            đẹp, nhẹ nh&agrave;ng h&agrave;i h&ograve;a.</p>\r\n', '1.jpg', '2020-01-16')
+;
 
 -- --------------------------------------------------------
 
@@ -137,20 +136,130 @@ INSERT INTO `post_category` (`id`, `name`) VALUES
 -- Table structure for table `pricing`
 --
 
-CREATE TABLE `pricing` (
+-- 
+
+
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `project`
+--
+
+CREATE TABLE `project` (
   `id` int(11) NOT NULL,
-  `name_pricing` text DEFAULT NULL,
-  `content` text NOT NULL,
-  `pricing_category_id` int(11) NOT NULL,
-     `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  `name_project` text NOT NULL,
+  `customer_name` text NOT NULL,
+  `investor` text NOT NULL,
+  `description` text NOT NULL,
+  `land_area` int(11) NOT NULL,
+  `building_area` int(11) NOT NULL,
+  `construction_progress` int(11) NOT NULL,
+  `total_amount` int(11) NOT NULL,
+  `project_category_id` int(11) NOT NULL,
+  `content` text NULL,
+  `image` text NOT NULL,
+  `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
   `created_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `pricing`
+-- Dumping data for table `project`
 --
-INSERT INTO `pricing` (`id`, `name_pricing`, `content`, `pricing_category_id`,`created_at`,`updated_at`) VALUES
-(1, 'BẢNG BÁO GIÁ PHÍ THIẾT KẾ CÔNG TRÌNH','<table cellspacing="0" style="border-collapse:collapse; width:1352px">
+
+INSERT INTO `project` (`id`, `name_project`, `customer_name`, `investor`, `description`, `land_area`, `building_area`, `construction_progress`, `total_amount`, `project_category_id`, `content`, `image`,`created_at`,`updated_at`) VALUES
+(1, 'MR PHƯỚC HOUSE_16_DCONSTECH', 'MR PHƯỚC', 'CÔNG TY TNHH TVXD & TM DCONSTECH', ' Mr Phước House: căn hộ được thiết kế 8 tầng vừa là nhà ở vừa làm căn hộ cho thuê nằm trên trục đường Trần Phú đắt địa nhưng không kém phần khó khăn trong công tác thi công. ', 800, 800, 150, 0, 2, '
+Edit your toolbar now!
+
+<p><strong>B&ecirc; t&ocirc;ng m&oacute;ng</strong></p>
+
+<p><img alt="Trong hình ảnh có thể có: trong nhà" src="https://scontent.fdad5-1.fna.fbcdn.net/v/t1.0-9/p720x720/68565361_700572577081498_1162767592578875392_o.jpg?_nc_cat=106&amp;_nc_ohc=12LsvseSfyIAX-ut9bO&amp;_nc_ht=scontent.fdad5-1.fna&amp;_nc_tp=6&amp;oh=2233abc6ae1641cba4e1e7c904f57706&amp;oe=5F02ED0D" /></p>
+
+<p>&nbsp;</p>
+
+<p><strong>C&ocirc;ng t&aacute;c v&aacute;n khu&ocirc;n m&oacute;ng</strong></p>
+
+<p><img alt="Không có mô tả ảnh." src="https://scontent.fdad5-1.fna.fbcdn.net/v/t1.0-9/p720x720/68720191_700572403748182_4051921139738345472_o.jpg?_nc_cat=102&amp;_nc_ohc=99r1RvUm3JUAX9vmrOL&amp;_nc_ht=scontent.fdad5-1.fna&amp;_nc_tp=6&amp;oh=7a9f9c2b1ddfe762259999fab1ebdaa6&amp;oe=5EFE52A7" /></p>
+', 'project1.jpg','2020-01-16 01:08:44','2020-01-16 01:08:44'),
+(2, 'XUYÊN VILLA_17_DCONSTECH', 'XUYÊN', 'CÔNG TY TNHH TVXD & TM DCONSTECH', 'Biệt thự được thiết kế với phong cách hiện đại trên khu đất rộng 250m2 nằm trên trục đường Vip nhất của khu đô thi Nam Việt Á (đường Bùi Tá Hán) với các khoảng không làm cho ngôi nhà luôn đầy nắng và gió. ', 250, 350, 120, 0, 1, '<p><strong>&Eacute;p cừ C chống sạt nh&agrave; l&acirc;n cận</strong></p>
+
+<p><img alt="Trong hình ảnh có thể có: một hoặc nhiều người, mọi người đang đứng và ngoài trời" src="https://scontent.fdad5-1.fna.fbcdn.net/v/t1.0-9/p720x720/70433355_714322199039869_6215581485705986048_o.jpg?_nc_cat=109&amp;_nc_ohc=tHTVJ1Wepe4AX8IEUqJ&amp;_nc_ht=scontent.fdad5-1.fna&amp;_nc_tp=6&amp;oh=e8efea1d607491d6762924e4ad0fe03a&amp;oe=5EC5886A" /></p>
+
+<p><strong>&Eacute;p cừ C</strong></p>
+
+<p><img alt="Trong hình ảnh có thể có: bầu trời, cây và ngoài trời" src="https://scontent.fdad5-1.fna.fbcdn.net/v/t1.0-9/p720x720/70014256_714322022373220_4455988403065847808_o.jpg?_nc_cat=101&amp;_nc_ohc=DRHvkrau-8QAX_ZpqOr&amp;_nc_ht=scontent.fdad5-1.fna&amp;_nc_tp=6&amp;oh=44b6577502af9b31946d44fb7e6f6549&amp;oe=5EBBEF15" /></p>
+
+<p><strong>C&uacute;ng động thổ</strong></p>
+
+<p><img alt="Trong hình ảnh có thể có: bầu trời, cây và ngoài trời" src="https://scontent.fdad5-1.fna.fbcdn.net/v/t1.0-9/p720x720/70037553_714321729039916_9100853520596205568_o.jpg?_nc_cat=107&amp;_nc_ohc=KqLl8lohUPwAX_3U9mu&amp;_nc_ht=scontent.fdad5-1.fna&amp;_nc_tp=6&amp;oh=cf9e5fe826ce38a561c680ea35fb808c&amp;oe=5F0303DC" /></p>
+
+<p>&nbsp;</p>
+', 'project2.jpg','2020-01-16 01:08:44','2020-01-16 01:08:44'),
+(3, 'VILLA OF BOSS_11_DCONSTECH', 'Boss', 'CÔNG TY TNHH TVXD & TM DCONSTECH', '\" Nhà của sếp \" Tựa đề đã nói lên tất cả. Cám ơn sếp đã tin tưởng chúng tôi, chúng tôi tự tin sẽ làm sếp hài lòng. Biệt thự 3 tầng với phong cách hiện đại tọa lạc tại một trong những khu Vip nhất Đà Nẵng \"', 250, 560, 90, 0, 1, '<p><strong>X&acirc;y tường</strong></p>
+
+<p><img alt="Trong hình ảnh có thể có: giày và ngoài trời" src="https://scontent.fdad5-1.fna.fbcdn.net/v/t1.0-9/p720x720/69636737_706997406439015_8391769409462468608_o.jpg?_nc_cat=107&amp;_nc_ohc=SlJuYq2VCssAX__7Luo&amp;_nc_ht=scontent.fdad5-1.fna&amp;_nc_tp=6&amp;oh=9786dd4e9dedf447f8b332d6667026b2&amp;oe=5F03503F" /></p>
+
+<p><img alt="Trong hình ảnh có thể có: ngoài trời" src="https://scontent.fdad5-1.fna.fbcdn.net/v/t1.0-9/69852381_706997606438995_1324835267210641408_o.jpg?_nc_cat=106&amp;_nc_ohc=8YZDXVntnqgAX-RKGJz&amp;_nc_ht=scontent.fdad5-1.fna&amp;oh=a4fe33db3042b2e4a3104bf6aab670bb&amp;oe=5EC31BA4" /></p>
+
+<p><img alt="Trong hình ảnh có thể có: ngoài trời" src="https://scontent.fdad5-1.fna.fbcdn.net/v/t1.0-9/p720x720/69335263_706997466439009_1591860578073182208_o.jpg?_nc_cat=107&amp;_nc_ohc=nrxRB5G73gYAX-pYtQU&amp;_nc_ht=scontent.fdad5-1.fna&amp;_nc_tp=6&amp;oh=8263b7f40d6382788b7297e782bf885f&amp;oe=5EC391DA" /></p>
+
+<p>&nbsp;</p>
+
+<p><strong>Khoan b&aacute;t r&acirc;u x&acirc;y tường</strong></p>
+
+<p><img alt="Trong hình ảnh có thể có: cây, thực vật, bầu trời và ngoài trời" src="https://scontent.fdad5-1.fna.fbcdn.net/v/t1.0-9/p720x720/69251680_706997796438976_6571705034130587648_o.jpg?_nc_cat=105&amp;_nc_ohc=VhsAbfjausEAX8oPMdk&amp;_nc_ht=scontent.fdad5-1.fna&amp;_nc_tp=6&amp;oh=6c3b710a4285a4b68a0160f9fc18d688&amp;oe=5EFCBFE9" /></p>
+
+
+
+
+<p>&nbsp;</p>
+', 'project3.jpg','2020-01-16 01:08:44','2020-01-16 01:08:44'),
+(4, 'MS KHƯƠNG HOUSE_18_DCONSTECH', 'MS KHƯƠNG', 'CÔNG TY TNHH TVXD & TM DCONSTECH', 'Chuyện giờ mới kể : khởi công vào tháng 9 sương sương, trời thì vẫn cứ mưa, nhà thì vẫn cứ xây, ngồi nhà của ms Khương nên hình như vậy. Cảm ơn chị đã đặt trọn niềm tin vào chúng tôi để xây dựng ngôi nhà mơ ước.', 120, 185, 90, 0, 2, '', 'project4.png','2020-01-16 01:08:44','2020-01-16 01:08:44'),
+(5, 'MR KHÁNH HOUSE_15_DCONSTECH', 'Mr Khánh', 'CÔNG TY TNHH TVXD & TM DCONSTECH', 'Ngôi nhà 5 tầng ban đầu được đơn vị thiết kế S3 thiết kế với kết cấu thép với chi phí rất cao. Với sự tư vấn của chúng tôi, chủ đầu tư đã đồng ý chuyển sang phương án BTCT với chi phí phải chăng và mang lại hiệu quả lâu dài. ', 100, 500, 120, 0, 2, '', 'project5.jpg','2020-01-16 01:08:44','2020-01-16 01:08:44'),
+(6, 'MR THƯƠNG HOUSE_07_DCONSTECH', 'Mr Thương', 'CÔNG TY TNHH TVXD & TM DCONSTECH', 'Mr Thương House_25/05/2019. Ngôi nhà 3 tầng trên diện tích lô đất rộng 200m2 được thiết kế các không gian thoáng và nhiều ánh sáng như mong muốn của chủ nhà. ', 250, 420, 120, 0, 2, '', 'project6.jpg','2020-01-16 01:08:44','2020-01-16 01:08:44');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `project_category`
+--
+
+CREATE TABLE `project_category` (
+  `id` int(11) NOT NULL,
+  `name` text NOT NULL,
+   `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `project_category`
+--
+
+INSERT INTO `project_category` (`id`, `name`,`created_at`,`updated_at`) VALUES
+(1, 'Biệt thự','2020-01-16 01:08:44','2020-01-16 01:08:44'),
+(2, 'Nhà phố','2020-01-16 01:08:44','2020-01-16 01:08:44'),
+(3, 'Khách sạn-văn phòng','2020-01-16 01:08:44','2020-01-16 01:08:44');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `service`
+--
+
+CREATE TABLE `service` (
+  `id` int(11) NOT NULL,
+  `name_service` text,
+  `content` text,
+  `service_category_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `service`
+--
+
+INSERT INTO `service` (`id`, `name_service`, `content`, `service_category_id`) VALUES
+(1, 'Thiết kế công trình', '<table cellspacing="0" style="border-collapse:collapse; width:1352px">
 	<tbody>
 		<tr>
 			<td colspan="6" style="border-bottom:1px solid black; border-left:none; border-right:none; border-top:none; height:53px; text-align:center; vertical-align:bottom; white-space:nowrap; width:1352px"><span style="font-size:19px"><strong><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="color:black">BẢNG B&Aacute;O GI&Aacute; PH&Iacute; THIẾT KẾ C&Ocirc;NG TR&Igrave;NH</span></span></strong></span></td>
@@ -342,13 +451,10 @@ INSERT INTO `pricing` (`id`, `name_pricing`, `content`, `pricing_category_id`,`c
 		</tr>
 	</tbody>
 </table>
-', 1,'2020-01-16 01:08:44','2020-01-16 01:08:44');
-
-INSERT INTO `pricing` (`id`, `name_pricing`, `content`, `pricing_category_id`,`created_at`,`updated_at`) VALUES
-(2, 'BẢNG BÁO GIÁ PHÍ THI CÔNG','<ol style="list-style-type:upper-alpha">
+', 1),
+(2,'Thi công xây dựng','<ol style="list-style-type:upper-alpha">
 	<li style="text-align:justify"><span style="font-size:12pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><strong><span style="font-family:&quot;Tahoma&quot;,sans-serif">Thi c&ocirc;ng ph&iacute;:</span></strong><strong> </strong></span></span></li>
 </ol>
-
 <table align="center" class="Table" style="height:100%; width:100%">
 	<thead>
 		<tr>
@@ -425,15 +531,11 @@ INSERT INTO `pricing` (`id`, `name_pricing`, `content`, `pricing_category_id`,`c
 		</tr>
 	</tbody>
 </table>
-
 <p><span style="font-size:12pt"><span style="font-family:&quot;Times New Roman&quot;,serif">&nbsp;</span></span></p>
-
 <ol>
 	<li style="text-align:justify"><span style="font-size:12pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><strong><span style="font-family:&quot;Tahoma&quot;,sans-serif">Một số g&oacute;i x&acirc;y dựng trọn g&oacute;i tham khảo</span></strong><strong> </strong></span></span></li>
 </ol>
-
 <p style="margin-left:48px; text-align:justify"><span style="font-size:12pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><strong><span style="font-family:&quot;Tahoma&quot;,sans-serif">G&oacute;i 1 - Đơn gi&aacute;: </span></strong><strong><span style="font-family:&quot;Tahoma&quot;,sans-serif">5</span></strong><strong><span style="font-family:&quot;Tahoma&quot;,sans-serif">.</span></strong><strong><span style="font-family:&quot;Tahoma&quot;,sans-serif">5</span></strong><strong><span style="font-family:&quot;Tahoma&quot;,sans-serif">00.000 đ/m<sup>2</sup></span></strong><strong> </strong></span></span></p>
-
 <ul>
 	<li style="list-style-type:none">
 	<ul style="list-style-type:circle">
@@ -462,9 +564,7 @@ INSERT INTO `pricing` (`id`, `name_pricing`, `content`, `pricing_category_id`,`c
 	</ul>
 	</li>
 </ul>
-
 <p style="margin-left:48px; text-align:justify"><span style="font-size:12pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><strong><span style="font-family:&quot;Tahoma&quot;,sans-serif">G&oacute;i&nbsp;2 - Đơn gi&aacute;: 6.</span></strong><strong><span style="font-family:&quot;Tahoma&quot;,sans-serif">0</span></strong><strong><span style="font-family:&quot;Tahoma&quot;,sans-serif">00.000 đ/m<sup>2</sup></span></strong><strong> </strong></span></span></p>
-
 <ul>
 	<li style="list-style-type:none">
 	<ul style="list-style-type:circle">
@@ -488,9 +588,7 @@ INSERT INTO `pricing` (`id`, `name_pricing`, `content`, `pricing_category_id`,`c
 	</ul>
 	</li>
 </ul>
-
 <p style="margin-left:6px"><span style="font-size:12pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-size:10.0pt"><span style="font-family:&quot;Courier New&quot;">o</span></span>&nbsp;&nbsp;&nbsp; Kh&oacute;a cửa &lt;= 150.000 đ/bộ.</span></span></p>
-
 <ol style="list-style-type:upper-alpha">
 	<li style="list-style-type:none">
 	<ul style="list-style-type:circle">
@@ -503,9 +601,7 @@ INSERT INTO `pricing` (`id`, `name_pricing`, `content`, `pricing_category_id`,`c
 	</li>
 	<li style="text-align:justify"><span style="font-size:12pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><strong><span style="font-family:&quot;Tahoma&quot;,sans-serif">Một số g&oacute;i x&acirc;y dựng th&ocirc; tham khảo</span></strong><strong> </strong></span></span></li>
 </ol>
-
 <p style="margin-left:48px; text-align:justify"><span style="font-size:12pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><strong><span style="font-family:&quot;Tahoma&quot;,sans-serif">G&oacute;i 1 - Đơn gi&aacute;: </span></strong><strong><span style="font-family:&quot;Tahoma&quot;,sans-serif">3</span></strong><strong><span style="font-family:&quot;Tahoma&quot;,sans-serif">.</span></strong><strong><span style="font-family:&quot;Tahoma&quot;,sans-serif">1</span></strong><strong><span style="font-family:&quot;Tahoma&quot;,sans-serif">00.000 đ/m<sup>2</sup></span></strong><strong> </strong></span></span></p>
-
 <ul>
 	<li style="list-style-type:none">
 	<ul style="list-style-type:circle">
@@ -519,9 +615,7 @@ INSERT INTO `pricing` (`id`, `name_pricing`, `content`, `pricing_category_id`,`c
 	</ul>
 	</li>
 </ul>
-
 <p style="margin-left:48px; text-align:justify"><span style="font-size:12pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><strong><span style="font-family:&quot;Tahoma&quot;,sans-serif">G&oacute;i&nbsp;2 - Đơn gi&aacute;: </span></strong><strong><span style="font-family:&quot;Tahoma&quot;,sans-serif">3</span></strong><strong><span style="font-family:&quot;Tahoma&quot;,sans-serif">.</span></strong><strong><span style="font-family:&quot;Tahoma&quot;,sans-serif">5</span></strong><strong><span style="font-family:&quot;Tahoma&quot;,sans-serif">00.000 đ/m<sup>2</sup></span></strong><strong> </strong></span></span></p>
-
 <ol>
 	<li style="list-style-type:none">
 	<ul style="list-style-type:circle">
@@ -544,19 +638,12 @@ INSERT INTO `pricing` (`id`, `name_pricing`, `content`, `pricing_category_id`,`c
 	</ul>
 	</li>
 </ol>
-
 <p style="text-align:center"><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:&quot;Times New Roman&quot;,serif"><strong><span style="color:#333333">BẢNG B&Aacute;O GI&Aacute; THI C&Ocirc;NG X&Acirc;Y DỰNG PHẦN TH&Ocirc; 2020</span></strong></span></span></span></p>
-
 <p style="text-align:center"><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:&quot;Times New Roman&quot;,serif">&nbsp; </span></span></span></p>
-
 <p style="text-align:justify"><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="color:#333333">DCONSTECH </span><span style="color:#333333">&nbsp;tr&acirc;n trọng gửi đến qu&yacute; kh&aacute;ch h&agrave;ng bảng&nbsp;<strong>b&aacute;o gi&aacute; thi c&ocirc;ng x&acirc;y dựng</strong>&nbsp;phần th&ocirc; &aacute;p dụng từ ng&agrave;y 01/0</span><span style="color:#333333">1</span><span style="color:#333333">/20</span><span style="color:#333333">20</span><span style="color:#333333"> như sau:</span> </span></span></span></p>
-
 <p style="text-align:justify"><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:&quot;Times New Roman&quot;,serif">&nbsp; </span></span></span></p>
-
 <p style="text-align:justify"><span style="font-size:12pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><strong><span style="color:#333333">B&Aacute;O GI&Aacute; THI C&Ocirc;NG X&Acirc;Y DỰNG PHẦN TH&Ocirc;</span></strong><strong> </strong></span></span></p>
-
 <p style="text-align:justify"><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:&quot;Times New Roman&quot;,serif">&nbsp; </span></span></span></p>
-
 <table align="center" cellspacing="0" class="Table" style="background:white; border-collapse:collapse; width:524px">
 	<tbody>
 		<tr>
@@ -585,238 +672,72 @@ INSERT INTO `pricing` (`id`, `name_pricing`, `content`, `pricing_category_id`,`c
 		</tr>
 	</tbody>
 </table>
-
 <p style="text-align:justify"><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:&quot;Times New Roman&quot;,serif">&nbsp; </span></span></span></p>
-
 <p style="text-align:justify"><span style="font-size:12pt"><span style="font-family:&quot;Times New Roman&quot;,serif">&nbsp; &nbsp;<strong><span style="color:#333333">VẬT TƯ SỬ DỤNG THI C&Ocirc;NG X&Acirc;Y DỰNG PHẦN TH&Ocirc;</span> </strong></span></span></p>
-
 <p style="text-align:justify"><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:&quot;Times New Roman&quot;,serif">&nbsp; </span></span></span></p>
-
 <p style="margin-left:24px; text-align:justify"><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="color:#333333">1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; C&aacute;t b&ecirc; t&ocirc;ng: c&aacute;t v&agrave;ng&nbsp;<strong>T&uacute;y Loan , Cầu Đỏ</strong>, C&aacute;t x&acirc;y t&ocirc; ti&ecirc;u chuẩn. ( trừ hạng mục san lấp).</span> </span></span></span></p>
-
 <p style="margin-left:24px; text-align:justify"><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:&quot;Times New Roman&quot;,serif">&nbsp; </span></span></span></p>
-
 <p style="margin-left:24px; text-align:justify"><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="color:#333333">2.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Đ&aacute; 4x6, Đ&aacute; 1x2&nbsp;( Đ&aacute; Phước Tường)</span> </span></span></span></p>
-
 <p style="margin-left:24px; text-align:justify"><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:&quot;Times New Roman&quot;,serif">&nbsp; </span></span></span></p>
-
 <p style="margin-left:24px; text-align:justify"><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="color:#333333">3.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Th&eacute;p Việt &Uacute;c ,Dana - &Yacute;</span> </span></span></span></p>
-
 <p style="margin-left:24px; text-align:justify"><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:&quot;Times New Roman&quot;,serif">&nbsp; </span></span></span></p>
-
 <p style="margin-left:24px; text-align:justify"><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="color:#333333">4.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Xi măng Kim Đỉnh hoặc S&ocirc;ng Gianh.</span> </span></span></span></p>
-
 <p style="margin-left:24px; text-align:justify"><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:&quot;Times New Roman&quot;,serif">&nbsp; </span></span></span></p>
-
 <p style="margin-left:24px; text-align:justify"><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="color:#333333">5.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Gạch Tuynel Đ&agrave; Nẵng hoặc Qu&atilde;ng Nam</span> </span></span></span></p>
-
 <p style="margin-left:24px; text-align:justify"><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:&quot;Times New Roman&quot;,serif">&nbsp; </span></span></span></p>
-
 <p style="margin-left:24px; text-align:justify"><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="color:#333333">6.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ống nước lạnh B&igrave;nh Minh đi &acirc;m tường ( Chịu &aacute;p lực 6 bar).</span> </span></span></span></p>
-
 <p style="margin-left:24px; text-align:justify"><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:&quot;Times New Roman&quot;,serif">&nbsp; </span></span></span></p>
-
 <p style="margin-left:24px; text-align:justify"><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="color:#333333">7.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; D&acirc;y điện Cadivi đi &acirc;m tường.</span> </span></span></span></p>
-
 <p style="margin-left:24px; text-align:justify"><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:&quot;Times New Roman&quot;,serif">&nbsp; </span></span></span></p>
-
 <p style="margin-left:24px; text-align:justify"><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="color:#333333">8.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; D&acirc;y truyền h&igrave;nh c&aacute;p, ADSL, điện thoại: SINO.</span> </span></span></span></p>
-
 <p style="margin-left:24px; text-align:justify"><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:&quot;Times New Roman&quot;,serif">&nbsp; </span></span></span></p>
-
 <p style="margin-left:24px; text-align:justify"><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="color:#333333">9.&nbsp; &nbsp; Ống ruột g&agrave; &acirc;m tường, dầm, s&agrave;n loại 1</span> </span></span></span></p>
-
 <p style="margin-left:24px; text-align:justify"><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:&quot;Times New Roman&quot;,serif">&nbsp; </span></span></span></p>
-
 <p style="text-align:justify"><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:&quot;Times New Roman&quot;,serif"><strong><span style="color:red">Tất cả hạn mục thi c&ocirc;ng đảm bảo đ&uacute;ng y&ecirc;u cầu chất lượng, kỹ thuật, thi c&ocirc;ng đ&uacute;ng, đủ cấp phối b&ecirc; t&ocirc;ng, m&aacute;c vữa theo hồ sơ thiết kế</span></strong><strong> </strong></span></span></span></p>
-
 <p style="text-align:justify"><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:&quot;Times New Roman&quot;,serif">&nbsp; </span></span></span></p>
-
 <p style="text-align:justify"><span style="font-size:12pt"><span style="font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp;<strong><span style="color:#333333">&nbsp;QUY TR&Igrave;NH THI C&Ocirc;NG X&Acirc;Y DỰNG PHẦN TH&Ocirc;</span> </strong></span></span></p>
-
 <p style="text-align:justify"><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:&quot;Times New Roman&quot;,serif">&nbsp; </span></span></span></p>
-
 <p style="margin-left:24px; text-align:justify"><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="color:#333333">1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tổ chức c&ocirc;ng trường, l&agrave;m l&aacute;n trại cho c&ocirc;ng nh&acirc;n ( nếu mặt bằng cho ph&eacute;p ).</span> </span></span></span></p>
-
 <p style="margin-left:24px; text-align:justify"><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:&quot;Times New Roman&quot;,serif">&nbsp; </span></span></span></p>
-
 <p style="margin-left:24px; text-align:justify"><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="color:#333333">2.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Vệ sinh mặt bằng thi c&ocirc;ng, định vị tim cột, m&oacute;ng.</span> </span></span></span></p>
-
 <p style="margin-left:24px; text-align:justify"><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:&quot;Times New Roman&quot;,serif">&nbsp; </span></span></span></p>
-
 <p style="margin-left:24px; text-align:justify"><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="color:#333333">3.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Đ&agrave;o đất v&agrave; vận chuyển x&agrave; bần ra khỏi c&ocirc;ng tr&igrave;nh.</span> </span></span></span></p>
-
 <p style="margin-left:24px; text-align:justify"><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:&quot;Times New Roman&quot;,serif">&nbsp; </span></span></span></p>
-
 <p style="margin-left:24px; text-align:justify"><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="color:#333333">4.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Đ&agrave;o hố m&oacute;ng, thi c&ocirc;ng phần m&oacute;ng, m&oacute;ng đơn hoặc m&oacute;ng bằng &nbsp;( hoặc từ đầu cọc &eacute;p, cọc khoan nhồi trở l&ecirc;n).</span> </span></span></span></p>
-
 <p style="margin-left:24px; text-align:justify"><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:&quot;Times New Roman&quot;,serif">&nbsp; </span></span></span></p>
-
 <p style="margin-left:24px; text-align:justify"><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="color:#333333">5.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Thi c&ocirc;ng BTCT s&agrave;n tầng hầm, v&aacute;ch tầng hầm (nếu c&oacute;).</span> </span></span></span></p>
-
 <p style="margin-left:24px; text-align:justify"><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:&quot;Times New Roman&quot;,serif">&nbsp; </span></span></span></p>
-
 <p style="margin-left:24px; text-align:justify"><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="color:#333333">6.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Thi c&ocirc;ng BTCT m&oacute;ng, đ&agrave;, kiềng.</span> </span></span></span></p>
-
 <p style="margin-left:24px; text-align:justify"><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:&quot;Times New Roman&quot;,serif">&nbsp; </span></span></span></p>
-
 <p style="margin-left:24px; text-align:justify"><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="color:#333333">7.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Thi c&ocirc;ng hầm tự hoại, hố ga, Bể nước ngầm.</span> </span></span></span></p>
-
 <p style="margin-left:24px; text-align:justify"><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:&quot;Times New Roman&quot;,serif">&nbsp; </span></span></span></p>
-
 <p style="margin-left:24px; text-align:justify"><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="color:#333333">8.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lắp đặt hệ thống tho&aacute;t nước thải trong khu&ocirc;n vi&ecirc;n đất x&acirc;y dựng.</span> </span></span></span></p>
-
 <p style="margin-left:24px; text-align:justify"><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:&quot;Times New Roman&quot;,serif">&nbsp; </span></span></span></p>
-
 <p style="margin-left:24px; text-align:justify"><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="color:#333333">9.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Thi c&ocirc;ng c&aacute;c tấm s&agrave;n, cột, đ&agrave;, dầm, lanh t&ocirc;, m&aacute;i b&ecirc; t&ocirc;ng.</span> </span></span></span></p>
-
 <p style="margin-left:24px; text-align:justify"><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:&quot;Times New Roman&quot;,serif">&nbsp; </span></span></span></p>
-
 <p style="margin-left:24px; text-align:justify"><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="color:#333333">10.&nbsp;&nbsp;&nbsp; Đổ b&ecirc; t&ocirc;ng bản cầu thang theo thiết kế v&agrave; x&acirc;y bậc&nbsp;.</span> </span></span></span></p>
-
 <p style="margin-left:24px; text-align:justify"><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:&quot;Times New Roman&quot;,serif">&nbsp; </span></span></span></p>
-
 <p style="margin-left:24px; text-align:justify"><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="color:#333333">11.&nbsp;&nbsp;&nbsp; X&acirc;y t&ocirc; tường bao v&agrave; tường ngăn chia ph&ograve;ng.</span> </span></span></span></p>
-
 <p style="margin-left:24px; text-align:justify"><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:&quot;Times New Roman&quot;,serif">&nbsp; </span></span></span></p>
-
 <p style="text-align:justify">&nbsp;</p>
-
 <p style="text-align:justify"><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:&quot;Times New Roman&quot;,serif"><strong><u><span style="color:red">Lưu &yacute;:</span></u></strong><strong><u> &nbsp; </u></strong></span></span></span></p>
-
 <p style="text-align:justify"><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="color:#333333">- </span><strong><span style="color:#333333">C&ocirc;ng ty miễn trừ 50% ph&iacute; Tư vấn thiết kế hồ sơ thiết kế cơ sở v&agrave; thi c&ocirc;ng cho hợp đồng trọn g&oacute;i ph&acirc;n th&ocirc; v&agrave; 100% chi ph&iacute; hồ sơ thiết kế thi c&ocirc;ng cho hợp đồng trọn g&oacute;i ho&agrave;n thiện. ( &aacute;p dụng cho nh&agrave; phố v&agrave; biệt thự).</span></strong></span></span></span></p>
-
 <p style="text-align:justify"><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="color:#333333">Thi c&ocirc;ng x&acirc;y dựng kho xưởng, trường học, kh&aacute;ch sạn, nh&agrave; văn ph&ograve;ng&hellip;sẽ lập b&aacute;o gi&aacute; chi tiết theo từng hồ sơ thiết kế</span> </span></span></span></p>
-
 <p><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:&quot;Times New Roman&quot;,serif">Lh:<strong>C&Ocirc;NG TY TNHH</strong><strong> TƯ VẤN X&Acirc;Y DỰNG &amp;THƯƠNG MẠI DCONSTECH</strong></span></span></span></p>
-
 <p><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:&quot;Times New Roman&quot;,serif">Địa chỉ : 24 Trần Th&aacute;nh T&ocirc;ng , P.An Hải Bắc- Sơn Tr&agrave;- TP Đ&agrave; Nẵng</span></span></span></p>
-
 <p><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:&quot;Times New Roman&quot;,serif">Điện thoại :&nbsp;<strong>09</strong><strong>11412274 &ndash; 0906119274&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong></span></span></span></p>
-
 <p><span style="font-size:12pt"><span style="background-color:white"><span style="font-family:&quot;Times New Roman&quot;,serif">Email : lanluu.dconstech@gmail.com</span></span></span></p>
-
 <p>&nbsp;</p>
-
 <p>&nbsp;</p>
-
 <p>&nbsp;</p>
-
 <p>&nbsp;</p>
-
 <p>&nbsp;</p>
-
 <p>&nbsp;</p>
-
 <p>&nbsp;</p>
-
 <p>&nbsp;</p>
-
 <p>&nbsp;</p>
-
 <p>&nbsp;</p>
-', 2,'2020-01-16 01:08:44','2020-01-16 01:08:44');
-
-
-
-
--- --------------------------------------------------------
-
---
--- Table structure for table `pricing_category`
---
-
-CREATE TABLE `pricing_category` (
-  `id` int(11) NOT NULL,
-  `name_pricing_category` text NOT NULL,
-     `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `pricing_category`
---
-
-INSERT INTO `pricing_category` (`id`, `name_pricing_category`,`created_at`,`updated_at`) VALUES
-(1, 'Bảng giá thiết kế','2020-01-16 01:08:44','2020-01-16 01:08:44'),
-(2, 'Bảng giá thi công','2020-01-16 01:08:44','2020-01-16 01:08:44');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `project`
---
-
-CREATE TABLE `project` (
-  `id` int(11) NOT NULL,
-  `name_project` text NOT NULL,
-  `customer_name` text NOT NULL,
-  `investor` text NOT NULL,
-  `description` text NOT NULL,
-  `land_area` int(11) NOT NULL,
-  `building_area` int(11) NOT NULL,
-  `construction_progress` int(11) NOT NULL,
-  `total_amount` int(11) NOT NULL,
-  `project_category_id` int(11) NOT NULL,
-  `content` text NULL,
-  `image` text NOT NULL,
-  `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `project`
---
-
-INSERT INTO `project` (`id`, `name_project`, `customer_name`, `investor`, `description`, `land_area`, `building_area`, `construction_progress`, `total_amount`, `project_category_id`, `content`, `image`,`created_at`,`updated_at`) VALUES
-(1, 'MR PHƯỚC HOUSE_16_DCONSTECH', 'MR PHƯỚC', 'CÔNG TY TNHH TVXD & TM DCONSTECH', ' Mr Phước House: căn hộ được thiết kế 8 tầng vừa là nhà ở vừa làm căn hộ cho thuê nằm trên trục đường Trần Phú đắt địa nhưng không kém phần khó khăn trong công tác thi công. ', 800, 800, 150, 0, 2, '', 'project1.jpg','2020-01-16 01:08:44','2020-01-16 01:08:44'),
-(2, 'XUYÊN VILLA_17_DCONSTECH', 'XUYÊN', 'CÔNG TY TNHH TVXD & TM DCONSTECH', 'Biệt thự được thiết kế với phong cách hiện đại trên khu đất rộng 250m2 nằm trên trục đường Vip nhất của khu đô thi Nam Việt Á (đường Bùi Tá Hán) với các khoảng không làm cho ngôi nhà luôn đầy nắng và gió. ', 250, 350, 120, 0, 1, '', 'project2.jpg','2020-01-16 01:08:44','2020-01-16 01:08:44'),
-(3, 'VILLA OF BOSS_11_DCONSTECH', 'Boss', 'CÔNG TY TNHH TVXD & TM DCONSTECH', '\" Nhà của sếp \" Tựa đề đã nói lên tất cả. Cám ơn sếp đã tin tưởng chúng tôi, chúng tôi tự tin sẽ làm sếp hài lòng. Biệt thự 3 tầng với phong cách hiện đại tọa lạc tại một trong những khu Vip nhất Đà Nẵng \"', 250, 560, 90, 0, 1, '', 'project3.jpg','2020-01-16 01:08:44','2020-01-16 01:08:44'),
-(4, 'MS KHƯƠNG HOUSE_18_DCONSTECH', 'MS KHƯƠNG', 'CÔNG TY TNHH TVXD & TM DCONSTECH', 'Chuyện giờ mới kể : khởi công vào tháng 9 sương sương, trời thì vẫn cứ mưa, nhà thì vẫn cứ xây, ngồi nhà của ms Khương nên hình như vậy. Cảm ơn chị đã đặt trọn niềm tin vào chúng tôi để xây dựng ngôi nhà mơ ước.', 120, 185, 90, 0, 2, '', 'project4.png','2020-01-16 01:08:44','2020-01-16 01:08:44'),
-(5, 'MR KHÁNH HOUSE_15_DCONSTECH', 'Mr Khánh', 'CÔNG TY TNHH TVXD & TM DCONSTECH', 'Ngôi nhà 5 tầng ban đầu được đơn vị thiết kế S3 thiết kế với kết cấu thép với chi phí rất cao. Với sự tư vấn của chúng tôi, chủ đầu tư đã đồng ý chuyển sang phương án BTCT với chi phí phải chăng và mang lại hiệu quả lâu dài. ', 100, 500, 120, 0, 2, '', 'project5.jpg','2020-01-16 01:08:44','2020-01-16 01:08:44'),
-(6, 'MR THƯƠNG HOUSE_07_DCONSTECH', 'Mr Thương', 'CÔNG TY TNHH TVXD & TM DCONSTECH', 'Mr Thương House_25/05/2019. Ngôi nhà 3 tầng trên diện tích lô đất rộng 200m2 được thiết kế các không gian thoáng và nhiều ánh sáng như mong muốn của chủ nhà. ', 250, 420, 120, 0, 2, '', 'project6.jpg','2020-01-16 01:08:44','2020-01-16 01:08:44');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `project_category`
---
-
-CREATE TABLE `project_category` (
-  `id` int(11) NOT NULL,
-  `name` text NOT NULL,
-   `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `project_category`
---
-
-INSERT INTO `project_category` (`id`, `name`,`created_at`,`updated_at`) VALUES
-(1, 'Biệt thự','2020-01-16 01:08:44','2020-01-16 01:08:44'),
-(2, 'Nhà phố','2020-01-16 01:08:44','2020-01-16 01:08:44'),
-(3, 'Khách sạn-văn phòng','2020-01-16 01:08:44','2020-01-16 01:08:44');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `service`
---
-
-CREATE TABLE `service` (
-  `id` int(11) NOT NULL,
-  `name_service` text,
-  `content` text,
-  `service_category_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `service`
---
-
-INSERT INTO `service` (`id`, `name_service`, `content`, `service_category_id`) VALUES
-(1, 'Thiết kế kiến trúc', '<h2><strong>1. Dịch Vụ Thiết Kế Kiến Trúc Đà Nẵng</strong></h2>\r\n            <p>Với sự phát triển của xã hội hiện đại, thu nhập bình quân đầu người ngày càng tăng. Việc có một không gian sống đẹp là yêu cầu tối thiểu của bất kỳ cá nhân nào. Thiết kế kiến trúc thể hiện sự sáng tạo, đem đến một không gian sống đẹp, chất\r\n                lượng, tiện ích và tạo một môi trường sống thuận tiện, thoải mái.</p>\r\n            <p>\r\n                <br>\r\n                <a class=\"mwm-aal-item\" name=\"hieu-them-ve-thiet-ke-kien-truc-\"></a><strong><img class=\"alignnone size-full wp-image-2348\" src=\"img/project1.jpg\" alt=\"\" width=\"100%\" height=\"975\"  /></strong></p>\r\n            <p style=\"text-align: center;\"><em>Thiết kế kiến trúc nhà phố đẹp Đà Nẵng</em></p>\r\n            <h2><strong>2.Tìm hiểu thêm về thiết kế kiến trúc Đà Nẵng</strong></h2>\r\n            <p>Ngày nay, với xu hướng thiết kế kiến trúc cho các công trình nhà phố đang ngày càng trở nên phổ biến hơn. Chúng ta dễ dàng bắt gặp các cụm từ như “thiết kế kiến trúc”, “dịch vụ thiết kế kiến trúc”. Điều này nhằm đáp ứng tính hoàn thiện cho\r\n                các công trình xây dựng. Từ những ngôi nhà phố cấp 4 cho đến những căn biệt thự sang trọng. Nó thể hiện sự sáng tạo, tính chuyên nghiệp của các kiến trúc sư và là giải pháp tối ưu cho chủ nhà.</p>\r\n            <p>Đây là công việc sáng tạo trong sắp xếp không gian. Kết hợp giữa mặt bằng công năng, cấu trúc của một công trình. Sự bố trí, sắp đặt đó tạo nên một không gian sống đẹp, chất lượng, tiện ích. Tạo một môi trường sống thuận tiện, thoải\r\n                mái cho gia chủ.</p>\r\n            <p>Công việc này không những đòi hỏi tính tư duy, sáng tạo. Mà còn thể hiện tính thẩm mỹ cũng như sự hài hòa của ngôi nhà đối với môi trường sống xung quanh, thể hiện cá tính và phong cách của gia chủ.</p>\r\n\r\n            <p>\r\n                <a class=\"mwm-aal-item\" name=\"loi-ich-va-ac-iem-cua-dich-vu-thiet-ke-kien-truc-\"></a>\r\n            </p>\r\n            <h2><strong>3.Lợi ích và đặc điểm của dịch vụ thiết kế kiến trúc Đà Nẵng</strong></h2>\r\n            <p>Để thiết kế một công trình, điều kiện đầu tiên cần đáp ứng của một kiến trúc sư chính là kinh nghiệm, chuyên môn và sự sáng tạo. Sau khi khảo sát mặt bằng hiện trạng, kiến trúc sư sẽ biết được kết hợp như thế nào cho phù hợp giữa không gian\r\n                chung và mong muốn ý tưởng thiết kế, nhu cầu công năng của chủ nhà.</p>\r\n            <p>Khi ngôi nhà của bạn có được thiết kế kiến trúc rõ ràng, thì việc định hình phong cách, sắp xếp không gian nội thất, đồ đạc sẽ trở nên tối ưu hơn, tránh những chi phí phát sinh không đáng có. Ngoài ra còn loại bỏ tối đa các không gian thừa,\r\n                những chi tiết không cần thiết làm phát sinh chi phí nhưng không mang lại lợi ích công năng cho ngôi nhà. Đây chính là lợi ích của dịch vụ thiết kế kiến trúc mang lại. Bạn sẽ được đảm bảo rằng không gian sống và ngôi nhà của mình trở nên\r\n                hoàn hảo hơn.</p>\r\n            <p>Bạn có thể đưa ra ý tưởng, thể hiện gu thẫm mỹ của bản thân và nhận được sự hỗ trợ tư vấn từ kiến trúc sư sao cho để có được phương án thiết kế phù hợp nhất. Sẽ là một điều tuyệt vời khi phong cách sống của bạn được thể hiện lên ngôi nhà thân\r\n                yêu.\r\n            </p>', 1);
+',2);
 
 -- --------------------------------------------------------
 
@@ -834,12 +755,9 @@ CREATE TABLE `service_category` (
 --
 
 INSERT INTO `service_category` (`id`, `name`) VALUES
-(1, 'Thiết kế kiến trúc'),
-(2, 'Thiết kế cấu trúc'),
-(3, 'Thiết kế cơ điện MEPF'),
-(4, 'Thi công xây dựng'),
-(5, 'Tư vấn dám sát xây dựng'),
-(6, 'Thiết kế xin giấy phép');
+(1, 'Thiết kế công trình'),
+(2, 'Thi công xây dựng')
+;
 
 -- --------------------------------------------------------
 
@@ -937,18 +855,6 @@ ALTER TABLE `post_category`
 --
 -- Indexes for table `pricing`
 --
-ALTER TABLE `pricing`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `pricing_category`
---
-ALTER TABLE `pricing_category`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `project`
---
 ALTER TABLE `project`
   ADD PRIMARY KEY (`id`);
 
@@ -1020,17 +926,6 @@ ALTER TABLE `post_category`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `pricing`
---
-ALTER TABLE `pricing`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
---
--- AUTO_INCREMENT for table `pricing_category`
---
-ALTER TABLE `pricing_category`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
 --
 -- AUTO_INCREMENT for table `project`
 --

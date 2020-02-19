@@ -1,11 +1,12 @@
 @extends('masterPage')
-
+@section('title')
+{{$advisory->name_post}}
+@endsection
 @section('content')
    <section class="banner_area" style="background: url(../public/img/banner/single-page-banner2.jpg); background-size: cover">
         <div class="container">
             <div class="banner_inner_text">
-                <h4>{{$advisory->name_post}}</h4>
-
+                <h4><a href="/">Trang chủ</a> / <a href="/advisoryCategory/{{$advisory->post_category_id}}">{{$advisory->name}}</a> / {{$advisory->name_post}}</h4>
             </div>
         </div>
     </section>

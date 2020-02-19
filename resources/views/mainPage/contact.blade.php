@@ -28,24 +28,24 @@ Liên hệ
                     {{csrf_field()}}
                 <div class="form-group">
                     <div class="col-sm-12">
-                        <input type="text" class="form-control" id="name" placeholder="HỌ TÊN" name="full_name" value="" required>
+                        <input type="text" class="form-control" id="name" placeholder="HỌ TÊN (*)" name="full_name" value="" required>
                       
                     </div>
                 </div>
 
                 <div class="form-group">
                     <div class="col-sm-12">
-                        <input type="text" class="form-control" id="address" placeholder="ĐỊA CHỈ" name="address" value="" required>
+                        <input type="text" class="form-control" id="address" placeholder="ĐỊA CHỈ" name="address" value="" >
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="col-sm-12">
-                        <input type="number" class="form-control" id="phone" placeholder="SỐ ĐIỆN THOẠI" name="phone" value="" required>
+                        <input type="number" class="form-control" id="phone" placeholder="SỐ ĐIỆN THOẠI (*)" name="phone" value="" required>
                     </div>
                 </div>
                  <div class="form-group">
                     <div class="col-sm-12">
-                        <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+                        <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" >
                     </div>
                 </div>
                       <div class="form-group">
@@ -55,7 +55,7 @@ Liên hệ
                 </div>
                   <div class="form-group">
                     <div class="col-sm-12">
-                      <select name="demand" id="demand" class="form-control" required>
+                      <select name="demand" id="demand" class="form-control" >
                           <option value="" >-- Lựa chọn loại tư vấn --</option>
                           <option value="Thiết kế" >Thiết kế</option>
                           <option value="Thi công">Thi công</option>
@@ -64,7 +64,7 @@ Liên hệ
                 </div>
                  <div class="form-group">
                     <div class="col-sm-12">
-                      <select name="type" id="type" class="form-control" required>
+                      <select name="type" id="type" class="form-control" >
                           <option value="" >-- Lựa chọn loại công trình --</option>
                           <option value="Nhà phố, liên kế" >Nhà phố, liên kế</option>
                           <option value="Biệt thự">Biệt thự</option>

@@ -113,8 +113,8 @@ class AdminProject extends Controller
       }
       public function showAdd(){
         if(Request()->session()->has('id')){
-          $lists="App\projectCategory"::orderby('id','desc')->get();
-          return view('admin.mainPage.project.addproject')->with('projectCategory',$lists);
+          $lists="App\ProjectCategory"::orderby('id','desc')->get();
+          return view('admin.mainPage.project.addProject')->with('projectCategory',$lists);
 
         }
 

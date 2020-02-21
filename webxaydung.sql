@@ -82,8 +82,37 @@ INSERT INTO `users` (`id`, `username`,`password`) VALUES(1,'admin','admin');
 --
 -- Dumping data for table `contact`
 --
+CREATE TABLE `introduction` (
+  `id` int(11) NOT NULL,
+  `history` text NOT NULL,
+	`information` text NOT NULL,
+  `service` text NOT NULL,
+   `company_diagram` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+INSERT INTO `introduction` (`id`, `history`,`information`,`service`,`company_diagram`) 
+VALUES(1,
+'<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, nisi rerum necessitatibus vero commodi voluptatem nihil omnis corrupti similique. Officia sunt ex placeat libero nisi nemo laudantium autem reprehenderit ab.</p>
 
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum reprehenderit reiciendis, cumque velit repudiandae officia aperiam ab culpa commodi ratione cum consequatur amet accusantium minima quod, voluptatibus ducimus dicta sequi.</p>
+',
+'<p><span style="font-size:26px"><strong>T&ecirc;n doanh nghiệp</strong>:&nbsp;C&ocirc;ng Ty TNHH Tư Vấn X&acirc;y Dựng V&agrave; Thương Mại Dconstech</span></p>
+
+<p><span style="font-size:26px"><strong>Trụ sở ch&iacute;nh</strong>:&nbsp;24 Trần Th&aacute;nh T&ocirc;ng</span></p>
+
+<p><span style="font-size:26px"><strong>VP Đại Diện</strong>:&nbsp;189 L&ecirc; Đ&igrave;nh L&yacute;</span></p>
+
+<p><span style="font-size:26px"><strong>Ng&agrave;y Th&agrave;nh Lập</strong>:&nbsp;01/10/2018</span></p>
+',
+'<p><span style="font-size:26px">Thiết kế Kiến tr&uacute;c c&ocirc;ng tr&igrave;nh D&acirc;n dụng &amp; C&ocirc;ng nghiệp</span></p>
+
+<p><span style="font-size:26px">Thiết kế Kết cấu c&ocirc;ng tr&igrave;nh D&acirc;n dụng &amp; C&ocirc;ng nghiệp.</span></p>
+
+<p><span style="font-size:26px">Thiết kế Cơ-Điện c&ocirc;ng tr&igrave;nh D&acirc;n dụng &amp; C&ocirc;ng nghiệp</span></p>
+
+<p><span style="font-size:26px">Thi c&ocirc;ng c&ocirc;ng tr&igrave;nh D&acirc;n dụng &amp; C&ocirc;ng nghiệp.</span></p>
+',
+'');
 
 -- --------------------------------------------------------
 

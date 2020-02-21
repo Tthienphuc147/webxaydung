@@ -25,9 +25,9 @@ Giới thiệu
                     <h2>Lịch sử hình thành</h2>
 
                 </div>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, nisi rerum necessitatibus vero commodi voluptatem nihil omnis corrupti similique. Officia sunt ex placeat libero nisi nemo laudantium autem reprehenderit ab.
+                <p> Đang cập nhật...
                 </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum reprehenderit reiciendis, cumque velit repudiandae officia aperiam ab culpa commodi ratione cum consequatur amet accusantium minima quod, voluptatibus ducimus dicta sequi.</p>
+                
 
             </div>
         </div>

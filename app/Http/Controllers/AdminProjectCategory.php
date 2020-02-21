@@ -48,7 +48,7 @@ class AdminProjectCategory extends Controller
 
       public function showAdd(){
         if(Request()->session()->has('id')){
-          return view('admin.mainPage.projectcategory.addProjectCategory');
+          return view('admin.mainPage.projectCategory.addProjectCategory');
         }
 
         return redirect('/showlogin');

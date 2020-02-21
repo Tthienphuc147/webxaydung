@@ -45,7 +45,7 @@ Liên hệ
                 </div>
                  <div class="form-group">
                     <div class="col-sm-12">
-                        <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" >
+                        <input type="email" class="form-control" id="email" placeholder="EMAIL(*)" name="email" value="" >
                     </div>
                 </div>
                       <div class="form-group">

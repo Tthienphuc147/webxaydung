@@ -12,7 +12,7 @@
                                             </div>
                                              <div class="form-group">
                                                 <label for="image" class="col-form-label">Ảnh slide</label>
-                                                <img src="/public/image/slide/{{$slide->image_url}}" alt="">
+                                                <img src="/public/image/slide/{{$slide->image_url}}" alt="" width="300px">
                                                 <input id="image" type="file"  name="image_url"  >
 
                                             </div>

@@ -23,6 +23,8 @@ Route::get('/project/{unsigned_name}','ProjectController@showDetail');
 Route::get('/pricing/{unsigned_name}','PricingController@showDetail');
 /*admin*/
 Route::get('/admin','AdminController@showDashboard');
+Route::get('/admin/introductionView','AdminIntroduction@show');
+Route::post('/admin/introduction','AdminIntroduction@update');
 /*admin-contact*/
 Route::get('/admin/contactList','AdminController@showContactList');
 Route::get('/admin/contactDetail/{unsigned_name}','AdminController@showContactDetail');

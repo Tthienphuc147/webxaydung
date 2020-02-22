@@ -101,4 +101,16 @@
             </div>
         </div>
     </div>
+     <div class="footer_copy_right" >
+        <div class="container">
+            <div class="copy_right_inner">
+                <div class="pull-left">
+                    <h4 >
+                      Developed by NOSN team | email:nghiadh2016@gmail.com
+                    </h4>
+                </div>
+
+            </div>
+        </div>
+    </div>
 </footer>

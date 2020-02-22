@@ -39,6 +39,7 @@ DROP TABLE IF EXISTS `slide`;
 DROP TABLE IF EXISTS `slide_category`;
 DROP TABLE IF EXISTS `slide_image`;
 DROP TABLE IF EXISTS `users`;
+DROP TABLE IF EXISTS `introduction`;
 CREATE TABLE `comment` (
   `id` int(11) NOT NULL,
   `content` text NOT NULL,
@@ -112,7 +113,81 @@ VALUES(1,
 
 <p><span style="font-size:26px">Thi c&ocirc;ng c&ocirc;ng tr&igrave;nh D&acirc;n dụng &amp; C&ocirc;ng nghiệp.</span></p>
 ',
-'');
+'<table border="1" cellspacing="0" class="MsoTableGrid" style="border-collapse:collapse; border:solid windowtext 1.0pt">
+	<tbody>
+		<tr>
+			<td colspan="3" style="height:49.0pt; width:467.5pt">
+			<p style="text-align:center"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong>GI&Aacute;M ĐỐC</strong></span></span></p>
+
+			<p style="text-align:center"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong>Mr A</strong></span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3" style="height:40.0pt; width:467.5pt">
+			<p style="text-align:center"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong>PH&Oacute; GI&Aacute;M ĐỐC</strong></span></span></p>
+
+			<p style="text-align:center"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong>Mr A</strong></span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:60.25pt; width:155.8pt">
+			<p style="text-align:center"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong>PH&Ograve;NG KẾ TO&Aacute;N</strong></span></span></p>
+			</td>
+			<td style="height:60.25pt; width:155.85pt">
+			<p style="text-align:center"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong>PH&Ograve;NG KỸ THUẬT</strong></span></span></p>
+			</td>
+			<td style="height:60.25pt; width:155.85pt">
+			<p style="text-align:center"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong>PH&Ograve;NG KHO B&Atilde;I-VẬT TƯ</strong></span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:67.9pt; width:155.8pt">
+			<p style="text-align:center"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong>TRƯỞNG PH&Ograve;NG</strong></span></span></p>
+
+			<p style="text-align:center"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong>Mr A</strong></span></span></p>
+			</td>
+			<td style="height:67.9pt; width:155.85pt">
+			<p style="text-align:center"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong>TRƯỞNG PH&Ograve;NG</strong></span></span></p>
+
+			<p style="text-align:center"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong>Mr A</strong></span></span></p>
+			</td>
+			<td style="height:67.9pt; width:155.85pt">
+			<p style="text-align:center"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong>TRƯỞNG PH&Ograve;NG</strong></span></span></p>
+
+			<p style="text-align:center"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong>Mr A</strong></span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:67.0pt; width:155.8pt">
+			<p style="text-align:center"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong>PH&Oacute; PH&Ograve;NG</strong></span></span></p>
+
+			<p style="text-align:center"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong>Mr B</strong></span></span></p>
+			</td>
+			<td style="height:67.0pt; width:155.85pt">
+			<p style="text-align:center"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong>PH&Oacute; PH&Ograve;NG</strong></span></span></p>
+
+			<p style="text-align:center"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong>Mr B</strong></span></span></p>
+			</td>
+			<td style="height:67.0pt; width:155.85pt">
+			<p style="text-align:center"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong>PH&Oacute; PH&Ograve;NG</strong></span></span></p>
+
+			<p style="text-align:center"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong>Mr B</strong></span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:56.65pt; width:155.8pt">
+			<p style="text-align:center"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong>C&Ocirc;NG NH&Acirc;N</strong></span></span></p>
+			</td>
+			<td style="height:56.65pt; width:155.85pt">
+			<p style="text-align:center"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong>KỸ THUẬT HIỆN TRƯỜNG</strong></span></span></p>
+			</td>
+			<td style="height:56.65pt; width:155.85pt">
+			<p style="text-align:center"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong>BẢO VỆ</strong></span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+');
 
 -- --------------------------------------------------------
 

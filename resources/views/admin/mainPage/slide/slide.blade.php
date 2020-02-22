@@ -21,7 +21,7 @@
                                             <tr>
                                                 <td hidden="true">{{$item->id}}</td>
                                                 <td>{{$key+1}}</td>
-                                                <td><img src="/public/image/slide/{{$item->image_url}}" alt=""></td>
+                                                <td><img src="/public/image/slide/{{$item->image_url}}" alt="" width="500px"></td>
                                                 <td style="display:flex;justify-content:center"><a href="/admin/slide/{{$item->id}}"><i class="fas fa-eye"></i></a></td>
                                             </tr>
                                             @endforeach

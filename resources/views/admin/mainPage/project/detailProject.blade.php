@@ -17,9 +17,9 @@
                                                 <input id="name_project" type="text" class="form-control" name="name_project"
                                                  placeholder="{{$projectDetail->name_project}}">
                                             </div>
-                                             <div class="form-group">
+                                             <div class="form-group d-flex flex-column">
                                                 <label for="image" class="col-form-label">Ảnh giới thiệu</label>
-                                                   <img src="/public/image/project/{{ $projectDetail->image}}" alt="" class="form-control">
+                                                   <img src="/public/image/project/{{ $projectDetail->image}}" alt="" width="500px">
                                                 <input id="image" type="file"  name="image" >
 
                                             </div>

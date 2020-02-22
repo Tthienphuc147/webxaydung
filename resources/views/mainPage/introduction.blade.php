@@ -25,7 +25,7 @@ Giới thiệu
                     <h2>Lịch sử hình thành</h2>
 
                 </div>
-               <div>
+               <div >
                      {!!$data->history!!}
                </div>
             </div>
@@ -52,7 +52,7 @@ Giới thiệu
                         <div class="main_c_b_title">
                             <h2>thông tin chung</h2>
                         </div>
-                        <div  style="display:flex;justify-content:center">
+                        <div class="introduce--info"  >
             
                      {!!$data->information!!}
                         
@@ -67,7 +67,7 @@ Giới thiệu
                         <div class="main_c_b_title">
                             <h2>Nghành nghề kinh doanh</h2>
                         </div>
-                        <div  style="display:flex;justify-content:center">
+                        <div  class="introduce--info introduce--service"  >
             
                         {!!$data->service!!}
                         
@@ -82,7 +82,7 @@ Giới thiệu
                         <div class="main_c_b_title">
                             <h2>Cơ cấu<br class="title_br">tổ chức công ty</h2>
                         </div>
-                        <div class="diagram">
+                        <div class="introduce--info introduce--service">
                             {!!$data->company_diagram!!}
                         </div>
                 </section>

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
      <meta name="description"
-		content="Công Ty TNHH Tư Vấn Xây Dựng Và Thương Mại Dconstech." />
+		content="Công Ty TNHH Tư Vấn Xây Dựng Và Thương Mại Dconstech chuyên thiết kế nhà phố,biệt thử,văn phòng.Cung cấp những dịch vụ chất lượng luôn đồng hành cùng khách hàng" />
 	<meta name="keywords" content="Công Ty TNHH Tư Vấn Xây Dựng Và Thương Mại Dconstech" />
     <meta name="abstract" content="Công Ty TNHH Tư Vấn Xây Dựng Và Thương Mại Dconstech" />
     <meta property="og:locale" content="vi_VN" />

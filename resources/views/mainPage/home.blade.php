@@ -14,11 +14,6 @@
                     <a class="slider_btn" href="/introduction">GIỚI THIỆU</a>
                 </div>
             </div>
-            <!-- <div class="col-md-7">
-                <div class="b_company_image">
-                    <img src="{{ asset('/public/img/about.jpg')}}" alt="">
-                </div>
-            </div> -->
         </div>
     </div>
 </section>

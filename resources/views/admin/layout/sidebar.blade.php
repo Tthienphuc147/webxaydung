@@ -126,6 +126,17 @@
                                     </ul>
                                 </div>
                             </li>
+                             <li class="nav-item">
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-12" aria-controls="submenu-5"><i class="fas fa-fw fas fa-phone-square"></i>Quản lý trang giới thiệu</a>
+                                <div id="submenu-12" class="collapse submenu" style="">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/admin/introductionView">Chỉnh sửa thông tin</a>
+                                        </li>
+                                      
+                                    </ul>
+                                </div>
+                            </li>
                            
                         </ul>
                     </div>

@@ -302,7 +302,7 @@
 <div style="color:#555555;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;line-height:1.5;padding-top:10px;padding-right:38px;padding-bottom:10px;padding-left:38px;">
 <div style="line-height: 1.5; font-size: 12px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; color: #555555; mso-line-height-alt: 18px;">
 <p style="line-height: 1.5; word-break: break-word; text-align: center; font-family: inherit; mso-line-height-alt: NaNpx; margin: 0;"><strong><span style="font-size: 14px;">Dconstech xin cảm ơn {{$name}} đã gửi thông tin để tư vấn.</span></strong></p>
-<p style="line-height: 1.5; word-break: break-word; text-align: center; font-family: inherit; mso-line-height-alt: NaNpx; margin: 0;"><strong><span style="font-size: 14px;">Chúng tôi đã đọc qua thông tin tư vấn của bạn.Bạn hãy vui lòng liên hệ đến số điện thoại 093 478 72 46 để trao đổi cụ thể hơn.</span></strong></p>
+<p style="line-height: 1.5; word-break: break-word; text-align: center; font-family: inherit; mso-line-height-alt: NaNpx; margin: 0;"><strong><span style="font-size: 14px;">Chúng tôi đã đọc qua thông tin tư vấn của bạn.Chúng tôi sẽ liên hệ với bạn sớm.</span></strong></p>
 <p style="line-height: 1.5; word-break: break-word; font-family: inherit; mso-line-height-alt: NaNpx; margin: 0;"> </p>
 </div>
 </div>

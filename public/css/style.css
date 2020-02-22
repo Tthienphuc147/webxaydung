@@ -69,8 +69,14 @@ ul {
 }
 
 .introduce--info {
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
     font-size: 2.5rem;
     line-height: 5rem;
+}
+.introduce--service {
+    align-items: center;
 }
 
 ul.introduce--info li span:first-child {
@@ -4211,12 +4217,12 @@ iframe {
 .footer_copy_right {
     text-align: center;
     background: #262a31;
-    padding: 41px 0px;
+    padding: 20px 0px;
 }
 
 .footer_copy_right h4 {
     color: #e8e8e8;
-    font-size: 18px;
+    font-size: 12px;
     font-family: "Open Sans", sans-serif;
 }
 
@@ -4509,6 +4515,12 @@ hr {
         height: 60px;
         line-height: 60px;
     }
+    .project_detail .detail_inner img{
+    width: 100%;
+    padding-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+}
 }
 
 @media screen and (max-width: 569px) {

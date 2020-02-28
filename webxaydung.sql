@@ -40,6 +40,13 @@ DROP TABLE IF EXISTS `slide_category`;
 DROP TABLE IF EXISTS `slide_image`;
 DROP TABLE IF EXISTS `users`;
 DROP TABLE IF EXISTS `introduction`;
+DROP TABLE IF EXISTS `role`;
+CREATE TABLE `Role`(
+	`id` int(11) NOT NULL,
+	`rolename` text NOT NULL
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+INSERT INTO `role`(`id`,`rolename`) VALUES(1,'admin'),(2,'user');
+
 CREATE TABLE `comment` (
   `id` int(11) NOT NULL,
   `content` text NOT NULL,
@@ -75,11 +82,12 @@ CREATE TABLE `contact` (
 CREATE TABLE `users` (
   `id` int(11) NOT NULL,
   `username` text NOT NULL,
-  `password` text NOT NULL
+  `password` text NOT NULL,
+  `id_role` int(11) NOT NULL DEFAULT 2
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
-INSERT INTO `users` (`id`, `username`,`password`) VALUES(1,'admin','admin');
+INSERT INTO `users` (`id`, `username`,`password`,`id_role`) VALUES(1,'admin','admin',1),(2,'user','user',2);
 --
 -- Dumping data for table `contact`
 --
@@ -113,81 +121,7 @@ VALUES(1,
 
 <p><span style="font-size:26px">Thi c&ocirc;ng c&ocirc;ng tr&igrave;nh D&acirc;n dụng &amp; C&ocirc;ng nghiệp.</span></p>
 ',
-'<table border="1" cellspacing="0" class="MsoTableGrid" style="border-collapse:collapse; border:solid windowtext 1.0pt">
-	<tbody>
-		<tr>
-			<td colspan="3" style="height:49.0pt; width:467.5pt">
-			<p style="text-align:center"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong>GI&Aacute;M ĐỐC</strong></span></span></p>
-
-			<p style="text-align:center"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong>Mr A</strong></span></span></p>
-			</td>
-		</tr>
-		<tr>
-			<td colspan="3" style="height:40.0pt; width:467.5pt">
-			<p style="text-align:center"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong>PH&Oacute; GI&Aacute;M ĐỐC</strong></span></span></p>
-
-			<p style="text-align:center"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong>Mr A</strong></span></span></p>
-			</td>
-		</tr>
-		<tr>
-			<td style="height:60.25pt; width:155.8pt">
-			<p style="text-align:center"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong>PH&Ograve;NG KẾ TO&Aacute;N</strong></span></span></p>
-			</td>
-			<td style="height:60.25pt; width:155.85pt">
-			<p style="text-align:center"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong>PH&Ograve;NG KỸ THUẬT</strong></span></span></p>
-			</td>
-			<td style="height:60.25pt; width:155.85pt">
-			<p style="text-align:center"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong>PH&Ograve;NG KHO B&Atilde;I-VẬT TƯ</strong></span></span></p>
-			</td>
-		</tr>
-		<tr>
-			<td style="height:67.9pt; width:155.8pt">
-			<p style="text-align:center"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong>TRƯỞNG PH&Ograve;NG</strong></span></span></p>
-
-			<p style="text-align:center"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong>Mr A</strong></span></span></p>
-			</td>
-			<td style="height:67.9pt; width:155.85pt">
-			<p style="text-align:center"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong>TRƯỞNG PH&Ograve;NG</strong></span></span></p>
-
-			<p style="text-align:center"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong>Mr A</strong></span></span></p>
-			</td>
-			<td style="height:67.9pt; width:155.85pt">
-			<p style="text-align:center"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong>TRƯỞNG PH&Ograve;NG</strong></span></span></p>
-
-			<p style="text-align:center"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong>Mr A</strong></span></span></p>
-			</td>
-		</tr>
-		<tr>
-			<td style="height:67.0pt; width:155.8pt">
-			<p style="text-align:center"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong>PH&Oacute; PH&Ograve;NG</strong></span></span></p>
-
-			<p style="text-align:center"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong>Mr B</strong></span></span></p>
-			</td>
-			<td style="height:67.0pt; width:155.85pt">
-			<p style="text-align:center"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong>PH&Oacute; PH&Ograve;NG</strong></span></span></p>
-
-			<p style="text-align:center"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong>Mr B</strong></span></span></p>
-			</td>
-			<td style="height:67.0pt; width:155.85pt">
-			<p style="text-align:center"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong>PH&Oacute; PH&Ograve;NG</strong></span></span></p>
-
-			<p style="text-align:center"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong>Mr B</strong></span></span></p>
-			</td>
-		</tr>
-		<tr>
-			<td style="height:56.65pt; width:155.8pt">
-			<p style="text-align:center"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong>C&Ocirc;NG NH&Acirc;N</strong></span></span></p>
-			</td>
-			<td style="height:56.65pt; width:155.85pt">
-			<p style="text-align:center"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong>KỸ THUẬT HIỆN TRƯỜNG</strong></span></span></p>
-			</td>
-			<td style="height:56.65pt; width:155.85pt">
-			<p style="text-align:center"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong>BẢO VỆ</strong></span></span></p>
-			</td>
-		</tr>
-	</tbody>
-</table>
-');
+'slider-1.jpg');
 
 -- --------------------------------------------------------
 
@@ -202,15 +136,15 @@ CREATE TABLE `post` (
   `description` text DEFAULT NULL,
   `content` text NOT NULL,
   `image` text DEFAULT NULL,
-  `date` date DEFAULT NULL
+  `status` int(11) DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `post`
 --
 
-INSERT INTO `post` (`id`, `post_category_id`, `name_post`, `description`, `content`, `image`, `date`) VALUES
-(2, 1, 'Kiểu trang tri tường đẹp hợp phong thủy', 'Trang trí nhà hợp phong thủy sẽ giúp chúng ta có thêm những may mắn trong dịp đầu năm mới. 10 ý tưởng trang trí nhà đơn giản nhưng hiệu quả và hợp phong thủy dưới đây rất hữu ích để bạn tham khảo.', '<p><strong>Trang tr&iacute; nh&agrave; hợp phong thủy sẽ gi&uacute;p ch&uacute;ng ta c&oacute; th&ecirc;m những may mắn trong dịp đầu năm mới.</strong></p>\r\n\r\n <p>10 &yacute; tưởng trang tr&iacute; nh&agrave; đơn giản nhưng hiệu quả v&agrave; hợp phong thủy dưới đ&acirc;y rất hữu &iacute;ch để bạn tham khảo.</p>\r\n<p><strong>1. Chọn m&agrave;u sắc một c&aacute;ch thận trọng</strong></p>\r\n<p>Nếu một bức tường được sơn bằng m&agrave;u sơn cũ, x&aacute;m xịt hay bất kỳ m&agrave;u sơn n&agrave;o cảm thấy giống như vậy khiến ta thấy buồn tẻ v&agrave; nh&agrave;m ch&aacute;n, trong khi một một bức tường được sơn bằng m&agrave;u\r\n                            sơn mới, hoặc sơn những m&agrave;u sắc s&aacute;ng sửa, sạch sẽ như đem đến một hơi thở mới v&agrave; năng lượng cho cuộc sống cũng như to&agrave;n bộ kh&ocirc;ng gian của ng&ocirc;i nh&agrave;.</p>\r\n\r\n\r\n\r\n                        <p><strong>2. Để đồ đạc ra khoảng kh&ocirc;ng rộng</strong></p>\r\n\r\n                        <p>Khi nghe điều n&agrave;y c&oacute; vẻ kh&aacute; mơ hồ, nhưng n&oacute; thực sự kh&aacute; đơn giản. H&atilde;y chắc chắn rằng bất kỳ đồ đạc được sắp xếp n&ecirc;n để lại một khoảng trống th&iacute;ch hợp xung quanh &ndash; khi\r\n                            bạn đi v&agrave;o ph&ograve;ng kh&aacute;ch, kh&ocirc;ng n&ecirc;n để ch&acirc;n bị chạm v&agrave;o lưng ghế. Những phụ kiện nhỏ hoặc những thứ tượng tự ch&uacute;ng ta n&ecirc;n cất trong tủ quần &aacute;o trong ph&ograve;ng\r\n                            ngủ. Như vậy, ch&uacute;ng ta sẽ c&oacute; th&ecirc;m nhiều kh&ocirc;ng gian khi đồ đạc được sắp xếp gọn g&agrave;ng m&agrave; vẫn giữ được số lượng thực tế vốn c&oacute;.</p>\r\n\r\n\r\n\r\n                        <p><strong>3. Kết hợp trang tr&iacute; ở tr&ecirc;n cao</strong></p>\r\n\r\n                        <p>Một căn ph&ograve;ng được b&agrave;i tr&iacute; theo phong thủy sẽ đem lại cho bạn cảm gi&aacute;c an to&agrave;n v&agrave; thoải m&aacute;i hơn. Một sản phẩm mang t&iacute;nh chất nghệ thuật được treo l&ecirc;n cao, hoặc một b&oacute;ng\r\n                            đ&egrave;n y&ecirc;u th&iacute;ch được n&acirc;ng l&ecirc;n tr&ecirc;n nhằm thu h&uacute;t &aacute;nh mắt hướng l&ecirc;n, được cho l&agrave; một thủ thuật n&acirc;ng cao t&acirc;m trạng. Nếu n&oacute; kh&ocirc;ng c&oacute;\r\n                            &yacute; nghĩa trong kh&ocirc;ng gian nh&agrave; bạn, th&igrave; h&atilde;y thử một chiến lược n&acirc;ng cao tầm mắt, chẳng hạn như gắn c&aacute;c vật trang tr&iacute; cho cửa sổ gần trần nh&agrave; hoặc sơn trần nh&agrave;\r\n                            đẹp, nhẹ nh&agrave;ng h&agrave;i h&ograve;a.</p>\r\n', '1.jpg', '2020-01-16')
+INSERT INTO `post` (`id`, `post_category_id`, `name_post`, `description`, `content`, `image`, `status`) VALUES
+(2, 1, 'Kiểu trang tri tường đẹp hợp phong thủy', 'Trang trí nhà hợp phong thủy sẽ giúp chúng ta có thêm những may mắn trong dịp đầu năm mới. 10 ý tưởng trang trí nhà đơn giản nhưng hiệu quả và hợp phong thủy dưới đây rất hữu ích để bạn tham khảo.', '<p><strong>Trang tr&iacute; nh&agrave; hợp phong thủy sẽ gi&uacute;p ch&uacute;ng ta c&oacute; th&ecirc;m những may mắn trong dịp đầu năm mới.</strong></p>\r\n\r\n <p>10 &yacute; tưởng trang tr&iacute; nh&agrave; đơn giản nhưng hiệu quả v&agrave; hợp phong thủy dưới đ&acirc;y rất hữu &iacute;ch để bạn tham khảo.</p>\r\n<p><strong>1. Chọn m&agrave;u sắc một c&aacute;ch thận trọng</strong></p>\r\n<p>Nếu một bức tường được sơn bằng m&agrave;u sơn cũ, x&aacute;m xịt hay bất kỳ m&agrave;u sơn n&agrave;o cảm thấy giống như vậy khiến ta thấy buồn tẻ v&agrave; nh&agrave;m ch&aacute;n, trong khi một một bức tường được sơn bằng m&agrave;u\r\n                            sơn mới, hoặc sơn những m&agrave;u sắc s&aacute;ng sửa, sạch sẽ như đem đến một hơi thở mới v&agrave; năng lượng cho cuộc sống cũng như to&agrave;n bộ kh&ocirc;ng gian của ng&ocirc;i nh&agrave;.</p>\r\n\r\n\r\n\r\n                        <p><strong>2. Để đồ đạc ra khoảng kh&ocirc;ng rộng</strong></p>\r\n\r\n                        <p>Khi nghe điều n&agrave;y c&oacute; vẻ kh&aacute; mơ hồ, nhưng n&oacute; thực sự kh&aacute; đơn giản. H&atilde;y chắc chắn rằng bất kỳ đồ đạc được sắp xếp n&ecirc;n để lại một khoảng trống th&iacute;ch hợp xung quanh &ndash; khi\r\n                            bạn đi v&agrave;o ph&ograve;ng kh&aacute;ch, kh&ocirc;ng n&ecirc;n để ch&acirc;n bị chạm v&agrave;o lưng ghế. Những phụ kiện nhỏ hoặc những thứ tượng tự ch&uacute;ng ta n&ecirc;n cất trong tủ quần &aacute;o trong ph&ograve;ng\r\n                            ngủ. Như vậy, ch&uacute;ng ta sẽ c&oacute; th&ecirc;m nhiều kh&ocirc;ng gian khi đồ đạc được sắp xếp gọn g&agrave;ng m&agrave; vẫn giữ được số lượng thực tế vốn c&oacute;.</p>\r\n\r\n\r\n\r\n                        <p><strong>3. Kết hợp trang tr&iacute; ở tr&ecirc;n cao</strong></p>\r\n\r\n                        <p>Một căn ph&ograve;ng được b&agrave;i tr&iacute; theo phong thủy sẽ đem lại cho bạn cảm gi&aacute;c an to&agrave;n v&agrave; thoải m&aacute;i hơn. Một sản phẩm mang t&iacute;nh chất nghệ thuật được treo l&ecirc;n cao, hoặc một b&oacute;ng\r\n                            đ&egrave;n y&ecirc;u th&iacute;ch được n&acirc;ng l&ecirc;n tr&ecirc;n nhằm thu h&uacute;t &aacute;nh mắt hướng l&ecirc;n, được cho l&agrave; một thủ thuật n&acirc;ng cao t&acirc;m trạng. Nếu n&oacute; kh&ocirc;ng c&oacute;\r\n                            &yacute; nghĩa trong kh&ocirc;ng gian nh&agrave; bạn, th&igrave; h&atilde;y thử một chiến lược n&acirc;ng cao tầm mắt, chẳng hạn như gắn c&aacute;c vật trang tr&iacute; cho cửa sổ gần trần nh&agrave; hoặc sơn trần nh&agrave;\r\n                            đẹp, nhẹ nh&agrave;ng h&agrave;i h&ograve;a.</p>\r\n', '1.jpg', 1)
 ;
 
 -- --------------------------------------------------------
@@ -265,14 +199,15 @@ CREATE TABLE `project` (
   `content` text NULL,
   `image` text NOT NULL,
   `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `status` int(11) DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `project`
 --
 
-INSERT INTO `project` (`id`, `name_project`, `customer_name`, `investor`, `description`, `land_area`, `building_area`, `construction_progress`, `total_amount`, `project_category_id`, `content`, `image`,`created_at`,`updated_at`) VALUES
+INSERT INTO `project` (`id`, `name_project`, `customer_name`, `investor`, `description`, `land_area`, `building_area`, `construction_progress`, `total_amount`, `project_category_id`, `content`, `image`,`created_at`,`updated_at`,`status`) VALUES
 (1, 'MR PHƯỚC HOUSE_16_DCONSTECH', 'MR PHƯỚC', 'CÔNG TY TNHH TVXD & TM DCONSTECH', ' Mr Phước House: căn hộ được thiết kế 8 tầng vừa là nhà ở vừa làm căn hộ cho thuê nằm trên trục đường Trần Phú đắt địa nhưng không kém phần khó khăn trong công tác thi công. ', 800, 800, 150, 0, 2, '
 Edit your toolbar now!
 
@@ -285,7 +220,7 @@ Edit your toolbar now!
 <p><strong>C&ocirc;ng t&aacute;c v&aacute;n khu&ocirc;n m&oacute;ng</strong></p>
 
 <p><img alt="Không có mô tả ảnh." src="https://scontent.fdad5-1.fna.fbcdn.net/v/t1.0-9/p720x720/68720191_700572403748182_4051921139738345472_o.jpg?_nc_cat=102&amp;_nc_ohc=99r1RvUm3JUAX9vmrOL&amp;_nc_ht=scontent.fdad5-1.fna&amp;_nc_tp=6&amp;oh=7a9f9c2b1ddfe762259999fab1ebdaa6&amp;oe=5EFE52A7" /></p>
-', 'project1.jpg','2020-01-16 01:08:44','2020-01-16 01:08:44'),
+', 'project1.jpg','2020-01-16 01:08:44','2020-01-16 01:08:44',1),
 (2, 'XUYÊN VILLA_17_DCONSTECH', 'XUYÊN', 'CÔNG TY TNHH TVXD & TM DCONSTECH', 'Biệt thự được thiết kế với phong cách hiện đại trên khu đất rộng 250m2 nằm trên trục đường Vip nhất của khu đô thi Nam Việt Á (đường Bùi Tá Hán) với các khoảng không làm cho ngôi nhà luôn đầy nắng và gió. ', 250, 350, 120, 0, 1, '<p><strong>&Eacute;p cừ C chống sạt nh&agrave; l&acirc;n cận</strong></p>
 
 <p><img alt="Trong hình ảnh có thể có: một hoặc nhiều người, mọi người đang đứng và ngoài trời" src="https://scontent.fdad5-1.fna.fbcdn.net/v/t1.0-9/p720x720/70433355_714322199039869_6215581485705986048_o.jpg?_nc_cat=109&amp;_nc_ohc=tHTVJ1Wepe4AX8IEUqJ&amp;_nc_ht=scontent.fdad5-1.fna&amp;_nc_tp=6&amp;oh=e8efea1d607491d6762924e4ad0fe03a&amp;oe=5EC5886A" /></p>
@@ -299,7 +234,7 @@ Edit your toolbar now!
 <p><img alt="Trong hình ảnh có thể có: bầu trời, cây và ngoài trời" src="https://scontent.fdad5-1.fna.fbcdn.net/v/t1.0-9/p720x720/70037553_714321729039916_9100853520596205568_o.jpg?_nc_cat=107&amp;_nc_ohc=KqLl8lohUPwAX_3U9mu&amp;_nc_ht=scontent.fdad5-1.fna&amp;_nc_tp=6&amp;oh=cf9e5fe826ce38a561c680ea35fb808c&amp;oe=5F0303DC" /></p>
 
 <p>&nbsp;</p>
-', 'project2.jpg','2020-01-16 01:08:44','2020-01-16 01:08:44'),
+', 'project2.jpg','2020-01-16 01:08:44','2020-01-16 01:08:44',1),
 (3, 'VILLA OF BOSS_11_DCONSTECH', 'Boss', 'CÔNG TY TNHH TVXD & TM DCONSTECH', '\" Nhà của sếp \" Tựa đề đã nói lên tất cả. Cám ơn sếp đã tin tưởng chúng tôi, chúng tôi tự tin sẽ làm sếp hài lòng. Biệt thự 3 tầng với phong cách hiện đại tọa lạc tại một trong những khu Vip nhất Đà Nẵng \"', 250, 560, 90, 0, 1, '<p><strong>X&acirc;y tường</strong></p>
 
 <p><img alt="Trong hình ảnh có thể có: giày và ngoài trời" src="https://scontent.fdad5-1.fna.fbcdn.net/v/t1.0-9/p720x720/69636737_706997406439015_8391769409462468608_o.jpg?_nc_cat=107&amp;_nc_ohc=SlJuYq2VCssAX__7Luo&amp;_nc_ht=scontent.fdad5-1.fna&amp;_nc_tp=6&amp;oh=9786dd4e9dedf447f8b332d6667026b2&amp;oe=5F03503F" /></p>
@@ -318,10 +253,10 @@ Edit your toolbar now!
 
 
 <p>&nbsp;</p>
-', 'project3.jpg','2020-01-16 01:08:44','2020-01-16 01:08:44'),
-(4, 'MS KHƯƠNG HOUSE_18_DCONSTECH', 'MS KHƯƠNG', 'CÔNG TY TNHH TVXD & TM DCONSTECH', 'Chuyện giờ mới kể : khởi công vào tháng 9 sương sương, trời thì vẫn cứ mưa, nhà thì vẫn cứ xây, ngồi nhà của ms Khương nên hình như vậy. Cảm ơn chị đã đặt trọn niềm tin vào chúng tôi để xây dựng ngôi nhà mơ ước.', 120, 185, 90, 0, 2, '', 'project4.png','2020-01-16 01:08:44','2020-01-16 01:08:44'),
-(5, 'MR KHÁNH HOUSE_15_DCONSTECH', 'Mr Khánh', 'CÔNG TY TNHH TVXD & TM DCONSTECH', 'Ngôi nhà 5 tầng ban đầu được đơn vị thiết kế S3 thiết kế với kết cấu thép với chi phí rất cao. Với sự tư vấn của chúng tôi, chủ đầu tư đã đồng ý chuyển sang phương án BTCT với chi phí phải chăng và mang lại hiệu quả lâu dài. ', 100, 500, 120, 0, 2, '', 'project5.jpg','2020-01-16 01:08:44','2020-01-16 01:08:44'),
-(6, 'MR THƯƠNG HOUSE_07_DCONSTECH', 'Mr Thương', 'CÔNG TY TNHH TVXD & TM DCONSTECH', 'Mr Thương House_25/05/2019. Ngôi nhà 3 tầng trên diện tích lô đất rộng 200m2 được thiết kế các không gian thoáng và nhiều ánh sáng như mong muốn của chủ nhà. ', 250, 420, 120, 0, 2, '', 'project6.jpg','2020-01-16 01:08:44','2020-01-16 01:08:44');
+', 'project3.jpg','2020-01-16 01:08:44','2020-01-16 01:08:44',1),
+(4, 'MS KHƯƠNG HOUSE_18_DCONSTECH', 'MS KHƯƠNG', 'CÔNG TY TNHH TVXD & TM DCONSTECH', 'Chuyện giờ mới kể : khởi công vào tháng 9 sương sương, trời thì vẫn cứ mưa, nhà thì vẫn cứ xây, ngồi nhà của ms Khương nên hình như vậy. Cảm ơn chị đã đặt trọn niềm tin vào chúng tôi để xây dựng ngôi nhà mơ ước.', 120, 185, 90, 0, 2, '', 'project4.png','2020-01-16 01:08:44','2020-01-16 01:08:44',1),
+(5, 'MR KHÁNH HOUSE_15_DCONSTECH', 'Mr Khánh', 'CÔNG TY TNHH TVXD & TM DCONSTECH', 'Ngôi nhà 5 tầng ban đầu được đơn vị thiết kế S3 thiết kế với kết cấu thép với chi phí rất cao. Với sự tư vấn của chúng tôi, chủ đầu tư đã đồng ý chuyển sang phương án BTCT với chi phí phải chăng và mang lại hiệu quả lâu dài. ', 100, 500, 120, 0, 2, '', 'project5.jpg','2020-01-16 01:08:44','2020-01-16 01:08:44',1),
+(6, 'MR THƯƠNG HOUSE_07_DCONSTECH', 'Mr Thương', 'CÔNG TY TNHH TVXD & TM DCONSTECH', 'Mr Thương House_25/05/2019. Ngôi nhà 3 tầng trên diện tích lô đất rộng 200m2 được thiết kế các không gian thoáng và nhiều ánh sáng như mong muốn của chủ nhà. ', 250, 420, 120, 0, 2, '', 'project6.jpg','2020-01-16 01:08:44','2020-01-16 01:08:44',1);
 
 -- --------------------------------------------------------
 
@@ -928,7 +863,8 @@ INSERT INTO `slide_image` (`id`, `image_url`) VALUES
 --
 -- Indexes for dumped tables
 --
-
+ALTER TABLE `role`
+  ADD PRIMARY KEY (`id`);
 --
 -- Indexes for table `comment`
 --
@@ -1001,7 +937,8 @@ ALTER TABLE `slide_image`
 --
 -- AUTO_INCREMENT for dumped tables
 --
-
+ALTER TABLE `role`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `comment`
 --

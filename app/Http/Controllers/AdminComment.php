@@ -44,7 +44,7 @@ class AdminComment extends Controller
         return redirect('/showlogin');
       }
       public function add(Request $request){
-        if(Request()->session()->has('id')){
+       
           $list=new Comment();
           $list->status=0;
           $list->id_post=$request->input('idpost');
@@ -55,10 +55,7 @@ class AdminComment extends Controller
           }
           
           return redirect("/advisory/$list->id_post");
-        }
-
-        return redirect('/showlogin');
-      }
+        
       
         
 }

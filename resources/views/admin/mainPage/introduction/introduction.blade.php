@@ -12,12 +12,12 @@
                 <script>
                 CKEDITOR.replace('demo', {
                     language: 'vi',
-                    filebrowserBrowseUrl: '../../public/ckfinder/ckfinder.html',
-                    filebrowserImageBrowseUrl: '../../public/ckfinder/ckfinder.html?type=Images',
-                    filebrowserFlashBrowseUrl: '../../public/ckfinder/ckfinder.html?type=Flash',
-                    filebrowserUploadUrl: '../../public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
-                    filebrowserImageUploadUrl: '../../public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images',
-                    filebrowserFlashUploadUrl: '../../public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash'
+                    filebrowserBrowseUrl: '../../../public/ckfinder/ckfinder.html',
+                    filebrowserImageBrowseUrl: '../../../public/ckfinder/ckfinder.html?type=Images',
+                    filebrowserFlashBrowseUrl: '../../../public/ckfinder/ckfinder.html?type=Flash',
+                    filebrowserUploadUrl: '../../../public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
+                    filebrowserImageUploadUrl: '../../../public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images',
+                    filebrowserFlashUploadUrl: '../../../public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash'
                 });
                 </script>
     <br>
@@ -28,12 +28,12 @@
                 <script>
                 CKEDITOR.replace('demo1', {
                     language: 'vi',
-                    filebrowserBrowseUrl: '../../public/ckfinder/ckfinder.html',
-                    filebrowserImageBrowseUrl: '../../public/ckfinder/ckfinder.html?type=Images',
-                    filebrowserFlashBrowseUrl: '../../public/ckfinder/ckfinder.html?type=Flash',
-                    filebrowserUploadUrl: '../../public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
-                    filebrowserImageUploadUrl: '../../public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images',
-                    filebrowserFlashUploadUrl: '../../public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash'
+                    filebrowserBrowseUrl: '../../../public/ckfinder/ckfinder.html',
+                    filebrowserImageBrowseUrl: '../../../public/ckfinder/ckfinder.html?type=Images',
+                    filebrowserFlashBrowseUrl: '../../../public/ckfinder/ckfinder.html?type=Flash',
+                    filebrowserUploadUrl: '../../../public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
+                    filebrowserImageUploadUrl: '../../../public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images',
+                    filebrowserFlashUploadUrl: '../../../public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash'
                 });
                 </script>
 <br>
@@ -44,30 +44,18 @@
                 <script>
                 CKEDITOR.replace('demo2', {
                     language: 'vi',
-                    filebrowserBrowseUrl: '../../public/ckfinder/ckfinder.html',
-                    filebrowserImageBrowseUrl: '../../public/ckfinder/ckfinder.html?type=Images',
-                    filebrowserFlashBrowseUrl: '../../public/ckfinder/ckfinder.html?type=Flash',
-                    filebrowserUploadUrl: '../../public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
-                    filebrowserImageUploadUrl: '../../public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images',
-                    filebrowserFlashUploadUrl: '../../public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash'
+                    filebrowserBrowseUrl: '../../../public/ckfinder/ckfinder.html',
+                    filebrowserImageBrowseUrl: '../../../public/ckfinder/ckfinder.html?type=Images',
+                    filebrowserFlashBrowseUrl: '../../../public/ckfinder/ckfinder.html?type=Flash',
+                    filebrowserUploadUrl: '../../../public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
+                    filebrowserImageUploadUrl: '../../../public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images',
+                    filebrowserFlashUploadUrl: '../../../public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash'
                 });
                 </script>
 <br>
                  <p><label>Sơ đồ công ty</label></p>
-                    <textarea name="company_diagram" id="demo3" class="form-control ckeditor" rows="3" >
-                        {!! $data->company_diagram !!}
-                        </textarea>
-                <script>
-                CKEDITOR.replace('demo3', {
-                    language: 'vi',
-                    filebrowserBrowseUrl: '../../public/ckfinder/ckfinder.html',
-                    filebrowserImageBrowseUrl: '../../public/ckfinder/ckfinder.html?type=Images',
-                    filebrowserFlashBrowseUrl: '../../public/ckfinder/ckfinder.html?type=Flash',
-                    filebrowserUploadUrl: '../../public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
-                    filebrowserImageUploadUrl: '../../public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images',
-                    filebrowserFlashUploadUrl: '../../public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash'
-                });
-                </script>
+                    <img src="/public/image/slide/{{$data->company_diagram}}" alt="chưa có">
+                    <input id="image_url" name="image_url" class="form-control" type="file">
                         
                 <button class="btn btn-primary" id="submit" type="submit" value="SEND">
                   <div class="button">

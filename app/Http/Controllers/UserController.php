@@ -19,6 +19,7 @@ class UserController extends Controller
                     $request->session()->put('login', true);
                     $request->session()->put('id', $account['id']);
                     $request->session()->put('username', $account['username']);
+                    $request->session()->put('role',$account['id_role']);
                     return redirect('/admin');
                     $success=true;
                     break;

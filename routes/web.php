@@ -56,6 +56,7 @@ Route::post('/admin/postcategory/add','AdminPostCategory@add');
 Route::get('/admin/post','AdminPost@showList');
 Route::get('/admin/post/{id}','AdminPost@showPost');
 Route::get('/admin/post/show/add','AdminPost@showAdd');
+Route::get('/admin/post/changestatus/{id}','AdminPost@changeStatus');
 Route::post('/admin/post/update','AdminPost@update');
 Route::post('/admin/post/add','AdminPost@add');
 
@@ -92,6 +93,7 @@ Route::post('/admin/projectcategory/add','AdminProjectCategory@add');
 Route::get('/admin/project','AdminProject@showList');
 Route::get('/admin/project/{id}','AdminProject@showProject');
 Route::get('/admin/project/show/add','AdminProject@showAdd');
+Route::get('/admin/project/changestatus/{id}','AdminProject@changeStatus');
 Route::post('/admin/project/update','AdminProject@update');
 Route::post('/admin/project/add','AdminProject@add');
 
@@ -126,3 +128,14 @@ Route::get('/admin/slide/{id}','AdminSlide@showSlide');
 Route::get('/admin/slide/show/add','AdminSlide@showAdd');
 Route::post('/admin/slide/update','AdminSlide@update');
 Route::post('/admin/slide/add/slide','AdminSlide@add');
+
+
+// admin user 
+Route::get('/admin/user/list','AdminUser@showListUser');
+Route::get('/admin/user/delete/{id}','AdminUser@deleteUser');
+Route::get('/admin/user/create/show','AdminUser@createUser');
+Route::get('/admin/user/change', 'AdminUser@showChange');
+
+
+Route::post('/admin/user/create/add','AdminUser@addUser');
+Route::post('/admin/user/changed','AdminUser@changeSaveUser');

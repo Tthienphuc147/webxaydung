@@ -15,9 +15,15 @@ class AdminProject extends Controller
         if(Request()->session()->has('id')){
           $list=DB::table('project_category')
           ->join('project','project_category.id','=','project.project_category_id')
+          ->where('status',1)
           ->orderby('project.id','desc')
           ->paginate(10);
-          return view('admin.mainPage.project.project')->with('projectList',$list);
+          $listCheck=DB::table('project_category')
+          ->join('project','project_category.id','=','project.project_category_id')
+          ->where('status',0)
+          ->orderby('project.id','desc')
+          ->paginate(10);
+          return view('admin.mainPage.project.project')->with('projectList',$list)->with('projectListCheck',$listCheck);
         }
 
         return redirect('/showlogin');
@@ -99,7 +105,7 @@ class AdminProject extends Controller
               $data->image= $random_file_name;
           }
               
-
+            $data->status=0;
             $data->save();
             
           }
@@ -179,7 +185,7 @@ class AdminProject extends Controller
             $data->image="macdinh.jpg";
           }
           
-            
+            $data->status=0;
             $data->save();
             
           return redirect('/admin/project');
@@ -188,6 +194,17 @@ class AdminProject extends Controller
         }
 
         return redirect('/showlogin');
+      }
+      public function changeStatus($id)
+      {
+        if(Request()->session()->has('id')&&Request()->session()->get('role')==1){
+          $data='App\Project'::find($id);
+          if(!is_null($data)){
+            $data->status=1;
+            $data->save();
+          }
+        }
+        return redirect('/admin/project');
       }
 
      

@@ -83,7 +83,7 @@ Giới thiệu
                             <h2>Cơ cấu<br class="title_br">tổ chức công ty</h2>
                         </div>
                         <div class="introduce--info introduce--service">
-                            {!!$data->company_diagram!!}
+                            
                         </div>
                 </section>
               

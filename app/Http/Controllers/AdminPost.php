@@ -16,9 +16,15 @@ class AdminPost extends Controller
         if(Request()->session()->has('id')){
           $list=DB::table('post_category')
           ->join('post','post_category.id','=','post.post_category_id')
+          ->where('status',1)
           ->orderby('post.id','desc')
           ->paginate(10);
-          return view('admin.mainPage.post.post')->with('postList',$list);
+          $listfalsestatus=DB::table('post_category')
+          ->join('post','post_category.id','=','post.post_category_id')
+          ->where('status',0)
+          ->orderby('post.id','desc')
+          ->paginate(10);
+          return view('admin.mainPage.post.post')->with('postList',$list)->with('postListCheck',$listfalsestatus);
         }
 
         return redirect('/showlogin');
@@ -66,7 +72,7 @@ class AdminPost extends Controller
               $img_file->move('public/image/advisory/', $random_file_name);
               $data->image= $random_file_name;
           }
-          $data->date=Carbon::now();
+          $data->status=0;
             $data->save();
             
           }
@@ -133,8 +139,7 @@ class AdminPost extends Controller
             else{
               $data->image="macdinh.jpg";
             }
-            $data->date=Carbon::now();
-            
+            $data->status=0;
             $data->save();
             
           return redirect('/admin/post');
@@ -146,13 +151,16 @@ class AdminPost extends Controller
       }
 
      
-      public function showmau(){
-        if(Request()->session()->has('id')){
-
-
+      public function changeStatus($id){
+        if(Request()->session()->has('id')&&Request()->session()->get('role')==1){
+            $data='App\Post'::find($id);
+            if(!is_null($data)){
+              $data->status=1;
+              $data->save();
+            }
         }
 
-        return redirect('/showlogin');
+        return redirect('/admin/post');
       }
         
 }

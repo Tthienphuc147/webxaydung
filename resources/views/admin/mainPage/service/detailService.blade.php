@@ -32,12 +32,12 @@
                 <script>
                 CKEDITOR.replace('demo', {
                     language: 'vi',
-                    filebrowserBrowseUrl: '../../public/ckfinder/ckfinder.html',
-                    filebrowserImageBrowseUrl: '../../public/ckfinder/ckfinder.html?type=Images',
-                    filebrowserFlashBrowseUrl: '../../public/ckfinder/ckfinder.html?type=Flash',
-                    filebrowserUploadUrl: '../../public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
-                    filebrowserImageUploadUrl: '../../public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images',
-                    filebrowserFlashUploadUrl: '../../public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash'
+                    filebrowserBrowseUrl: '../../../public/ckfinder/ckfinder.html',
+                    filebrowserImageBrowseUrl: '../../../public/ckfinder/ckfinder.html?type=Images',
+                    filebrowserFlashBrowseUrl: '../../../public/ckfinder/ckfinder.html?type=Flash',
+                    filebrowserUploadUrl: '../../../public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
+                    filebrowserImageUploadUrl: '../../../public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images',
+                    filebrowserFlashUploadUrl: '../../../public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash'
                 });
                 </script>
                         

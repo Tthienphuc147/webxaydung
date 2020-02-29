@@ -67,6 +67,23 @@ ul {
     margin: 0px;
     padding: 0px;
 }
+.logo-content{
+    display:flex;
+    align-items: center;
+}
+.logo{
+    width:5rem;
+}
+.logo-description{
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+    font-weight: bold;
+    padding-left: 1rem;
+    font-size: 12px;
+    padding-top:2rem;
+    text-transform: uppercase;
+}
 
 .introduce--info {
     display:flex;
@@ -506,7 +523,6 @@ iframe {
 }
 
 .main_menu_area .navbar.navbar-default .navbar-header .navbar-brand {
-    line-height: 97px;
     display: inline-block;
     padding: 0px;
 }
@@ -514,6 +530,7 @@ iframe {
 .main_menu_area .navbar.navbar-default .navbar-header .navbar-brand img {
     line-height: 40px;
     display: inline-block;
+    padding-top: 1rem;
 }
 
 .main_menu_area .navbar.navbar-default .navbar-header .navbar-brand img+img {

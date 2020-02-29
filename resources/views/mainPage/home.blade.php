@@ -113,7 +113,7 @@
             <div class="col-md-6 col-sm-6">
                 <div class="counter_item">
                     <i class="fa fa-smile-o" aria-hidden="true"></i>
-                    <h4 class="counter">50</h4>
+                    <h4 class="counter">{{$countProject}}</h4>
                     <h5>Khách hàng </h5>
                 </div>
             </div>

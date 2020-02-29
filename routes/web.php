@@ -129,6 +129,13 @@ Route::get('/admin/slide/show/add','AdminSlide@showAdd');
 Route::post('/admin/slide/update','AdminSlide@update');
 Route::post('/admin/slide/add/slide','AdminSlide@add');
 
+//slide_certification
+Route::get('/admin/slideCertification','AdminSlideCertification@showList');
+Route::get('/admin/slideCertification/{id}','AdminSlideCertification@showSlide');
+Route::get('/admin/slideCertification/show/add','AdminSlideCertification@showAdd');
+Route::post('/admin/slideCertification/update','AdminSlideCertification@update');
+Route::post('/admin/slideCertification/add/slide','AdminSlideCertification@add');
+
 
 // admin user 
 Route::get('/admin/user/list','AdminUser@showListUser');
@@ -139,3 +146,12 @@ Route::get('/admin/user/change', 'AdminUser@showChange');
 
 Route::post('/admin/user/create/add','AdminUser@addUser');
 Route::post('/admin/user/changed','AdminUser@changeSaveUser');
+
+
+//admin feedback
+
+Route::get('/admin/feedback','AdminFeedBack@showList');
+Route::get('/admin/feedback/{id}','AdminFeedback@showFeedBack');
+Route::get('/admin/feedback/show/add','AdminFeedBack@showAdd');
+Route::post('/admin/feedback/update','AdminFeedBack@update');
+Route::post('/admin/feedback/add','AdminFeedBack@add');

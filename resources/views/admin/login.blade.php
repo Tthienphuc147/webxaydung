@@ -17,7 +17,7 @@
 <body>
 <div class="splash-container">
         <div class="card ">
-            <div class="card-header text-center"><a href="#"><img class="logo-img" src="{{ asset('/public/img/logo.png')}}" alt="logo"></div>
+            <div class="card-header text-center"><a href="#"><img class="logo-img logo" src="{{ asset('/public/img/logo.png')}}" alt="logo" width="50rem"></div>
             <div class="card-body">
                 <form action="/showlogin/login"  method="POST">
                       {{csrf_field()}}

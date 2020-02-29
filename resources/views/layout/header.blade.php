@@ -18,7 +18,13 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         </button>
-                    <a class="navbar-brand" href="/"><img src="{{ asset('/public/img/logo.png')}}" alt=""><img src="{{ asset('/public/img/logo.png')}}" alt=""></a>
+                        <div class="logo-content">
+                            <a class="navbar-brand" href="/"><img src="{{ asset('/public/img/logo.png')}}" alt="" class="logo"><img src="{{ asset('/public/img/logo.png')}}" alt="" class="logo"></a>
+                        <div class="logo-description">
+                            <p>Công Ty TNHH Tư Vấn Xây Dựng</p>
+                            <p>Thương Mại Dconstech</p>
+                        </div>
+                        </div>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->

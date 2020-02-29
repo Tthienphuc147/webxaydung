@@ -6,7 +6,7 @@
             <div class="row footer_widgets_inner">
                 <div class="col-md-3 col-sm-6">
                     <aside class="f_widget about_widget">
-                        <img src="{{ asset('/public/img/logo.png')}}" alt="">
+                        <img src="{{ asset('/public/img/logo.png')}}" alt="" class="logo">
                         <p>Công Ty TNHH Tư Vấn Xây Dựng Và Thương Mại Dconstech</p>
                        
                     </aside>

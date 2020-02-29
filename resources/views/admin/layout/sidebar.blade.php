@@ -141,7 +141,7 @@
                             @if(Request()->session()->get('role')==1)
                             
                              <li class="nav-item" >
-                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-13" aria-controls="submenu-5"><i class="fas fa-fw fas fa-phone-square"></i>Quản lý user</a>
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-13" aria-controls="submenu-5"><i class="fas fa-fw fas fa-user-circle"></i>Quản lý user</a>
                                 <div id="submenu-13" class="collapse submenu" style="">
                                     <ul class="nav flex-column">
                                         <li class="nav-item">
@@ -157,6 +157,40 @@
                                 </div>
                             </li>
                             @endif
+                            @if(Request()->session()->get('role')==1)
+                            
+                            <li class="nav-item" >
+                               <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-14" aria-controls="submenu-5"><i class="fas fa-fw fas fa-icon-feed"></i>Quản lý đánh giá</a>
+                               <div id="submenu-14" class="collapse submenu" style="">
+                                   <ul class="nav flex-column">
+                                       <li class="nav-item">
+                                           <a class="nav-link" href="/admin/feedback">Danh sách dánh giá</a>
+                                       </li>
+                                       <li class="nav-item">
+                                           <a class="nav-link" href="/admin/feedback/show/add">Thêm đánh giá</a>
+                                       </li>
+
+                                   </ul>
+                               </div>
+                           </li>
+                           @endif
+                           @if(Request()->session()->get('role')==1)
+                            
+                           <li class="nav-item" >
+                              <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-15" aria-controls="submenu-5"><i class="fas fa-fw fas fa-icon-feed"></i>Quản lý đánh giá</a>
+                              <div id="submenu-15" class="collapse submenu" style="">
+                                  <ul class="nav flex-column">
+                                      <li class="nav-item">
+                                          <a class="nav-link" href="/admin/slideCertification">Danh sách chứng chỉ</a>
+                                      </li>
+                                      <li class="nav-item">
+                                          <a class="nav-link" href="/admin/slideCertification/show/add">Thêm chứng chỉ</a>
+                                      </li>
+
+                                  </ul>
+                              </div>
+                          </li>
+                          @endif
                            
                         </ul>
                     </div>

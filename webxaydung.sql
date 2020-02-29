@@ -38,20 +38,29 @@ DROP TABLE IF EXISTS `service_category`;
 DROP TABLE IF EXISTS `slide`;
 DROP TABLE IF EXISTS `slide_category`;
 DROP TABLE IF EXISTS `slide_image`;
+DROP TABLE IF EXISTS `slide_certification`;
 DROP TABLE IF EXISTS `users`;
 DROP TABLE IF EXISTS `introduction`;
 DROP TABLE IF EXISTS `role`;
+DROP TABLE IF EXISTS `feedback`;
 CREATE TABLE `Role`(
 	`id` int(11) NOT NULL,
 	`rolename` text NOT NULL
 )ENGINE=InnoDB DEFAULT CHARSET=utf8;
 INSERT INTO `role`(`id`,`rolename`) VALUES(1,'admin'),(2,'user');
 
+CREATE TABLE `feedback`(
+	`id` int(11) NOT NULL,
+	`customer_name` text NOT NULL,
+	`feedback` text NOT NULL
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+INSERT INTO `feedback`(`id`,`customer_name`,`feedback`) VALUES(1,'Mr A','Dconstech làm việc rất chuyên nghiệp.');
+
 CREATE TABLE `comment` (
   `id` int(11) NOT NULL,
   `content` text NOT NULL,
   `id_post` int(11) NOT NULL,
-  `status`tinyint(1) DEFAULT(0)
+  `status`tinyint(1) DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -66,7 +75,7 @@ CREATE TABLE `contact` (
   `address` text NOT NULL,
   `email` text NOT NULL,
   `plot_map_image` text DEFAULT NULL,
-  `demand` text NOT NULL DEFAULT 'Thiết kế',
+  `demand` text NOT NULL ,
   `land_image` text DEFAULT NULL,
   `message` text DEFAULT NULL,
   `land_direction` text DEFAULT NULL,
@@ -75,7 +84,7 @@ CREATE TABLE `contact` (
   `phone` int(11) NOT NULL,
   `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
   `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
-  `status` tinyint(1) DEFAULT(0)
+  `status` tinyint(1) DEFAULT 0
   
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -839,7 +848,8 @@ CREATE TABLE `slide_category` (
 
 INSERT INTO `slide_category` (`id`, `name`) VALUES
 (1, 'Home'),
-(2, 'Buiding');
+(2, 'Buiding'),
+(3,'Certification');
 
 -- --------------------------------------------------------
 
@@ -852,6 +862,13 @@ CREATE TABLE `slide_image` (
   `image_url` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+
+
+CREATE TABLE `slide_certification` (
+  `id` int(11) NOT NULL,
+  `image_url` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 --
 -- Dumping data for table `slide_image`
 --
@@ -860,10 +877,16 @@ INSERT INTO `slide_image` (`id`, `image_url`) VALUES
 (1, 'slider-1.jpg'),
 (2, 'slider-2.jpg');
 
+
+INSERT INTO `slide_certification` (`id`, `image_url`) VALUES
+(1, 'cert-1.jpg');
 --
 -- Indexes for dumped tables
 --
 ALTER TABLE `role`
+  ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `feedback`
   ADD PRIMARY KEY (`id`);
 --
 -- Indexes for table `comment`
@@ -916,6 +939,9 @@ ALTER TABLE `service`
 ALTER TABLE `service_category`
   ADD PRIMARY KEY (`id`);
 
+
+ALTER TABLE `slide_certification`
+  ADD PRIMARY KEY (`id`);
 --
 -- Indexes for table `slide`
 --
@@ -939,9 +965,12 @@ ALTER TABLE `slide_image`
 --
 ALTER TABLE `role`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  
 --
 -- AUTO_INCREMENT for table `comment`
 --
+ALTER TABLE `feedback`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 ALTER TABLE `comment`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
@@ -1007,6 +1036,10 @@ ALTER TABLE `slide_category`
 -- AUTO_INCREMENT for table `slide_image`
 --
 ALTER TABLE `slide_image`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+
+
+  ALTER TABLE `slide_certification`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 COMMIT;
 

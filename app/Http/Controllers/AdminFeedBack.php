@@ -38,10 +38,10 @@ class AdminFeedBack extends Controller
               $data->feedback=$feedback;
               $data->save();
             }
-            
+
           }
-          return redirect('/admin/feedBack');
-          
+          return redirect('/admin/feedback');
+
 
         }
 
@@ -58,7 +58,7 @@ class AdminFeedBack extends Controller
 
       public function add(Request $request){
         if(Request()->session()->has('id') && Request()->session()->get('role')==1){
-          
+
             $data=new FeedBack();
             $name=$request->input('name');
             $feedback=$request->input('feedback');
@@ -67,12 +67,12 @@ class AdminFeedBack extends Controller
               $data->feedback=$feedback;
               $data->save();
             }
-          return redirect('/admin/feedBack');
-        
+          return redirect('/admin/feedback');
+
 
         }
 
         return redirect('/showlogin');
       }
-      
+
 }

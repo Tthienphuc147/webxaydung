@@ -12,7 +12,8 @@ class HomeController extends Controller
         $slide='App\SlideImage'::get();
         $countProject='App\Project'::get()->count();
         $countSlide='App\SlideImage'::get()->count();
-        return view('mainPage.home')->with('project',$project)->with('countProject',$countProject)->with('slide',$slide)->with('countSlide',$countSlide);
+        $feedBack='App\FeedBack'::get();
+        return view('mainPage.home')->with('project',$project)->with('countProject',$countProject)->with('slide',$slide)->with('countSlide',$countSlide)->with('feedback',$feedBack);
     }
-        
+
 }

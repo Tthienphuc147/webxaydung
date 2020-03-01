@@ -25,17 +25,17 @@ Table of Content:
 03/ header
 04/ slider
 05/ photography
-06/ button 
-07/ work 
+06/ button
+07/ work
 08/ team
-09/ contact 
-10/ price 
-11/ portfolio 
-12/ blog 
-13/ sidebar  
-13/ page-header  
-13/ project  
-13/ we-dope  
+09/ contact
+10/ price
+11/ portfolio
+12/ blog
+13/ sidebar
+13/ page-header
+13/ project
+13/ we-dope
 13/ progress
 13/ comingsoon
 13/ error
@@ -83,6 +83,22 @@ ul {
     font-size: 12px;
     padding-top:2rem;
     text-transform: uppercase;
+    color:#fff;
+}
+.main_cate_b_title{
+    width:100%;
+}
+.main_cate_b_title h2{
+    font-size: 40px;
+    font-family: "PT Sans", sans-serif;
+    color: #31353d;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+    text-align:center;
+
+    padding-bottom:2rem;
 }
 
 .introduce--info {
@@ -428,6 +444,11 @@ iframe {
     box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
     z-index: 999;
 }
+
+.main_header_area.navbar_fixed .logo-description p{
+    color: #000;
+}
+
 
 .main_header_area.navbar_fixed .main_menu_area .navbar.navbar-default .nav.navbar-nav.navbar-right li a {
     color: #31353d;

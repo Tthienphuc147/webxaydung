@@ -16,12 +16,12 @@
     <section class="project_single_area">
         <div class="container">
             <div class="project_single_inner">
-            
+
                 <div class="row">
                 <h4 class="project_title">Tổng quan dự án</h4>
                         <p class="project_description">{{$project->description}}</p>
                     <div class="project_summery row">
-                        
+
                         <div class="description col-sm-5">
                              <ul>
                              <li><a href="#">Chủ đầu từ: <span>{{$project->investor}}</span> </a></li>
@@ -34,16 +34,16 @@
 
                         </ul>
                         </div>
-                      
-                        <div class="project_image col-sm-7"><img src="/public/image/project/{{ $project->image}}" alt="" width="100%" height="400px"></div>
+
+                        <div class="project_image col-sm-7"><img src="/public/image/project/{{ $project->image}}" alt="" width="100%" height="400px" style="object-fit: contain"></div>
                     </div>
-               
+
                     <div class="project_detail">
                          <h4 class="project_title">Chi tiết dự án</h4>
                          <div class="detail_inner">
                                {!!$project->content!!}
                          </div>
-                       
+
                     </div>
 
                          <div class="project_quote">
@@ -57,7 +57,7 @@
 
 
 
-                </div>  
+                </div>
             </div>
         </div>
         </div>
@@ -88,7 +88,7 @@
                     </div>
                 </div>
                 @endforeach
-          
+
 
             </div>
         </div>

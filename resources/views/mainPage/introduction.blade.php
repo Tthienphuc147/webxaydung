@@ -46,6 +46,29 @@ Giới thiệu
     <section class="service_single_area">
         <div class="container">
             <div class="service_single_inner">
+                <section class="our_team_area2">
+                    <div class="container-fluid">
+                        <div class="main_c_b_title">
+                            <h2>chứng chỉ năng lực</h2>
+                        </div>
+                        <div class="team_slider owl-carousel">
+                            @foreach ($slideCert  as $key=>$item)
+                            <div class="item">
+                                <div class="team_item" style="display:flex;justify-content:center;background:rgb(217,215,213)">
+                                    <div class="pic-container">
+                                        <a data-fancybox="gallery" href="/public/image/slide_certification/{{$item->image_url}}"><img src="/public/image/slide_certification/{{$item->image_url}}" alt=""  width="100%" height="100%"/></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            @endforeach
+
+
+                        </div>
+                    </div>
+                </section>
+                <br>
+                <br>
 
                 <section class="our_team_area2">
                     <div class="container">
@@ -53,9 +76,9 @@ Giới thiệu
                             <h2>thông tin chung</h2>
                         </div>
                         <div class="introduce--info"  >
-            
+
                      {!!$data->information!!}
-                        
+
                         </div>
 
                     </div>
@@ -68,9 +91,9 @@ Giới thiệu
                             <h2>Nghành nghề kinh doanh</h2>
                         </div>
                         <div  class="introduce--info introduce--service"  >
-            
+
                         {!!$data->service!!}
-                        
+
                         </div>
 
                     </div>
@@ -83,11 +106,12 @@ Giới thiệu
                             <h2>Cơ cấu<br class="title_br">tổ chức công ty</h2>
                         </div>
                         <div class="introduce--info introduce--service">
-                            
+
                         </div>
                 </section>
-              
+
             </div>
         </div>
     </section>
 @endsection
+

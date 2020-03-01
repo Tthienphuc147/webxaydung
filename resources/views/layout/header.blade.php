@@ -4,7 +4,7 @@
             <div class="pull-left">
                 <marquee direction="right" style="color:transparent">CHÀO MỪNG BẠN ĐẾN VỚI CTY TNHH TƯ VẤN XD&TM DCONSTECH</marquee>
             </div>
-  
+
         </div>
     </div>
     <div class="main_menu_area">
@@ -20,8 +20,8 @@
                         </button>
                         <div class="logo-content">
                             <a class="navbar-brand" href="/"><img src="{{ asset('/public/img/logo.png')}}" alt="" class="logo"><img src="{{ asset('/public/img/logo.png')}}" alt="" class="logo"></a>
-                        <div class="logo-description">
-                            <p>Công Ty TNHH Tư Vấn Xây Dựng</p>
+                        <div class="logo-description" >
+                            <p >Công Ty TNHH Tư Vấn Xây Dựng</p>
                             <p>Thương Mại Dconstech</p>
                         </div>
                         </div>
@@ -38,8 +38,8 @@
                                 @foreach ($projectCategoryMenu as $item)
                             <li><a href="/categoryProject/{{$item->id}}" class="text-uppercase">{{$item->name}}</a></li>
                                 @endforeach
-                            
-                              
+
+
                             </ul>
                         </li>
                         <li class="dropdown submenu">
@@ -48,8 +48,8 @@
                                 @foreach ($serviceCategoryMenu as $item)
                                      <li><a href="/serviceCategory/{{$item->id}}">{{$item->name}}</a></li>
                                 @endforeach
-                               
-                            
+
+
                             </ul>
                         </li>
                         <li class="dropdown submenu">
@@ -66,8 +66,8 @@
                                 @foreach ($advisoryCategoryMenu as $item)
                                     <li><a href="/advisoryCategory/{{$item->id}}">{{$item->name}}</a></li>
                                 @endforeach
-                                
-                          
+
+
                             </ul>
                         </li>
 

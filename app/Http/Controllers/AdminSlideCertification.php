@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\DB;
 
 class AdminSlideCertification extends Controller
 {
-  
+
       public function showList(){
         if(Request()->session()->has('id')){
           $list=DB::table('slide_certification')
@@ -35,21 +35,21 @@ class AdminSlideCertification extends Controller
             $data='App\SlideCertification'::find($id);
 
             if ($request->hasFile('image_url')) {
-              $img_file = $request->file('image_url');
-              $img_file_extension = $img_file->getClientOriginalExtension();
-              $img_file_name = $img_file->getClientOriginalName();
-              $random_file_name =$img_file_name;
-              while (file_exists('/public/image/slide_certification/' . $random_file_name)) {
-                  $random_file_name = $img_file_name;
-              }
-              $img_file->move('public/image/slide_certification/', $random_file_name);
-              $data->image= $random_file_name;
-          }
-            $data->save();
-            
+                $img_file = $request->file('image_url');
+                $img_file_extension = $img_file->getClientOriginalExtension();
+                $img_file_name = $img_file->getClientOriginalName();
+                $random_file_name =$img_file_name;
+                while (file_exists('/public/image/slide_certification/' . $random_file_name)) {
+                    $random_file_name = $img_file_name;
+                }
+                $img_file->move('public/image/slide_certification/', $random_file_name);
+                $data->image_url= $random_file_name;
+            }
+
+              $data->save();
           }
           return redirect('/admin/slideCertification');
-          
+
 
         }
 
@@ -66,11 +66,10 @@ class AdminSlideCertification extends Controller
       public function add(Request $request){
         if(Request()->session()->has('id')){
           $id=$request->input('idd');
-            $data=new SlideImage();
-            
+            $data=new SlideCertification();
+
            if ($request->hasFile('image_url')) {
               $img_file = $request->file('image_url');
-              var_dump($img_file);
               $img_file_extension = $img_file->getClientOriginalExtension();
               $img_file_name = $img_file->getClientOriginalName();
               $random_file_name =$img_file_name;
@@ -80,21 +79,22 @@ class AdminSlideCertification extends Controller
               $img_file->move('public/image/slide_certification/', $random_file_name);
               $data->image_url= $random_file_name;
           }
+
           else{
               $data->image_url="macdinh.jpg";
             }
-          
-            
+
+
             $data->save();
-            
+
           return redirect('/admin/slideCertification');
-          
+
 
         }
 
        return redirect('/showlogin');
       }
 
-     
-        
+
+
 }

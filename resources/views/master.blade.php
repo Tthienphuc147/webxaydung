@@ -22,7 +22,7 @@
 	<meta name="RATING" content="GENERAL" />
 
     <link rel="icon" href="{{ asset('/public/img/logo.png')}}" type="image/x-icon" />
-
+    <link href="{{ asset('/public/css/slide.css')}}"rel="stylesheet">
     <title>Dconstech-Thiết Kế và xây dựng Đà Nẵng</title>
 
     <!-- Icon css link -->
@@ -43,6 +43,9 @@
     <link href="{{ asset('/public/css/style.css')}}" rel="stylesheet">
     <link href="{{ asset('/public/css/responsive.css')}}" rel="stylesheet">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <link rel="stylesheet" href="/public/fancybox-master/dist/jquery.fancybox.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="/public/fancybox-master/dist/jquery.fancybox.min.js"></script>
 
 
 </head>
@@ -66,7 +69,7 @@
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="{{ asset('/public/js/jquery-2.2.4.js')}}"></script>
-    
+
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="{{ asset('/public/js/bootstrap.min.js')}}"></script>
     <!-- Rev slider js -->

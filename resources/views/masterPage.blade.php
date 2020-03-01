@@ -28,6 +28,7 @@
 
     <!-- Icon css link -->
     <link href="{{ asset('/public/css/font-awesome.min.css')}}"rel="stylesheet">
+    <link href="{{ asset('/public/css/slide.css')}}"rel="stylesheet">
     <link href="{{ asset('/public/css/materialdesignicons.min.css')}}" rel="stylesheet">
 
     <!-- Bootstrap -->
@@ -44,6 +45,9 @@
     <link href="{{ asset('/public/css/style.css')}}" rel="stylesheet">
     <link href="{{ asset('/public/css/responsive.css')}}" rel="stylesheet">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <link rel="stylesheet" href="/public/fancybox-master/dist/jquery.fancybox.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="/public/fancybox-master/dist/jquery.fancybox.min.js"></script>
 
 
 </head>

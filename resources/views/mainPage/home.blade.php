@@ -35,9 +35,9 @@
                                 <img src="{{ asset('/public/img/icon/design.png')}}" alt="">
                                 <img src="{{ asset('/public/img/icon/design.png')}}" alt="">
                             </div>
-                            <h4>TƯ VẤN THIẾT KẾ</h4>
+                            <h4>THIẾT KẾ CÔNG TRÌNH</h4>
                             <p></p>
-                           
+
                         </div>
                     </div>
                 </div>
@@ -50,9 +50,9 @@
                                 <img src="{{ asset('/public/img/icon/employee.png')}}" alt="">
                                 <img src="{{ asset('/public/img/icon/employee.png')}}" alt="">
                             </div>
-                            <h4>THI CÔNG</h4>
+                            <h4>THI CÔNG XÂY DỰNG</h4>
                             <p></p>
-                          
+
                         </div>
                     </div>
                 </div>
@@ -73,7 +73,7 @@
         <div class="row our_project_details">
               @foreach ($project as $item)
             <div class="col-md-4 col-sm-6 building isolation interior">
-              
+
                       <div class="project_item">
                     <img src="/public/image/project/{{ $item->image}}" alt="">
 
@@ -89,20 +89,23 @@
                         </div>
                     </div>
                 </div>
-               
-              
+
+
             </div>
              @endforeach
-       
+
         </div>
     </div>
 </section>
+
+
+
 <!--================End Our Project2 Area =================-->
 
 <section class="counter_area">
     <div class="container">
         <div class="row counter_inner">
-         
+
             <div class="col-md-6 col-sm-6">
                 <div class="counter_item">
                     <i class="fa fa-building-o" aria-hidden="true"></i>
@@ -131,36 +134,19 @@
             </div>
             <div class="col-md-8">
                 <div class="testimonials_slider owl-carousel">
+                    @foreach ($feedback as $item)
                     <div class="item">
                         <div class="testi_left">
                             <i class="fa fa-quote-right" aria-hidden="true"></i>
-                            <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment.</p>
+                            <p>{{$item->feedback}}</p>
                             <a href="#">
-                                <h4>Eng. Abul Kalam</h4>
+                                <h4>{{$item->customer_name}}</h4>
                             </a>
                         </div>
-                     
+
                     </div>
-                    <div class="item">
-                        <div class="testi_left">
-                            <i class="fa fa-quote-right" aria-hidden="true"></i>
-                            <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment.</p>
-                            <a href="#">
-                                <h4>Eng. Abul Kalam</h4>
-                            </a>
-                        </div>
-                       
-                    </div>
-                    <div class="item">
-                        <div class="testi_left">
-                            <i class="fa fa-quote-right" aria-hidden="true"></i>
-                            <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment.</p>
-                            <a href="#">
-                                <h4>Eng. Abul Kalam</h4>
-                            </a>
-                        </div>
-                     
-                    </div>
+                    @endforeach
+
                 </div>
             </div>
         </div>

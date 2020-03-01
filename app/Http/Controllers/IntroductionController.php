@@ -9,7 +9,9 @@ class IntroductionController extends Controller
     public function showIntroduction()
     {
         $data='App\Introduction'::first();
-        return view('mainPage.introduction')->with('data',$data);
+        $slideCert='App\SlideCertification'::get();
+        $countSlide='App\SlideCertification'::get()->count();
+        return view('mainPage.introduction')->with('data',$data)->with('slideCert',$slideCert)->with('countSlide',$countSlide);
     }
-        
+
 }

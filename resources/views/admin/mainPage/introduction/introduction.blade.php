@@ -4,7 +4,7 @@
 <script src="{{asset('../../public/ckeditor/ckeditor.js')}}"></script>
       <div class="container-fluid p-0">
                      <form class="form-horizontal"  action="/admin/introduction" method="POST" enctype="multipart/form-data">
-                    {{csrf_field()}}    
+                    {{csrf_field()}}
                 <p><label>Lịch sử</label></p>
                     <textarea name="history" id="demo" class="form-control ckeditor" rows="3" >
                         {!! $data->history !!}
@@ -54,14 +54,14 @@
                 </script>
 <br>
                  <p><label>Sơ đồ công ty</label></p>
-                    <img src="/public/image/slide/{{$data->company_diagram}}" alt="chưa có">
+                    <img src="/public/image/diagram/{{$data->company_diagram}}" alt="chưa có">
                     <input id="image_url" name="image_url" class="form-control" type="file">
-                        
+
                 <button class="btn btn-primary" id="submit" type="submit" value="SEND">
                   <div class="button">
                     <i class="fa fa-paper-plane" style="color:#fff"></i><span class="send-text" style="color:#fff">  Sửa</span>
                   </div>
-                
+
                 </button>
                      </from>
                     </div>
